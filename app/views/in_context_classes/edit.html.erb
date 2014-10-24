@@ -1,0 +1,240 @@
+<h1>Editing in context class</h1>
+
+<% form_for :in_context_class, :url => { :action => "update" } , :html => { :class => 'form' } do |f| %>
+  <%= f.error_messages %>
+  <%= hidden_field_tag :id, @in_context_class %>
+
+  <%= f.label :class %>
+  <p>
+    <%= f.select :in_context_class_class, @classes, :selected => @in_context_class.in_context_class_class.first.uri %>
+		<%= 
+			unless params[:show_meta_classes] 
+				link_to 'Show meta classes', :action => :edit, :id => @in_context_class, :show_meta_classes => true
+			else 
+				link_to 'Hide meta classes', :action => :edit, :id => @in_context_class
+			end 
+		%>
+	</p>
+
+  <%= f.label :context %>
+  <p>
+    <%= f.select :in_context_class_context, @contexts, :selected => @in_context_class.in_context_class_context.first.uri %>
+  </p>
+
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+
+<% end %>
+
+<script type="text/javascript">
+  var target_index_changing_warning = function(x) { 
+      var id = this.form.id.value;
+      if(id){
+        var text = "You have changed the Target Index.\n\n Consider update the Target Index Parameters.\n";
+        alert(text);
+      }
+ } 
+
+ function open_index_attributes_window(id) {
+    var callback_indexes_attributes = function() { $("#index_attributes").trigger("reloadGrid"); }
+    
+    var options_hash = array_options_hash(<%= SHDM::Index.find_all.map{|v| [v.uri, v.index_name.first]}.to_json %>);
+    var window_name = 'Index Attribute';
+    var elements = [
+                    { "name" : "navigation_attribute_name", "caption" : "Name" },
+                    { "name" : "index_navigation_attribute_index", "caption" : "Index", "type" : "select", "options": options_hash, "change" : "target_index_changing_warning" },
+                    { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    var run_after = function(modal_name){
+      
+      if(id){ index_attr_parameters(id, modal_name); }
+    }
+    var html_after_parameters = !id ? '' : '<h3>Target Index Parameters</h3> <a href="javascript:void(0)" onclick="index_attr_parameters(\''+id+'\',\''+create_window_modal_name(window_name)+'\',{})">New</a><br /><label>Name</label><label style="float:none;">Value Expression</label><br />';
+    create_window_modal(id, '/in_context_classes/get_resource_attributes/','/in_context_classes/index_attributes_post_data', {parent:'<%= CGI::escape(@in_context_class.uri) %>'}, window_name, elements, callback_indexes_attributes, html_after_parameters,run_after);
+    
+  }
+  
+  function index_attr_parameters(id,modal_name, data){
+    var elements = [
+                      { "name" : "navigation_attribute_parameter_name", "caption" : "" },
+                      { "name" : "navigation_attribute_parameter_value_expression", "caption" : "" },
+                      { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    var target_element_id = 'after'+modal_name;
+    var run_on_submit = function(){ $('#'+target_element_id+ ' form').remove();index_attr_parameters(id,modal_name); }
+    
+    multiple_forms_in_target(id, target_element_id, data, '/in_context_classes/get_resource_children_attributes/', { 'children_attribute' : 'index_navigation_attribute_index_parameters' }, '/in_context_classes/index_navigation_attribute_index_parameters_post_data', { 'parent_id' : id }, elements, run_on_submit)
+  }
+  
+</script>
+
+<%=jqgrid("Index Attributes", "index_attributes", "/in_context_classes/index_attributes/#{CGI::escape(@in_context_class.uri)}",
+	[
+		{ :field => "id", :label => "ID", :width => 1, :resizable => false },
+		{ :field => "navigation_attribute_name", :label => "Name", :editable => true, :width => 350, :align => 'center' },
+		{ :field => "index_navigation_attribute_index", :label => "Index", :editable => true, :width => 350 ,:edittype => "select",
+		  :editoptions => { :value => SHDM::Index.find_all.map{|v| [CGI::escape(v.uri), v.index_name.first]} } }
+	],
+	{ 
+	  :selection_handler => "open_index_attributes_window", :direct_selection => false, :add => false, :inline_edit => false, :delete => false, :search => false, :height => 70,
+	}
+)%>
+<script type="text/javascript">
+ jQuery(document).ready(function(){
+    $("#index_attributes").jqGrid("setGridHeight", 'auto');
+  });
+</script>
+<p><a href='javascript:void(0)' onclick='open_index_attributes_window()'>New Index Attribute</a></p>
+<br />
+
+<script type="text/javascript">
+  var target_context_changing_warning = function(x) { 
+      var id = this.form.id.value;
+      if(id){
+        var text = "You have changed the Target Context.\n\n Consider update the Context Anchor Parameters.\n";
+        alert(text);
+        //alert('ID do elemento da Janela: '+ id+ '\nID do elemento do select:'+this.value);
+      }
+  } 
+
+ function open_context_anchor_attributes_window(id) {
+    var callback_context_anchor_attributes = function() { $("#context_anchor_attributes").trigger("reloadGrid"); }
+    
+    var target_context_options = array_options_hash(<%= SHDM::Context.find_all.map{|v| [v.uri, v.context_name.first]}.to_json %>);
+    var window_name = 'Context Anchor Attribute';
+    var elements = [
+                    { "name" : "navigation_attribute_name", "caption" : "Name" },
+                    { "name" : "context_anchor_navigation_attribute_label_expression", "caption" : "Label expression", "type" : "textarea" },
+                    { "name" : "context_anchor_navigation_attribute_target_context", "caption" : "Target context", "type" : "select", "options" : target_context_options , "change" : "target_context_changing_warning" },
+                    { "name" : "context_anchor_navigation_attribute_target_node_expression", "caption" : "Target node expression", "type" : "textarea" },
+                    { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    var run_after = function(modal_name){
+      if(id){ index_anchor_parameters(id, modal_name); }
+    }
+    var html_after_parameters = !id ? '' : '<h3>Context Anchor Parameters</h3> <a href="javascript:void(0)" onclick="index_anchor_parameters(\''+id+'\',\''+create_window_modal_name(window_name)+'\',{})">New</a><br /><label>Name</label><label style="float:none;">Value Expression</label><br />';
+    create_window_modal(id, '/in_context_classes/get_resource_attributes/','/in_context_classes/context_anchor_attributes_post_data', {parent:'<%= CGI::escape(@in_context_class.uri) %>'}, window_name, elements, callback_context_anchor_attributes, html_after_parameters,run_after);
+    
+  }
+  
+  function index_anchor_parameters(id,modal_name, data){
+    var elements = [
+                      { "name" : "navigation_attribute_parameter_name", "caption" : "" },
+                      { "name" : "navigation_attribute_parameter_value_expression", "caption" : "" },
+                      { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    var target_element_id = 'after'+modal_name;
+    var run_on_submit = function(){ $('#'+target_element_id+ ' form').remove();index_anchor_parameters(id,modal_name); }
+    
+    multiple_forms_in_target(id, target_element_id, data, '/in_context_classes/get_resource_children_attributes/', { 'children_attribute' : 'context_anchor_navigation_attribute_target_parameters' }, '/in_context_classes/navigation_attribute_context_parameters_post_data', { 'parent_id' : id }, elements, run_on_submit)
+  }
+  
+</script>
+
+<%=jqgrid("Context Anchor Attributes", "context_anchor_attributes", "/in_context_classes/context_anchor_attributes/#{CGI::escape(@in_context_class.uri)}",
+	[
+		{ :field => "id", :label => "ID", :width => 1, :resizable => false },
+		{ :field => "navigation_attribute_name", :label => "Name", :editable => true, :width => 100, :align => 'center' },
+		{ :field => "context_anchor_navigation_attribute_label_expression", :label => "Label expression", :editable => true, :width => 300, :edittype => "textarea", :editoptions => { :rows => 5, :cols => 40 } },
+		{ :field => "context_anchor_navigation_attribute_target_context", :label => "Target context", :editable => true, :width => 100 ,:edittype => "select",
+		  :editoptions => { :value => SHDM::Context.find_all.map{|v| [CGI::escape(v.uri), v.context_name.first]} } },
+  	{ :field => "context_anchor_navigation_attribute_target_node_expression", :label => "Target node expression", :editable => true, :width => 200, :edittype => "textarea", :editoptions => { :rows => 5, :cols => 40 } },
+	],
+	{ 
+	  :selection_handler => "open_context_anchor_attributes_window", :search => false, :direct_selection => false, :height => 150,
+	}
+)%>
+<script type="text/javascript">
+ jQuery(document).ready(function(){
+    $("#context_anchor_attributes").jqGrid("setGridHeight", 'auto');
+  });
+</script>
+<p><a href='javascript:void(0)' onclick='open_context_anchor_attributes_window()'>New Context Anchor Attribute</a></p>
+<br/>
+
+<script type="text/javascript">
+ function open_index_anchor_attributes_window(id) {
+    var callback_indexes_attributes = function() { $("#index_anchor_attributes").trigger("reloadGrid"); }
+    
+    var target_index_options = array_options_hash(<%=  SHDM::Index.find_all.map{|v| [v.uri, v.index_name.first]}.to_json %>);
+    var window_name = 'Index Anchor Attribute';
+    var elements = [
+                    { "name" : "navigation_attribute_name", "caption" : "Name" },
+                    { "name" : "index_anchor_navigation_attribute_label_expression", "caption" : "Label expression", "type" : "textarea" },
+                    { "name" : "index_anchor_navigation_attribute_target_index", "caption" : "Target index", "type" : "select", "options" : target_index_options , "change" : "target_index_changing_warning" },
+                    { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    var run_after = function(modal_name){
+      if(id){ index_anchor_navigation_parameters(id, modal_name); }
+    }
+    var html_after_parameters = !id ? '' : '<h3>Context Anchor Parameters</h3> <a href="javascript:void(0)" onclick="index_anchor_navigation_parameters(\''+id+'\',\''+create_window_modal_name(window_name)+'\',{})">New</a><br /><label>Name</label><label style="float:none;">Value Expression</label><br />';
+    create_window_modal(id, '/in_context_classes/get_resource_attributes/','/in_context_classes/index_anchor_attributes_post_data', {parent:'<%= CGI::escape(@in_context_class.uri) %>'}, window_name, elements, callback_indexes_attributes, html_after_parameters,run_after);
+    
+  }
+  
+  function index_anchor_navigation_parameters(id,modal_name, data){
+    var elements = [
+                      { "name" : "navigation_attribute_parameter_name", "caption" : "" },
+                      { "name" : "navigation_attribute_parameter_value_expression", "caption" : "" },
+                      { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    var target_element_id = 'after'+modal_name;
+    var run_on_submit = function(){ $('#'+target_element_id+ ' form').remove();index_anchor_navigation_parameters(id,modal_name); }
+    
+    multiple_forms_in_target(id, target_element_id, data, '/in_context_classes/get_resource_children_attributes/', { 'children_attribute' : 'index_anchor_navigation_attribute_target_parameters' }, '/in_context_classes/navigation_attribute_index_parameters_post_data', { 'parent_id' : id }, elements, run_on_submit)
+  }
+  
+</script>
+
+<%=jqgrid("Index Anchor Attributes", "index_anchor_attributes", "/in_context_classes/index_anchor_attributes/#{CGI::escape(@in_context_class.uri)}",
+	[
+		{ :field => "id", :label => "ID", :width => 1, :resizable => false },
+		{ :field => "navigation_attribute_name", :label => "Name", :editable => true, :width => 200, :align => 'center' },
+		{ :field => "index_anchor_navigation_attribute_label_expression", :label => "Label expression", :editable => true, :width => 300, :edittype => "textarea", :editoptions => { :rows => 5, :cols => 40 } },
+		{ :field => "index_anchor_navigation_attribute_target_index", :label => "Target index", :editable => true, :width => 200 ,:edittype => "select",
+		  :editoptions => { :value => SHDM::Index.find_all.map{|v| [CGI::escape(v.uri), v.index_name.first]} } }
+	],
+	{ 
+	  :selection_handler => "open_index_anchor_attributes_window", :direct_selection => false, :search => false, :height => 150,
+	}
+)%>
+<script type="text/javascript">
+ jQuery(document).ready(function(){
+    $("#index_anchor_attributes").jqGrid("setGridHeight", 'auto');
+  });
+</script>
+<p><a href='javascript:void(0)' onclick='open_index_anchor_attributes_window()'>New Index Anchor Attribute</a></p>
+<br />
+
+<script type="text/javascript">
+ function open_computed_attributes_window(id) {
+    var callback_computed_attributes = function() { $("#computed_attributes").trigger("reloadGrid");}
+    var window_name = 'Computed Attribute';
+    var elements = [
+                    { "name" : "navigation_attribute_name", "caption" : "Name" },
+                    { "name" : "computed_navigation_attribute_value_expression", "caption" : "Value expression", "type" : "textarea", "size" : 5 },
+                    { "name" : "id", "type" : "hidden", "class" : "hidden"}
+                    ];
+    create_window_modal(id, '/in_context_classes/get_resource_attributes/','/in_context_classes/computed_attributes_post_data', {parent:'<%= CGI::escape(@in_context_class.uri) %>'}, window_name, elements, callback_computed_attributes);
+  }
+</script>
+
+<%=jqgrid("Computed Attributes", "computed_attributes", "/in_context_classes/computed_attributes/#{CGI::escape(@in_context_class.uri)}",
+	[
+		{ :field => "id", :label => "ID", :width => 1, :resizable => false },
+		{ :field => "navigation_attribute_name", :label => "Name", :editable => true, :width => 220, :align => 'center' },
+		{ :field => "computed_navigation_attribute_value_expression", :label => "Value expression", :editable => true, :width => 480, :edittype => "textarea", :editoptions => { :rows => 5, :cols => 40 } }
+	],
+	{ 
+    :selection_handler => "open_computed_attributes_window", :direct_selection => false, :search => false, :height => 150,
+  }
+)%>
+<script type="text/javascript">
+ jQuery(document).ready(function(){
+    $("#computed_attributes").jqGrid("setGridHeight", 'auto');
+  });
+</script>
+<p><a href='javascript:void(0)' onclick='open_computed_attributes_window()'>New Computed Attribute</a></p>
+<br/>
+<%= link_to 'Back', in_context_classes_path %>

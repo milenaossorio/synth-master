@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+
+#path/to/jruby -S script/import path/to/source_file.rdf model=application_name format=rdfxml
+
+args = ARGV.map{|arg| arg.split("=")}
+file = args.delete_at(0)
+options = {}
+for arg in args do
+  options[arg.first] = arg.last
+end
+
+model   = options['model']
+format  = options['format'].nil? ? 'rdfxml' : options['format']
+
+unless File.exists?("applications/#{model}")
+  raise "There is no '#{model}' application here. Check if the name is correct."
+end
+
+unless ['rdfxml', 'n3', 'ntriples', 'turtle'].include?(format)
+  raise "'#{format.to_s}' format is not valid"
+end
+
+puts "Loading Rails environment..."
+
+require File.expand_path('../../config/boot',  __FILE__)
+
+Rails::Initializer.run do |config|
+  config.frameworks -= [ :active_record , :active_resource, :action_mailer ]
+  config.time_zone = 'UTC'
+end
+
+require 'active_rdf'
+
+context = options['context'].nil? ? nil : RDFS::Resource.new(options['context'])
+
+app    = Application.find(model)
+app.start
+
+puts "Importing..."
+
+app.db.load("#{file}", format, context)
+app.shutdown
+
+puts "Finished."
