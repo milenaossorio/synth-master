@@ -94,14 +94,14 @@ class OntologiesController < ApplicationController
     domain_classes = RDFS::Class.domain_classes.
       map{|value| ActiveRDF::Namespace.localname(value.uri) if value.uri.index(param) == 0}.compact.sort
     wizard = []
-    class_step("1.1.1", wizard, domain_classes, "swrc");
-    class_next_step("1.1.1.1", wizard, domain_classes);
+    class_step("0.0.0", wizard, domain_classes, "swrc");
+    class_next_step("0.0.0.0", wizard, domain_classes);
     render :json => {:windows=>wizard}
   end
   
   def class_step(previousId, wizard, classes, prefix)
     index = -1
-    currentId = previousId + ".1"
+    currentId = previousId + ".0"
     m = {:id => currentId, :type => 'select', :title => "What do you want to show from #{prefix} ontology?", 
       :message => 'Class', :options => []}
     m[:options] = classes.map{|className| {:key=>(index += 1), :text=>className, :next=>currentId + "." + index.to_s}}
@@ -110,7 +110,7 @@ class OntologiesController < ApplicationController
   
   def class_next_step(previousId, wizard, classes)
     index = -1
-    
+    aux = []
     classes.each{ |name|
       currentId = (previousId + "." + (index += 1).to_s)
       m = {:id => currentId, :type => 'radio', :title => 'What do you want to do?', 
@@ -121,7 +121,39 @@ class OntologiesController < ApplicationController
           {:key => 2, :text => "Define a computation using a(n) #{name}", :next => currentId + ".2"}
           ]}
       wizard.push(m);
+      aux.push({:id => currentId, :className => name})
     }
+  #  aux.each{ |xam| example_list(1, wizard, 'event', ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...'])}
+    aux.each {|x| example_list(x[:id], wizard, x[:className], getExamplesFor(x[:className], 3, 'label'))}
+  end
+  
+  def getExamplesFor(className, cant, *props)
+    return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+  end
+  
+  def example_list(previousId, wizard, className, examples)
+    currentId = previousId.to_s + ".0"
+    m = {:id => currentId, :title => "", :type => "radioDetail", :message => className,
+            :messageOptions => "Do you want to choose",
+            :options => [
+              {:key => 0, :text => "one #{className}?", :next => currentId + ".0"},
+              {:key => 1, :text => "more than one #{className}?", :next => currentId + ".1"} 
+            ],
+            :details =>
+            [
+              [
+                  [{:type => "text", :msg => examples[0]}],
+                  [{:type => "text", :msg => examples[1]}],
+                  [{:type => "text", :msg => examples[2]}]
+              ],
+              [
+                  [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[0]}],
+                  [{:type => "img", :msg => '/assets/checkbox.png'},{:type => "text", :msg => examples[1]}],
+                  [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[2]}]
+              ]
+            ]
+        }
+     wizard.push(m);
   end
 
 end
