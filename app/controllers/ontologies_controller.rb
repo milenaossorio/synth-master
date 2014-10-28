@@ -145,7 +145,7 @@ class OntologiesController < ApplicationController
       child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
       example_list(currentId, name, getExamplesFor(name, 3, 'label'), child)
-      example_detail(currentId, name, getDatatypeProperties(name), child)
+      example_detail(currentId, name, getDatatypeProperties(name, false), child)
       
     #  wizard.push(m);
     #  aux.push({:id => currentId, :className => name})
@@ -170,8 +170,16 @@ class OntologiesController < ApplicationController
     return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
   end
   
-  def getDatatypeProperties(className)
-    return ["label", "summary", "Documents"]
+  def getDatatypeProperties(className, isFirstSet)
+    if (isFirstSet)
+      return ["label", "start", "end", "summary"]
+    else
+      return ["label", "summary", "Documents"]
+    end
+  end
+  
+  def getRelatedCollections(className)
+    return ["Article", "Book", "Conference", "Event", "Person", "Document"]
   end
   
   def example_list(previousId, className, examples, fatherFlowTree) # 6, 29, ...
@@ -215,6 +223,9 @@ class OntologiesController < ApplicationController
         }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
+    choose_attributes_types_detail(currentId, className, child)
+    example_detail_navigation_to_other_screen_question(currentId, className, child)
+    
   end
   
   def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
@@ -233,6 +244,9 @@ class OntologiesController < ApplicationController
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
+    choose_attributes_types_list(currentId, className, child)
+    choose_examples_list_navigation_question(currentId, className, child) 
+    
   end
   
   def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...
@@ -253,7 +267,7 @@ class OntologiesController < ApplicationController
     fatherFlowTree[:children].push(child)
   end 
   
-  def choose_attributes_types_detail(previousId, wizard, className) #16
+  def choose_attributes_types_detail(previousId, className, fatherFlowTree) #16
     currentId = previousId.to_s + ".0"
       m = {      
             :id => currentId, :title => "", :type => "radio",
@@ -264,10 +278,16 @@ class OntologiesController < ApplicationController
               {:key => 2, :text => "Computed Attributes", :next => currentId + ".2"} 
             ]
       } 
-      wizard.push(m)   
+      child = {:value => m, :children => []}
+      fatherFlowTree[:children].push(child)
+      
+      datatype_properties_selection_detail(currentId, className, getDatatypeProperties(className, true), child)
+      related_collection_detail(currentId, className, getRelatedCollections(className), child)
+      computed_attribute_detail(currentId, className, child)
+      
   end
   
-  def example_detail_navigation_to_other_screen_question(previousId, wizard, className) #23
+  def example_detail_navigation_to_other_screen_question(previousId, className, fatherFlowTree) #23
     currentId = previousId.to_s + ".1"
     m = {
           :id => currentId,
@@ -275,16 +295,21 @@ class OntologiesController < ApplicationController
           :type => "loopDetail",
           :message => "#{className} Detail",
           :messageOptions => "Do you want to choose anything to navigate to other screen?",
-          :example => "#{className}",
+          :example => className,
           :options => [
               {:key => 0, :text => "Yes", :next => currentId + ".0" },
               {:key => 1, :text => "No", :next => currentId + ".1"}
             ]
           }
-    wizard.push(m)    
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    choose_attribute_to_navigate_detail(currentId, className, child)
+    finish_app(currentId, className, child)    
+    
   end     
   
-  def choose_attributes_types_list(previousId, wizard, className) #7
+  def choose_attributes_types_list(previousId, className, fatherFlowTree) #7
     currentId = previousId.to_s + ".0"
     m = {
           :id => currentId, :title => "", :type => "radio", 
@@ -295,6 +320,230 @@ class OntologiesController < ApplicationController
               {:key => 2, :text => "Computed Attributes", :next => currentId + ".2"} 
             ]
     }
-    wizard.push(m)
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    datatype_properties_selection_list(currentId, className, getDatatypeProperties(className, true), child)
+    related_collection_list(currentId, className, getRelatedCollections(className), child)
+    computed_attribute_list(currentId, className, child)
+    
+  end
+ 
+  def choose_examples_list_navigation_question(previousId, className, fatherFlowTree) #24
+    currentId = previousId.to_s + ".1"
+    m = {
+            :id => currentId, :title => "", :type => "loop", :message => "", :message1 => "#{className} List",
+            :messageOptions => "Do you want to choose anything to navigate to other screen?",
+            :example => className,
+            :options => [
+              {:key => 0, :text => "Yes", :next => currentId + ".0"},
+              {:key => 1, :text => "No", :next => previousId[0, previousId.length-4] + ".1.1.1"}
+            ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    choose_attribute_to_navigate_list(currentId, className, child)
+    
+  end
+  
+  def datatype_properties_selection_detail(previousId, className, datatypeProperties, fatherFlowTree) #17
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Following this example which attributes you want to show in the #{className} detail",
+            :type => "checkboxForDetail", :message => "Add #{className} properties", :example => className,
+            :datatypeProperties => datatypeProperties,
+            :options =>  [  
+                  {:key => 0, :next => currentId + ".0"}
+                ],
+            :message1 => "Selected properties"
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+  end
+  
+  def related_collection_detail(previousId, className, relatedCollections, fatherFlowTree) #19
+    currentId = previousId.to_s + ".1"
+    m = {
+          :id => currentId, :title => "Select what you want to show", :type => "select",
+          :message => "#{className}'s \t related collections",
+          :options => [
+              {:key => 0, :text => relatedCollections[0], :next => 11}, {:key => 1, :text => relatedCollections[1], :next => 20}, 
+              {:key => 2, :text => relatedCollections[2], :next => 20}, {:key => 3, :text => relatedCollections[3], :next => 11}, 
+              {:key => 4, :text => relatedCollections[4], :next => 20}, {:key => 5, :text => relatedCollections[5], :next => 20} 
+          ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+  
+  end
+  
+  def computed_attribute_detail(previousId, className, fatherFlowTree) #22
+    currentId = previousId.to_s + ".2"
+    m = {
+            :id => currentId, :title => "Computed attribute", :type => "computedAttribute", :needNextProcessing => true,
+            :message => "New attribute", :message1 => "Selected properties", :example => className,
+            :options => [
+              {:key => 0, :next => 18} 
+             ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+        
+  end
+  
+  def choose_attribute_to_navigate_detail(previousId, className, fatherFlowTree) #25
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Select where one should click to choose an #{className}",
+            :type => "attributeForChoosingForDetail", :needNextProcessing => true, :message => "#{className} Detail",
+            :originalModal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
+            :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
+            :example => className,
+            :options => [
+              {:key => 0, :next => 3} 
+             ]
+          }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+  end
+  
+  def finish_app(previousId, className, fatherFlowTree) #26
+    currentId = previousId.to_s + ".1"
+    m = {
+            :id => currentId, :title => "What do you want to do?", :type => "radio", :message => "",
+            :options => [
+              {:key => 0, :text => "Go to the pages index", :next => 26},
+              {:key => 1, :text => "Finish the application definition", :next => 26} 
+            ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+  end
+  
+  def datatype_properties_selection_list(previousId, className, datatypeProperties, fatherFlowTree) #9
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Following this example which attributes you want to show in the #{className} list",
+            :type => "checkbox", :message => "Add #{className} properties", :example => className,
+            :datatypeProperties => datatypeProperties,
+            :options =>  [  
+                  {:key => 0, :next => 8}
+                ],
+            :message1 => "Selected properties"
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+        
+  end
+  
+  def related_collection_list(previousId, className, relatedCollections, fatherFlowTree) #10
+    currentId = previousId.to_s + ".1"
+    m = {
+            :id => currentId, :title => "Select what you want to show", :type => "select", :message => "#{className}'s \t related collections",
+            :options => [
+              {:key => 0, :text => relatedCollections[0], :next => 11}, {:key => 1, :text => relatedCollections[1], :next => 11}, 
+              {:key => 2, :text => relatedCollections[2], :next => 11}, {:key => 3, :text => relatedCollections[3], :next => 11}, 
+              {:key => 4, :text => relatedCollections[4], :next => 11}, {:key => 5, :text => relatedCollections[5], :next => 11} 
+            ]
+         }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    suggest_paths(currentId, className, child)
+    
+  end
+  
+  def computed_attribute_list(previousId, className, fatherFlowTree) #13
+    currentId = previousId.to_s + ".2"
+    m = {
+            :id => currentId, :title => "Computed attribute", :type => "computedAttribute", 
+            :message => "New attribute", :message1 => "Selected properties", :example => className,
+            :options => [
+              {:key => 0, :next => 8} 
+             ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+  end
+  
+  def choose_attribute_to_navigate_list(previousId, className, fatherFlowTree) #14
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Select where one should click to choose a(n) #{className}", 
+            :type => "attributeForChoosing", :message => "Events", :example => className, 
+            :originalModal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
+            :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
+            :options => [
+              {:key => 0, :next => 3} 
+             ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+  end
+          
+  def suggest_paths(previousId, className, fatherFlowTree) #11
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Select the path", :type => "paths", :message => "Suggested paths",
+            :paths => [
+                  {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
+                                                  "Event1 - hasOpeningDocument:author - João",
+                                                  "Event2 - hasClosingDocument:advisor - Schawbe"]},
+                  {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
+                   ],
+            :options => [
+                    {:key => 0, :next => 12}, {:key => 1, :next => 12}
+                   ]
+          }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    choose_relations_of_path(currentId, className, child) #12
+    
+  end
+  
+  def choose_relations_of_path(previousId, className, fatherFlowTree) #12
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Select the relationships", :type => "path",
+            :message => "Suggested path",
+            :paths => [
+                  {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
+                                                  "Event1 - hasOpeningDocument:author - João",
+                                                  "Event2 - hasClosingDocument:advisor - Schawbe"]},
+                  {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
+                 ],
+            :options => [
+                    {:key => 0, :next => 8}, {:key => 1, :next => 8}
+                   ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    more_attributes_question_list(currentId, className, child) #8
+    
+  end
+  
+  def more_attributes_question_list(previousId, className, fatherFlowTree) #8
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "", :type => "radioSelectedProperties",
+            :message => "Do you want to show more attributes in the #{className} list? Which type?",
+            :example => className,
+            :options => [
+              {:key => 0, :text => "Direct attributes of an #{className}", :next => 9},
+              {:key => 1, :text => "Attributes of other classes related to #{className}", :next => 10},
+              {:key => 2, :text => "Computed Attributes", :next => 13},
+              {:key => 3, :text => "No more", :next => 24}
+            ]
+        }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+  
   end
   end
