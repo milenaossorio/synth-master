@@ -369,13 +369,18 @@ class OntologiesController < ApplicationController
           :id => currentId, :title => "Select what you want to show", :type => "select",
           :message => "#{className}'s \t related collections",
           :options => [
-              {:key => 0, :text => relatedCollections[0], :next => 11}, {:key => 1, :text => relatedCollections[1], :next => 20}, 
-              {:key => 2, :text => relatedCollections[2], :next => 20}, {:key => 3, :text => relatedCollections[3], :next => 11}, 
-              {:key => 4, :text => relatedCollections[4], :next => 20}, {:key => 5, :text => relatedCollections[5], :next => 20} 
+              {:key => 0, :text => relatedCollections[0], :next => currentId + ".0"},
+              {:key => 1, :text => relatedCollections[1], :next => currentId + ".0"}, 
+              {:key => 2, :text => relatedCollections[2], :next => currentId + ".0"}, 
+              {:key => 3, :text => relatedCollections[3], :next => currentId + ".0"}, 
+              {:key => 4, :text => relatedCollections[4], :next => currentId + ".0"},
+              {:key => 5, :text => relatedCollections[5], :next => currentId + ".0"} 
           ]
         }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
+    
+    suggest_paths_detail(currentId, className, child) #20
   
   end
   
@@ -445,9 +450,12 @@ class OntologiesController < ApplicationController
     m = {
             :id => currentId, :title => "Select what you want to show", :type => "select", :message => "#{className}'s \t related collections",
             :options => [
-              {:key => 0, :text => relatedCollections[0], :next => 11}, {:key => 1, :text => relatedCollections[1], :next => 11}, 
-              {:key => 2, :text => relatedCollections[2], :next => 11}, {:key => 3, :text => relatedCollections[3], :next => 11}, 
-              {:key => 4, :text => relatedCollections[4], :next => 11}, {:key => 5, :text => relatedCollections[5], :next => 11} 
+              {:key => 0, :text => relatedCollections[0], :next => currentId + ".0"}, 
+              {:key => 1, :text => relatedCollections[1], :next => currentId + ".0"}, 
+              {:key => 2, :text => relatedCollections[2], :next => currentId + ".0"}, 
+              {:key => 3, :text => relatedCollections[3], :next => currentId + ".0"}, 
+              {:key => 4, :text => relatedCollections[4], :next => currentId + ".0"},
+              {:key => 5, :text => relatedCollections[5], :next => currentId + ".0"} 
             ]
          }
     child = {:value => m, :children => []}
@@ -498,7 +506,7 @@ class OntologiesController < ApplicationController
                   {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
                    ],
             :options => [
-                    {:key => 0, :next => 12}, {:key => 1, :next => 12}
+                    {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
                    ]
           }
     child = {:value => m, :children => []}
@@ -520,7 +528,7 @@ class OntologiesController < ApplicationController
                   {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
                  ],
             :options => [
-                    {:key => 0, :next => 8}, {:key => 1, :next => 8}
+                    {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
                    ]
         }
     child = {:value => m, :children => []}
@@ -546,4 +554,82 @@ class OntologiesController < ApplicationController
     fatherFlowTree[:children].push(child)
   
   end
+  
+  def suggest_paths_detail(previousId, className, fatherFlowTree) #20
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Select the path", :type => "paths",
+            :message => "Suggested paths",
+            :paths => [
+                  {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
+                                                  "Event1 - hasOpeningDocument:author - João",
+                                                  "Event2 - hasClosingDocument:advisor - Schawbe"]},
+                  {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
+                   ],
+            :options => [
+                  {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
+                   ]
+          }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    choose_relations_of_path_detail(currentId, className, child) #21
+  
   end
+  
+  def choose_relations_of_path_detail(previousId, className, fatherFlowTree) #21
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "Select the relationships", :type => "path", :message => "Suggested path",
+            :paths => [
+                  {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
+                                                  "Event1 - hasOpeningDocument:author - João",
+                                                  "Event2 - hasClosingDocument:advisor - Schawbe"]},
+                  {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
+                 ], 
+            :propertySets => [
+                      [
+                        [
+                          {:key => 0, :text => "organizer"}
+                          ]
+                        ],
+                        [
+                        [
+                          {:key => 0, :text => "hasOpeningDocument"},
+                          {:key => 1, :text => "hasClosingDocument"}
+                          ],
+                          [
+                          {:key => 0, :text => "presenter"},
+                          {:key => 1, :text => "author"}
+                          ]
+                        ]
+                      ],
+            :options => [
+                    {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
+                   ]
+          }
+          
+          child = {:value => m, :children => []}
+          fatherFlowTree[:children].push(child)
+          
+          more_attributes_question_detail(currentId, className, child) #18
+  
+  end
+  
+  def more_attributes_question_detail(previousId, className, fatherFlowTree) #18
+    currentId = previousId.to_s + ".0"
+    m = {
+            :id => currentId, :title => "", :type => "radioSelectedPropertiesForDetail",
+            :message => "Do you want to show more attributes in the Event detail? Which type?",
+            :example => "events",
+            :options => [
+              {:key => 0, :text => "Direct attributes of an Event", :next => 17},
+              {:key => 1, :text => "Attributes of other classes related to Event", :next => 19},
+              {:key => 2, :text => "Computed Attributes", :next => 22},
+              {:key => 3, :text => "No more", :next => 23}
+            ]
+          }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+end
+end
