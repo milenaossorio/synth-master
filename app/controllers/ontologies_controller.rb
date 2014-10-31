@@ -354,7 +354,7 @@ class OntologiesController < ApplicationController
             :type => "checkboxForDetail", :message => "Add #{className} properties", :example => className,
             :datatypeProperties => datatypeProperties,
             :options =>  [  
-                  {:key => 0, :next => currentId + ".0"}
+                  {:key => 0, :next => previousId + ".1.0.0.0"}
                 ],
             :message1 => "Selected properties"
         }
@@ -390,8 +390,8 @@ class OntologiesController < ApplicationController
             :id => currentId, :title => "Computed attribute", :type => "computedAttribute", :needNextProcessing => true,
             :message => "New attribute", :message1 => "Selected properties", :example => className,
             :options => [
-              {:key => 0, :next => 18} 
-             ]
+              {:key => 0, :next => previousId + ".1.0.0.0"} 
+            ]
         }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
@@ -407,7 +407,7 @@ class OntologiesController < ApplicationController
             :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
             :example => className,
             :options => [
-              {:key => 0, :next => 3} 
+              {:key => 0, :next => ".0.0.0"} 
              ]
           }
     child = {:value => m, :children => []}
@@ -436,7 +436,7 @@ class OntologiesController < ApplicationController
             :type => "checkbox", :message => "Add #{className} properties", :example => className,
             :datatypeProperties => datatypeProperties,
             :options =>  [  
-                  {:key => 0, :next => 8}
+                  {:key => 0, :next => previousId + ".1.0.0.0"}
                 ],
             :message1 => "Selected properties"
         }
@@ -471,7 +471,7 @@ class OntologiesController < ApplicationController
             :id => currentId, :title => "Computed attribute", :type => "computedAttribute", 
             :message => "New attribute", :message1 => "Selected properties", :example => className,
             :options => [
-              {:key => 0, :next => 8} 
+              {:key => 0, :next => previousId + ".1.0.0.0"} 
              ]
         }
     child = {:value => m, :children => []}
@@ -487,7 +487,7 @@ class OntologiesController < ApplicationController
             :originalModal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
             :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
             :options => [
-              {:key => 0, :next => 3} 
+              {:key => 0, :next => ".0.0.0"} 
              ]
         }
     child = {:value => m, :children => []}
@@ -544,10 +544,10 @@ class OntologiesController < ApplicationController
             :message => "Do you want to show more attributes in the #{className} list? Which type?",
             :example => className,
             :options => [
-              {:key => 0, :text => "Direct attributes of an #{className}", :next => 9},
-              {:key => 1, :text => "Attributes of other classes related to #{className}", :next => 10},
-              {:key => 2, :text => "Computed Attributes", :next => 13},
-              {:key => 3, :text => "No more", :next => 24}
+              {:key => 0, :text => "Direct attributes of an #{className}", :next => previousId[0, previousId.length-6] + ".0"},
+              {:key => 1, :text => "Attributes of other classes related to #{className}", :next => previousId[0, previousId.length-4]},
+              {:key => 2, :text => "Computed Attributes", :next => previousId[0, previousId.length-6] + ".2"},
+              {:key => 3, :text => "No more", :next => previousId[0, previousId.length-8] + ".1"}
             ]
         }
     child = {:value => m, :children => []}
@@ -623,10 +623,10 @@ class OntologiesController < ApplicationController
             :message => "Do you want to show more attributes in the Event detail? Which type?",
             :example => "events",
             :options => [
-              {:key => 0, :text => "Direct attributes of an Event", :next => 17},
-              {:key => 1, :text => "Attributes of other classes related to Event", :next => 19},
-              {:key => 2, :text => "Computed Attributes", :next => 22},
-              {:key => 3, :text => "No more", :next => 23}
+              {:key => 0, :text => "Direct attributes of an Event", :next => previousId[0, previousId.length-6] + ".0"},
+              {:key => 1, :text => "Attributes of other classes related to Event", :next => previousId[0, previousId.length-4]},
+              {:key => 2, :text => "Computed Attributes", :next => previousId[0, previousId.length-6] + ".2"},
+              {:key => 3, :text => "No more", :next => previousId[0, previousId.length-8] + ".1"}
             ]
           }
     child = {:value => m, :children => []}

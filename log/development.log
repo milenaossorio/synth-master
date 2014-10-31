@@ -8756,3 +8756,259 @@ Completed in 3863ms (View: 2462 | 200 OK [http://localhost/ontologies/wizard/htt
 Processing OntologiesController#wizard (for 127.0.0.1 at 2014-10-29 18:16:43) [GET]
   Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
 Completed in 1665ms (View: 1438 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:42:33) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 1940ms (View: 1469 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ExecuteController#init (for 127.0.0.1 at 2014-10-31 10:45:55) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d
+Completed in 228ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 127.0.0.1 at 2014-10-31 10:45:56) [GET]
+  Parameters: {"id"=>"http://base#84f5cd60-59bc-11e0-b9e1-00264afffe1d"}
+Completed in 2690ms (View: 3 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d]
+
+
+Processing ApplicationsController#index (for 127.0.0.1 at 2014-10-31 10:46:06) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 225ms (View: 220 | 200 OK [http://localhost/]
+
+
+Processing ExecuteController#init (for 127.0.0.1 at 2014-10-31 10:46:13) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d
+Completed in 124ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 127.0.0.1 at 2014-10-31 10:46:13) [GET]
+  Parameters: {"id"=>"http://base#84f5cd60-59bc-11e0-b9e1-00264afffe1d"}
+Completed in 1048ms (View: 2 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:47:48) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 159ms (View: 154 | 200 OK [http://localhost/]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:47:51) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 88ms (View: 65 | 200 OK [http://localhost/domain]
+
+
+Processing ContextsController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:47:56) [GET]
+Rendering template within layouts/application
+Rendering contexts/index
+Completed in 693ms (View: 643 | 200 OK [http://localhost/navigation]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:48:07) [GET]
+  Parameters: {"id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 212ms (View: 202 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:48:09) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414759688992", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 334ms (View: 4 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414759688992&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:48:09) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414759689043", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 32ms (View: 10 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414759689043&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:50:33) [GET]
+Rendering template within layouts/application
+Rendering contexts/index
+Completed in 333ms (View: 317 | 200 OK [http://localhost/navigation]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:50:48) [GET]
+  Parameters: {"id"=>"http://base#0ccf7820-59b9-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 111ms (View: 95 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%230ccf7820-59b9-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:50:49) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414759849268", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#0ccf7820-59b9-11e0-b9e1-00264afffe1d"}
+Completed in 176ms (View: 0 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%230ccf7820-59b9-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414759849268&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 10:50:49) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414759849307", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#0ccf7820-59b9-11e0-b9e1-00264afffe1d"}
+Completed in 31ms (View: 0 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%230ccf7820-59b9-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414759849307&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:20) [GET]
+  Parameters: {"id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 138ms (View: 124 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:21) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760481849", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 121ms (View: 4 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760481849&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:22) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760481886", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 24ms (View: 4 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760481886&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:27) [GET]
+Rendering template within layouts/application
+Rendering contexts/index
+Completed in 339ms (View: 318 | 200 OK [http://localhost/contexts]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:45) [GET]
+  Parameters: {"id"=>"http://base#b16a1990-59b8-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 181ms (View: 175 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23b16a1990-59b8-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:46) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760506821", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#b16a1990-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 45ms (View: 5 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23b16a1990-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760506821&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:01:47) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760506783", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#b16a1990-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 126ms (View: 4 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23b16a1990-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760506783&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:02:23) [GET]
+  Parameters: {"id"=>"http://base#b16a1990-59b8-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 170ms (View: 160 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23b16a1990-59b8-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:02:24) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760544451", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#b16a1990-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 114ms (View: 4 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23b16a1990-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760544451&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:02:24) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760544489", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#b16a1990-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 24ms (View: 6 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23b16a1990-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760544489&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:04:38) [GET]
+Rendering template within layouts/application
+Rendering contexts/index
+Completed in 313ms (View: 298 | 200 OK [http://localhost/contexts]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:04:47) [GET]
+  Parameters: {"id"=>"http://base#813df250-59b8-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 79ms (View: 79 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23813df250-59b8-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:04:48) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760688878", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#813df250-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 144ms (View: 0 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23813df250-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760688878&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 11:04:49) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414760688915", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#813df250-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 16ms (View: 0 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23813df250-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414760688915&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-10-31 14:32:22) [GET]
+  Parameters: {"id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 16732ms (View: 12829 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-10-31 14:32:46) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414773165933", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 1786ms (View: 52 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414773165933&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-10-31 14:32:48) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1414773166189", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#150c5860-59b8-11e0-b9e1-00264afffe1d"}
+Completed in 146ms (View: 27 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23150c5860-59b8-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1414773166189&rows=10&page=1&sidx=&sord=]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 14:33:04) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 179ms (View: 73 | 200 OK [http://localhost/domain]
+
+
+Processing ClassesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 14:33:08) [GET]
+Rendering template within layouts/application
+Rendering resources/show
+Rendered classes/_domain_classes (152.0ms)
+Rendered classes/_meta_classes (23.0ms)
+Rendered resources/_properties (841.0ms)
+Completed in 1639ms (View: 1311 | 200 OK [http://localhost/classes]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 16:33:28) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 366ms (View: 314 | 200 OK [http://localhost/]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 18:39:38) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 6307ms (View: 3071 | 200 OK [http://localhost/domain]
+
+
+Processing ResourcesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 18:40:25) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Rendered resources/_domain_classes (2149.0ms)
+Rendered resources/_meta_classes (375.0ms)
+Completed in 4994ms (View: 4446 | 200 OK [http://localhost/resources]
+
+
+Processing ClassesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 19:05:04) [GET]
+Rendering template within layouts/application
+Rendering resources/show
+Rendered classes/_domain_classes (3859.0ms)
+Rendered classes/_meta_classes (16.0ms)
+Rendered resources/_properties (329.0ms)
+Completed in 6040ms (View: 4275 | 200 OK [http://localhost/classes]
+
+
+Processing ResourcesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 19:08:27) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Rendered resources/_domain_classes (156.0ms)
+Rendered resources/_meta_classes (266.0ms)
+Completed in 1189ms (View: 593 | 200 OK [http://localhost/resources]
+
+
+Processing ResourcesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 19:08:38) [GET]
+  Parameters: {"type"=>"http://data.semanticweb.org/ns/swc/ontology#AccommodationPlace"}
+Rendering template within layouts/application
+Rendering resources/index
+Rendered resources/_domain_classes (62.0ms)
+Rendered resources/_meta_classes (16.0ms)
+Completed in 1391ms (View: 109 | 200 OK [http://localhost/resources?type=http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology%23AccommodationPlace]
+
+
+Processing ResourcesController#index (for 0:0:0:0:0:0:0:1 at 2014-10-31 19:09:07) [GET]
+  Parameters: {"type"=>"http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"}
+Rendering template within layouts/application
+Rendering resources/index
+Rendered resources/_domain_classes (78.0ms)
+Rendered resources/_meta_classes (15.0ms)
+Completed in 15280ms (View: 14721 | 200 OK [http://localhost/resources?type=http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology%23AcademicEvent]
