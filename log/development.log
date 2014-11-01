@@ -7610,3 +7610,8 @@ SyntaxError (c:/Users/Milena/synth-master Mauricio/synth-master/app/controllers/
 Rendered rescues/_trace (23.0ms)
 Rendered rescues/_request_and_response (6.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 127.0.0.1 at 2014-10-27 17:54:04) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 6182ms (View: 3917 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]

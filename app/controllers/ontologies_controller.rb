@@ -94,38 +94,43 @@ class OntologiesController < ApplicationController
     domain_classes = RDFS::Class.domain_classes.
       map{|value| ActiveRDF::Namespace.localname(value.uri) if value.uri.index(param) == 0}.compact.sort
     wizard = []
-    flowTree = class_step("0.0.0", wizard, domain_classes, "swrc")
+    flowTree = class_step("0.0.0", domain_classes, "swrc")
+    puts "value"
+    puts flowTree[:value]
+    puts "children"
+    puts flowTree[:children].count
     breadthFirstSearch(flowTree, wizard)
     render :json => {:windows=>wizard}
   end
     
   def breadthFirstSearch(flowTree, wizard)
     aux = []
-    if flowTree
+    if flowTree != nil
       aux.push(flowTree)
-    while aux.cont > 0
+    end
+    while aux.count > 0
       wizard.push(aux[0][:value])
       aux[0][:children].each {|child|
         aux.push(child)
       }
-      aux.delete(0)
-    end
+      aux.delete_at(0)
+    end      
   end  
   
-  def class_step(previousId, wizard, classes, prefix) # 4, 27,...
+  def class_step(previousId, classes, prefix) # 4, 27,...
     index = -1
     currentId = previousId + ".0"
     m = {:id => currentId, :type => 'select', :title => "What do you want to show from #{prefix} ontology?", 
       :message => 'Class', :options => []}
     m[:options] = classes.map{|className| {:key=>(index += 1), :text=>className, :next=>currentId + "." + index.to_s}}
-    flowTree[:value] = m
+    flowTree = {:value => m, :children => []}
     
-    class_next_step(currentId, wizard, domain_classes, flowTree);
+    class_next_step(currentId, classes, flowTree);
     return flowTree
     #wizard.push(m);
   end
   
-  def class_next_step(previousId, wizard, classes, fatherFlowTree) #5, 28, ...
+  def class_next_step(previousId, classes, fatherFlowTree) #5, 28, ...
     index = -1
     aux = []
     classes.each{ |name|
@@ -137,10 +142,10 @@ class OntologiesController < ApplicationController
           {:key => 1, :text => "Show the detail of a(n) #{name}", :next => currentId + ".1"},
           {:key => 2, :text => "Define a computation using a(n) #{name}", :next => currentId + ".2"}
           ]}
-      child = {:value => m}
+      child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
-      example_list(x[:id], wizard, x[:className], getExamplesFor(x[:className], 3, 'label'), child)
-      example_detail(x[:id], wizard, x[:className], getDatatypeProperties(x[:className]), child)
+      example_list(currentId, name, getExamplesFor(name, 3, 'label'), child)
+      example_detail(currentId, name, getDatatypeProperties(name), child)
       
     #  wizard.push(m);
     #  aux.push({:id => currentId, :className => name})
@@ -169,7 +174,7 @@ class OntologiesController < ApplicationController
     return ["label", "summary", "Documents"]
   end
   
-  def example_list(previousId, wizard, className, examples) # 6, 29, ...
+  def example_list(previousId, className, examples, fatherFlowTree) # 6, 29, ...
     currentId = previousId.to_s + ".0"
     m = {:id => currentId, :title => "", :type => "radioDetail", :message => className,
             :messageOptions => "Do you want to choose",
@@ -191,9 +196,14 @@ class OntologiesController < ApplicationController
               ]
             ]
         }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    example_list_choose_one_more_attributes_question(currentId, className, getExamplesFor(className, 3, 'label'), child)
+    example_list_choose_more_than_one_more_attributes_question(currentId, className, getExamplesFor(className, 3, 'label'), child)
+    
   end
   
-  def example_detail(previousId, wizard, className, datatypeProperties) # 15, 42, ...
+  def example_detail(previousId, className, datatypeProperties, fatherFlowTree) # 15, 42, ...
     currentId = previousId.to_s + ".1"
     m = {:id => currentId, :title => "#{className} detail", :type => "yesNoDetail",
             :messageOptions => "Do you want to show other attributes of a(n) #{className} in the detail view?",
@@ -203,9 +213,11 @@ class OntologiesController < ApplicationController
               {:key => 0, :text => "Yes", :next => currentId + ".0"},{:key => 1, :text => "No", :next => currentId + ".1"} 
             ]
         }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
   end
   
-  def example_list_choose_one_more_attributes_question(previousId, wizard, className, examples) #30, 32, ...
+  def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
     currentId = previousId.to_s + ".0"
     m = {
             :id => currentId, :title => "", :type => "infoWithOptions", :message => "#{className}s",
@@ -219,10 +231,11 @@ class OntologiesController < ApplicationController
                     [{:type => "text", :msg => examples[2]}]
                   ]
     }
-    wizard.push(m)
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
   end
   
-  def example_list_choose_more_than_one_more_attributes_question(previousId, wizard, className, examples) #31, 33, ...
+  def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...
     currentId = previousId.to_s + ".1"
     m = {
             :id => currentId, :title => "", :type => "infoWithOptions", :message => "#{className}s",
@@ -236,7 +249,8 @@ class OntologiesController < ApplicationController
                     [{:type => "img", :msg => "/assets/checkbox-checked.png"},{:type => "text", :msg => examples[2]}]
                   ]
     }
-    wizard.push(m)
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
   end 
   
   def choose_attributes_types_detail(previousId, wizard, className) #16
