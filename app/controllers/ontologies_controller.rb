@@ -96,9 +96,12 @@ class OntologiesController < ApplicationController
     wizard = []
     #flowTree = class_step("0.0.0", domain_classes, "swrc")
     
-   # breadthFirstSearch(flowTree, wizard)
+    #breadthFirstSearch(flowTree, wizard)
     
-    wizard = getDatatypeProperties("AcademicEvent", true)
+    wizard = getExamplesFor("ArgumentativeDocument", 3)
+    #wizard = getExamplesFor("AccommodationPlace", 3)
+    
+   # wizard = getDatatypeProperties("AcademicEvent", true)
     
     render :json => {:windows=>wizard}
   end
@@ -176,29 +179,32 @@ class OntologiesController < ApplicationController
     resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
   
  
-      result = resources[0,50].map{|resource| 
+      result = resources[0,10].map{|resource| 
       resource.rdfs::label.empty? ? "compacturi: #{resource.compact_uri}" : "label: #{resource.rdfs::label.first}"
-        }.uniq
-                         
-    return result[0, cant]
+        }.uniq.compact[0, cant]
+    (result.length...cant).each do result.push("No more example") end                   
+    return result
     #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
   end
   
   def getDatatypeProperties(className, isFirstSet)
+=begin 
     className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     datatypeProps = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).direct_predicates(distinct = true)
     
     result = datatypeProps.map{|prop|
       prop.rdfs::label.empty? ? "compacturi: #{prop.compact_uri}" : "label: #{prop.rdfs::label.first}"
       }
-=begin   
+      
+      return result
+=end
     if (isFirstSet)
       return ["label", "start", "end", "summary"]
     else
       return ["label", "summary", "Documents"]
     end
-=end
-  return result
+
+  
 
   end
   
