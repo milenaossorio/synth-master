@@ -167,6 +167,7 @@ class OntologiesController < ApplicationController
   end
   
   def getExamplesFor(className, cant, *props) 
+    
     return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
   end
   
