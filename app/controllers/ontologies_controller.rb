@@ -98,9 +98,12 @@ class OntologiesController < ApplicationController
     
     #breadthFirstSearch(flowTree, wizard)
     
-    wizard = getExamplesFor("ArgumentativeDocument", 3)
-    #wizard = getExamplesFor("AccommodationPlace", 3)
+    #domain_classes.each{ |klass|
+     # wizard.push(getExamplesFor1("AcademicEvent", 2))
+    #} 
     
+    wizard = getDatatypeProperties("AcademicEvent", true)   
+        
    # wizard = getDatatypeProperties("AcademicEvent", true)
     
     render :json => {:windows=>wizard}
@@ -169,7 +172,7 @@ class OntologiesController < ApplicationController
    
   end
   
-  def getExamplesFor(className, cant, *props)
+  def getExamplesFor1(className, cant, *props)
     
     puts 'begin***************************'
     
@@ -187,25 +190,64 @@ class OntologiesController < ApplicationController
     #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
   end
   
-  def getDatatypeProperties(className, isFirstSet)
-=begin 
+  def getExamplesFor(className, cant, *props)
+        
     className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
-    datatypeProps = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).direct_predicates(distinct = true)
-    
-    result = datatypeProps.map{|prop|
-      prop.rdfs::label.empty? ? "compacturi: #{prop.compact_uri}" : "label: #{prop.rdfs::label.first}"
-      }
+    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
+     
+    result = []
+    resources[0, cant].each{|res|
+      hash = {}     
+      res.direct_properties.each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+      result.push(hash)
+      }  
       
-      return result
-=end
+    
+    
+    return result
+
+    #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+  end
+  
+  def getExamplesFor2(className, cant, *props)
+        
+    className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
+    
+ #   resources = resources[0, cant].collect{|res|
+ #     res.direct_properties.collect{|property| [property.label.first || property.compact_uri, property]}
+  #    }
+  
+    result = []
+    text = "rdfs:label"
+    resources[0, cant].each{|res|
+      hash = {}  
+      unless property.label.first.nil?   
+        res.direct_properties.find_by.rdfs::label(:regex => (/#{text}/)).each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+      end
+      result.push(hash)
+      }  
+    
+    return result
+
+    #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+  end
+  
+  def getDatatypeProperties(className, isFirstSet)
+
+    className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resource = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all.first
+    
+    result = resource.direct_properties.collect{|property| (property.label.first || property.compact_uri)}
+
+=begin
     if (isFirstSet)
       return ["label", "start", "end", "summary"]
     else
       return ["label", "summary", "Documents"]
     end
-
-  
-
+=end
+   return result
   end
   
   def getRelatedCollections(className)
