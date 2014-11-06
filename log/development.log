@@ -11560,3 +11560,615 @@ Rendering rescues/layout (internal_server_error)
 Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 18:11:59) [GET]
   Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
 Completed in 3905ms (View: 125 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 11:20:55) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+SyntaxError (C:/Users/Milena/synth-master Mauricio/synth-master/app/controllers/ontologies_controller.rb:200: syntax error, unexpected tPIPE
+
+      res.direct_properties.select(|x| props.include?(x)).each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+                                   ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:406:in `load_file'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (23.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 11:25:25) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 236ms (View: 69 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 11:25:46) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 668ms (View: 19 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:01:58) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 460ms (View: 21 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:02:30) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 64ms (View: 7 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:02:51) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 411ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:03:40) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 224ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:04:12) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+SyntaxError (C:/Users/Milena/synth-master Mauricio/synth-master/app/controllers/ontologies_controller.rb:200: syntax error, unexpected '='
+
+      res.direct_properties.select{|x| props.include?(x.label.first || x.compact_uri) = false}.each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+                                                                                      ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:406:in `load_file'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:04:24) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 494ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:04:59) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 535ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:07:06) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 429ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:07:37) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 420ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:08:43) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 437ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:08:56) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 415ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:09:29) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 351ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:10:11) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 5395ms (View: 17 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:11:05) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 4060ms (View: 13 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:12:21) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 49ms (View: 7 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:12:35) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 171ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:14:09) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 82ms (View: 10 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:37:47) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `getExamplesFor' for #<OntologiesController:0x81ab73>):
+  app/controllers/ontologies_controller.rb:17:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:38:11) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+TypeError (no implicit conversion from nil to integer):
+  org/jruby/RubyArray.java:1368:in `[]'
+  app/controllers/ontologies_controller.rb:198:in `get_examples_for'
+  app/controllers/ontologies_controller.rb:17:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:38:58) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 103ms (View: 11 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:39:19) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 95ms (View: 15 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:42:21) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 84ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:46:33) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `to_h' for #<Array:0x196038a>):
+  app/controllers/ontologies_controller.rb:208:in `get_examples_for'
+  org/jruby/RubyRange.java:407:in `each'
+  app/controllers/ontologies_controller.rb:207:in `get_examples_for'
+  app/controllers/ontologies_controller.rb:19:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:46:43) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `to_hash' for #<Array:0x1193df1>):
+  app/controllers/ontologies_controller.rb:208:in `get_examples_for'
+  org/jruby/RubyRange.java:407:in `each'
+  app/controllers/ontologies_controller.rb:207:in `get_examples_for'
+  app/controllers/ontologies_controller.rb:19:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:47:55) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 88ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:50:02) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 78ms (View: 7 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 12:51:16) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 127ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:13:54) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/ontologies_controller.rb:22:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:14:37) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 123ms (View: 17 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:15:15) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `getDatatypeProperties' for #<OntologiesController:0x1f72fd7>):
+  app/controllers/ontologies_controller.rb:365:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:286:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:248:in `example_list'
+  app/controllers/ontologies_controller.rb:157:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:146:in `class_next_step'
+  app/controllers/ontologies_controller.rb:138:in `class_step'
+  app/controllers/ontologies_controller.rb:14:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:15:48) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `getDatatypeProperties' for #<OntologiesController:0x1864215>):
+  app/controllers/ontologies_controller.rb:365:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:286:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:248:in `example_list'
+  app/controllers/ontologies_controller.rb:157:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:146:in `class_next_step'
+  app/controllers/ontologies_controller.rb:138:in `class_step'
+  app/controllers/ontologies_controller.rb:14:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:15:54) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `getDatatypeProperties' for #<OntologiesController:0x145979d>):
+  app/controllers/ontologies_controller.rb:365:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:286:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:248:in `example_list'
+  app/controllers/ontologies_controller.rb:157:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:146:in `class_next_step'
+  app/controllers/ontologies_controller.rb:138:in `class_step'
+  app/controllers/ontologies_controller.rb:14:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:16:21) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `direct_properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:206:in `get_datatype_properties'
+  app/controllers/ontologies_controller.rb:365:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:286:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:248:in `example_list'
+  app/controllers/ontologies_controller.rb:157:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:146:in `class_next_step'
+  app/controllers/ontologies_controller.rb:138:in `class_step'
+  app/controllers/ontologies_controller.rb:14:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (26.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:19:51) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `direct_properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:208:in `get_datatype_properties'
+  app/controllers/ontologies_controller.rb:368:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:289:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:251:in `example_list'
+  app/controllers/ontologies_controller.rb:157:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:146:in `class_next_step'
+  app/controllers/ontologies_controller.rb:138:in `class_step'
+  app/controllers/ontologies_controller.rb:14:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:20:33) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `direct_properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:208:in `get_datatype_properties'
+  app/controllers/ontologies_controller.rb:370:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:291:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:253:in `example_list'
+  app/controllers/ontologies_controller.rb:157:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:146:in `class_next_step'
+  app/controllers/ontologies_controller.rb:138:in `class_step'
+  app/controllers/ontologies_controller.rb:14:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:20:59) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 20723ms (View: 596 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 15:59:56) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 17675ms (View: 479 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:07:25) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 17037ms (View: 470 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:09:00) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 31ms (View: 11 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:09:35) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 94ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:10:27) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 110ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:11:14) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 94ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:11:58) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 31ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:12:59) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 1390ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:18:33) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+SyntaxError (C:/Users/Milena/synth-master Mauricio/synth-master/app/controllers/ontologies_controller.rb:674: syntax error, unexpected kEND
+
+end
+  ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:444:in `recognize'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (16.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:18:45) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:204:in `get_datatype_properties'
+  app/controllers/ontologies_controller.rb:16:in `wizard'
+  app/controllers/ontologies_controller.rb:15:in `each'
+  app/controllers/ontologies_controller.rb:15:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (16.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:19:03) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+
+NoMethodError (undefined method `direct_properties' for []:Array):
+  app/controllers/ontologies_controller.rb:205:in `get_datatype_properties'
+  app/controllers/ontologies_controller.rb:16:in `wizard'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:15:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (17.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:22:31) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 6087ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:23:38) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 102ms (View: 7 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:23:59) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 78ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:24:18) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 48ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:25:40) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 32ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:26:07) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 5965ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:27:14) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 5841ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-06 16:29:31) [GET]
+  Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
+Completed in 68442ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
