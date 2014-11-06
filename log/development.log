@@ -9463,3 +9463,2100 @@ Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-02 23:37:
 Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-02 23:38:35) [GET]
   Parameters: {"url"=>"http://swrc.ontoware.org/ontology"}
 Completed in 5155ms (View: 750 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fswrc.ontoware.org%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:10:13) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 5274ms (View: 1812 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:11:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 3264ms (View: 557 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:13:09) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 2221ms (View: 547 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:23:01) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 1674ms (View: 485 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:24:53) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 1908ms (View: 704 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:33:18) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 1710ms (View: 438 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:35:38) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 3925ms (View: 1250 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:37:25) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 2318ms (View: 578 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:40:56) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 32ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:41:35) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 39ms (View: 24 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:42:44) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 16ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:43:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 32ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:43:07) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 34ms (View: 19 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:45:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:104: wrcunknown regexp options - wrc):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:406:in `load_file'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:47:13) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 97ms (View: 31 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:53:09) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 235ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 10:58:02) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 173ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:45:40) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 11170ms (View: 564 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:46:46) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 7910ms (View: 500 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:48:00) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 7528ms (View: 610 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:49:27) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 8315ms (View: 484 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:51:55) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 6955ms (View: 407 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:52:33) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 6839ms (View: 391 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 11:59:45) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `unique' for #<Array:0x5e77a4a0>):
+  app/controllers/ontologies_controller.rb:174:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 12:00:02) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 7219ms (View: 422 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 12:01:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `distinct' for #<Array:0x79f8f5ed>):
+  app/controllers/ontologies_controller.rb:176:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 12:01:24) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `distinct' for #<Array:0x5e77a4a0>):
+  app/controllers/ontologies_controller.rb:174:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 12:02:34) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 7159ms (View: 438 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 12:39:39) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:179: syntax error, unexpected '['
+
+        }.uniq.[0,cant]
+               ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:451:in `load_missing_constant'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 12:40:01) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 99895ms (View: 422 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 14:59:56) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:177:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (353.0ms)
+Rendered rescues/_request_and_response (94.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:02:11) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 14659ms (View: 1547 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:04:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:177:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:23:48) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:183:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (563.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:27:58) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:29:03) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:185: syntax error, unexpected tRPAREN
+
+      resources.join(:)
+                      ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:406:in `load_file'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:29:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:190:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:30:45) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:30:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:33:19) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:33:53) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 15:34:15) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:08:21) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (438.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:08:23) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/ontologies_controller.rb:189:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (179.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:17:25) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:187:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:19:01) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:19:49) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:19:53) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:30:44) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (22.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:31:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (26.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:40:15) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (20.0ms)
+Rendered rescues/_request_and_response (905.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:41:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:179:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:145:in `class_next_step'
+  app/controllers/ontologies_controller.rb:134:in `each'
+  app/controllers/ontologies_controller.rb:134:in `class_next_step'
+  app/controllers/ontologies_controller.rb:126:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:48:22) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NameError (undefined local variable or method `cant' for #<OntologiesController:0x6bd5c3bf>):
+  app/controllers/ontologies_controller.rb:107:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (16.0ms)
+Rendered rescues/_request_and_response (8.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:48:42) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/ontologies_controller.rb:108:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:52:46) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `legth' for []:Array):
+  app/controllers/ontologies_controller.rb:108:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (16.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:53:15) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `min' for #<OntologiesController:0x1aa08628>):
+  app/controllers/ontologies_controller.rb:108:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (164.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:53:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:108:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 16:55:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:115:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:01:27) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:117:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (16.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:04:09) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:117:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:09:49) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:118:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (16.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:10:22) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:118:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:10:46) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.length):
+  app/controllers/ontologies_controller.rb:118:in `wizard'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:26:25) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 77183ms (View: 863 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 17:30:39) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 55123ms (View: 453 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 18:12:45) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  org/jruby/RubyKernel.java:2109:in `send'
+  app/controllers/ontologies_controller.rb:189:in `getDatatypeProperties'
+  app/controllers/ontologies_controller.rb:101:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (625.0ms)
+Rendered rescues/_request_and_response (265.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 18:17:42) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  org/jruby/RubyKernel.java:2109:in `send'
+  app/controllers/ontologies_controller.rb:189:in `getDatatypeProperties'
+  app/controllers/ontologies_controller.rb:101:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (15.0ms)
+Rendered rescues/_request_and_response (24.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:47:14) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  org/jruby/RubyKernel.java:2109:in `send'
+  app/controllers/ontologies_controller.rb:189:in `getDatatypeProperties'
+  app/controllers/ontologies_controller.rb:101:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (438.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:48:38) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  org/jruby/RubyKernel.java:2109:in `send'
+  app/controllers/ontologies_controller.rb:189:in `getDatatypeProperties'
+  app/controllers/ontologies_controller.rb:350:in `choose_attributes_types_list'
+  app/controllers/ontologies_controller.rb:271:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:233:in `example_list'
+  app/controllers/ontologies_controller.rb:147:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:136:in `class_next_step'
+  app/controllers/ontologies_controller.rb:128:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:49:39) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 36451ms (View: 1203 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:50:22) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 13411ms (View: 547 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:54:14) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `|' for "label: 20th International World Wide Web Conference":String):
+  app/controllers/ontologies_controller.rb:183:in `getExamplesFor'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:183:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:147:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:136:in `class_next_step'
+  app/controllers/ontologies_controller.rb:128:in `class_step'
+  app/controllers/ontologies_controller.rb:97:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:54:30) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 12353ms (View: 468 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 19:57:13) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 12869ms (View: 485 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:00:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:101: syntax error, unexpected tRPAREN
+
+    wizard = getExamplesFor("AccommodationPlace", 3,)
+                                                    ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:406:in `load_file'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:00:26) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 48ms (View: 32 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:00:47) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 31ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:01:03) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 32ms (View: 17 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:01:14) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 31ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:01:57) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 94ms (View: 15 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:02:42) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 12979ms (View: 469 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:05:24) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 237ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:06:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 251ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:05:41) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 125ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:11:27) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/ontologies_controller.rb:187:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (8.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:11:57) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/ontologies_controller.rb:187:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:12:38) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/ontologies_controller.rb:187:in `getExamplesFor'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:13:04) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:667: syntax error, unexpected end-of-file
+
+end
+  ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:451:in `load_missing_constant'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:13:13) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 40ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:13:27) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 33ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:14:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 221ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:15:04) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 363ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:15:25) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 253ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:15:39) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 236ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:16:04) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 329ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:16:22) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 221ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-03 20:16:34) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 220ms (View: 15 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ContextsController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 18:52:26) [GET]
+Rendering template within layouts/application
+Rendering contexts/index
+Completed in 2315ms (View: 2001 | 200 OK [http://localhost/navigation]
+
+
+Processing AbstractInterfacesController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 18:52:45) [GET]
+Rendering template within layouts/application
+Rendering abstract_interfaces/index
+Completed in 907ms (View: 859 | 200 OK [http://localhost/interface]
+
+
+Processing AbstractInterfacesController#edit (for 0:0:0:0:0:0:0:1 at 2014-11-04 18:52:58) [GET]
+  Parameters: {"id"=>"http://base#13ec84f0-59c2-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering abstract_interfaces/edit
+Completed in 2931ms (View: 2511 | 200 OK [http://localhost/abstract_interfaces/edit/http:%2F%2Fbase%2313ec84f0-59c2-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 18:58:45) [GET]
+Rendering template within layouts/application
+Rendering contexts/index
+Completed in 360ms (View: 344 | 200 OK [http://localhost/navigation]
+
+
+Processing ContextsController#edit (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:00:14) [GET]
+  Parameters: {"id"=>"http://base#bc100a90-59b7-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering contexts/edit
+Completed in 126ms (View: 110 | 200 OK [http://localhost/contexts/edit/http:%2F%2Fbase%23bc100a90-59b7-11e0-b9e1-00264afffe1d]
+
+
+Processing ContextsController#context_parameters (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:00:15) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415134815636", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#bc100a90-59b7-11e0-b9e1-00264afffe1d"}
+Completed in 67ms (View: 36 | 200 OK [http://localhost/contexts/context_parameters/http%3A%2F%2Fbase%23bc100a90-59b7-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415134815636&rows=10&page=1&sidx=&sord=]
+
+
+Processing ContextsController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:00:15) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415134815723", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#bc100a90-59b7-11e0-b9e1-00264afffe1d"}
+Completed in 47ms (View: 16 | 200 OK [http://localhost/contexts/pre_conditions/http%3A%2F%2Fbase%23bc100a90-59b7-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415134815723&rows=10&page=1&sidx=&sord=]
+
+
+Processing IndexesController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:02:10) [GET]
+Rendering template within layouts/application
+Rendering indexes/index
+Completed in 391ms (View: 360 | 200 OK [http://localhost/indexes]
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:02) [GET]
+
+ActionController::RoutingError (No route matches "/rest/resource" with {:method=>:get}):
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IndexesController#edit (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:18) [GET]
+  Parameters: {"id"=>"http://base#9b6a77f0-59ba-11e0-b9e1-00264afffe1d"}
+Rendering template within layouts/application
+Rendering indexes/edit
+Completed in 4717ms (View: 4043 | 200 OK [http://localhost/indexes/edit/http:%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d]
+
+
+Processing IndexesController#index_attributes (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:25) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415135124759", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#9b6a77f0-59ba-11e0-b9e1-00264afffe1d"}
+Completed in 38ms (View: 23 | 200 OK [http://localhost/indexes/index_attributes/http%3A%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415135124759&rows=10&page=1&sidx=&sord=]
+
+
+Processing IndexesController#context_anchor_attributes (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:25) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415135124815", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#9b6a77f0-59ba-11e0-b9e1-00264afffe1d"}
+Completed in 406ms (View: 15 | 200 OK [http://localhost/indexes/context_anchor_attributes/http%3A%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415135124815&rows=10&page=1&sidx=&sord=]
+
+
+Processing IndexesController#computed_attributes (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:25) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415135124890", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#9b6a77f0-59ba-11e0-b9e1-00264afffe1d"}
+Completed in 46ms (View: 15 | 200 OK [http://localhost/indexes/computed_attributes/http%3A%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415135124890&rows=10&page=1&sidx=&sord=]
+
+
+Processing IndexesController#pre_conditions (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:25) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415135124917", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#9b6a77f0-59ba-11e0-b9e1-00264afffe1d"}
+Completed in 32ms (View: 16 | 200 OK [http://localhost/indexes/pre_conditions/http%3A%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415135124917&rows=10&page=1&sidx=&sord=]
+
+
+Processing IndexesController#index_anchor_attributes (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:25) [GET]
+  Parameters: {"q"=>"1", "_search"=>"false", "nd"=>"1415135124847", "rows"=>"10", "page"=>"1", "sidx"=>"", "sord"=>"", "id"=>"http://base#9b6a77f0-59ba-11e0-b9e1-00264afffe1d"}
+Completed in 286ms (View: 18 | 200 OK [http://localhost/indexes/index_anchor_attributes/http%3A%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d?q=1&_search=false&nd=1415135124847&rows=10&page=1&sidx=&sord=]
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/rest/resource/http:%2F%2Fbase%239b6a77f0-59ba-11e0-b9e1-00264afffe1d" with {:method=>:get}):
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ExecuteController#init (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:15:38) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d
+Completed in 95ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2014-11-04 19:15:38) [GET]
+  Parameters: {"id"=>"http://base#84f5cd60-59bc-11e0-b9e1-00264afffe1d"}
+Completed in 813ms (View: 2 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-11-05 09:47:37) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 250ms (View: 250 | 200 OK [http://localhost/]
+
+
+Processing ExecuteController#init (for 0:0:0:0:0:0:0:1 at 2014-11-05 09:47:45) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d
+Completed in 318ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2014-11-05 09:47:46) [GET]
+  Parameters: {"id"=>"http://base#84f5cd60-59bc-11e0-b9e1-00264afffe1d"}
+Completed in 1541ms (View: 9 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 11:10:18) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 16788ms (View: 63 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 11:12:39) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 12232ms (View: 109 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 11:53:44) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 15841ms (View: 735 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:01:10) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 169947ms (View: 586 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:06:02) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 7452ms (View: 31 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:06:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 7680ms (View: 24 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:14:07) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 741ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:21:08) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:197: syntax error, unexpected tASSOC
+
+      ":#{i}" => res.direct_properties.collect{|property| [property.label.first || property.compact_uri,  property.to_s]}
+               ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:451:in `load_missing_constant'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (78.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:22:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `direct_properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (8.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:22:33) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (7.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:25:41) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NameError (undefined local variable or method `properties' for #<OntologiesController:0x1d6a7aba>):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:26:04) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:26:11) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:26:40) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 1135ms (View: 15 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:28:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (can't convert Array into String):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:28:42) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (can't convert Array into String):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:30:23) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 79ms (View: 7 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:30:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 40ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:32:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:32:35) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (can't convert Array into String):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:32:50) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (can't convert Array into String):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:34:56) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 40ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:35:15) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 56ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:35:17) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 32ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:35:37) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 32ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:35:38) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 40ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:43:14) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ActiveRDF::ActiveRdfError (could not set  to rdf:typehttp://www.w3.org/2000/01/rdf-schema#Resource, http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent, http://data.semanticweb.org/ns/swc/ontology#AcademicEvent, http://data.semanticweb.org/ns/swc/ontology#OrganisedEvent, http://xmlns.com/wordnet/1.6/Event-1, http://www.w3.org/2002/12/cal/ical#Vevent: no suitable predicate found. Maybe you are missing some schema information?):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:45:09) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ActiveRDF::ActiveRdfError (could not set  to rdf:typehttp://www.w3.org/2000/01/rdf-schema#Resource, http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent, http://data.semanticweb.org/ns/swc/ontology#AcademicEvent, http://data.semanticweb.org/ns/swc/ontology#OrganisedEvent, http://xmlns.com/wordnet/1.6/Event-1, http://www.w3.org/2002/12/cal/ical#Vevent: no suitable predicate found. Maybe you are missing some schema information?):
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:197:in `getExamplesFor1'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:196:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:49:22) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 493ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 12:59:46) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 3120ms (View: 2971 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:12:08) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:201: syntax error, unexpected tASSOC
+
+      Hash res.direct_properties.collect{|property| (property.label.first || property.compact_uri).to_sym => property]}
+                                                                                                           ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:406:in `load_file'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (364.0ms)
+Rendered rescues/_request_and_response (182.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:15:19) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 8231ms (View: 329 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:18:54) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 683ms (View: 17 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:19:03) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 468ms (View: 10 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:20:40) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 580ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:26:51) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 20742ms (View: 19725 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:29:50) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NoMethodError (undefined method `direct_properties' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  app/controllers/ontologies_controller.rb:203:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:202:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:31:57) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (no implicit conversion from nil to integer):
+  org/jruby/RubyArray.java:1408:in `[]='
+  app/controllers/ontologies_controller.rb:204:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:202:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:40:08) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (no implicit conversion from nil to integer):
+  org/jruby/RubyArray.java:1408:in `[]='
+  app/controllers/ontologies_controller.rb:204:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:202:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:41:38) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 1002ms (View: 0 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 16:57:12) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NameError (undefined local variable or method `arr' for #<OntologiesController:0x370f3f8d>):
+  app/controllers/ontologies_controller.rb:202:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:201:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (38.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:00:45) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (Symbol as array index):
+  org/jruby/RubyArray.java:1406:in `[]='
+  app/controllers/ontologies_controller.rb:203:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:203:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:201:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:01:19) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+TypeError (can't convert String into Integer):
+  org/jruby/RubyArray.java:1408:in `[]='
+  app/controllers/ontologies_controller.rb:203:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:203:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:201:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:03:55) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 717ms (View: 126 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:04:34) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 3773ms (View: 45 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:39:01) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+SyntaxError (C:/Milena/Aptana/Workspace/synth-master/app/controllers/ontologies_controller.rb:228: syntax error, unexpected tRCURLY
+
+      }  
+      ^):
+  org/jruby/RubyKernel.java:1087:in `load'
+  app/controllers/ontologies_controller.rb:451:in `load_missing_constant'
+  org/jruby/RubyArray.java:1620:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:41:06) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+NameError (undefined local variable or method `property' for #<OntologiesController:0x63749b42>):
+  app/controllers/ontologies_controller.rb:225:in `getExamplesFor1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:223:in `getExamplesFor1'
+  app/controllers/ontologies_controller.rb:102:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 17:52:05) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 2382ms (View: 62 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 18:06:18) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 9066ms (View: 16 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 18:06:28) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 797ms (View: 15 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 18:10:32) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/ontologies_controller.rb:105:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (15357.0ms)
+Rendered rescues/_request_and_response (500.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-05 18:11:59) [GET]
+  Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
+Completed in 3905ms (View: 125 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]

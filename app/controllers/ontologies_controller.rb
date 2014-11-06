@@ -94,12 +94,18 @@ class OntologiesController < ApplicationController
     domain_classes = RDFS::Class.domain_classes.
       map{|value| ActiveRDF::Namespace.localname(value.uri) if value.uri.index(param) == 0}.compact.sort
     wizard = []
-    flowTree = class_step("0.0.0", domain_classes, "swrc")
-    puts "value"
-    puts flowTree[:value]
-    puts "children"
-    puts flowTree[:children].count
-    breadthFirstSearch(flowTree, wizard)
+    #flowTree = class_step("0.0.0", domain_classes, "swrc")
+    
+    #breadthFirstSearch(flowTree, wizard)
+    
+    #domain_classes.each{ |klass|
+     # wizard.push(getExamplesFor1("AcademicEvent", 2))
+    #} 
+    
+    wizard = getDatatypeProperties("AcademicEvent", true)   
+        
+   # wizard = getDatatypeProperties("AcademicEvent", true)
+    
     render :json => {:windows=>wizard}
   end
     
@@ -166,27 +172,82 @@ class OntologiesController < ApplicationController
    
   end
   
-  def getExamplesFor(className, cant, *props)
+  def getExamplesFor1(className, cant, *props)
+    
+    puts 'begin***************************'
+    
+   # from_label = RDFS::Class.find_by.rdfs::label(:regex => (/#{className}/)).execute.first
     
     className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
-    
     resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
-   # resources.map{|resource| 
-    #   resource.rdfs::label.empty? ? resource.compact_uri : resource.rdfs::label.first
-    # }
-    puts "isto"
-    puts className
-    puts resources
-    return resources[0, cant]
+  
+ 
+      result = resources[0,10].map{|resource| 
+      resource.rdfs::label.empty? ? "compacturi: #{resource.compact_uri}" : "label: #{resource.rdfs::label.first}"
+        }.uniq.compact[0, cant]
+    (result.length...cant).each do result.push("No more example") end                   
+    return result
+    #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+  end
+  
+  def getExamplesFor(className, cant, *props)
+        
+    className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
+     
+    result = []
+    resources[0, cant].each{|res|
+      hash = {}     
+      res.direct_properties.each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+      result.push(hash)
+      }  
+      
+    
+    
+    return result
+
+    #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+  end
+  
+  def getExamplesFor2(className, cant, *props)
+        
+    className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
+    
+ #   resources = resources[0, cant].collect{|res|
+ #     res.direct_properties.collect{|property| [property.label.first || property.compact_uri, property]}
+  #    }
+  
+    result = []
+    text = "rdfs:label"
+    resources[0, cant].each{|res|
+      hash = {}  
+      unless property.label.first.nil?   
+        res.direct_properties.find_by.rdfs::label(:regex => (/#{text}/)).each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+      end
+      result.push(hash)
+      }  
+    
+    return result
+
     #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
   end
   
   def getDatatypeProperties(className, isFirstSet)
+
+    className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resource = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all.first
+    
+    result = resource.direct_properties.collect{|property| (property.label.first || property.compact_uri)}
+
+=begin
     if (isFirstSet)
       return ["label", "start", "end", "summary"]
     else
       return ["label", "summary", "Documents"]
     end
+=end
+   return result
   end
   
   def getRelatedCollections(className)

@@ -145,11 +145,7 @@ class OntologiesController < ApplicationController
       child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
       example_list(currentId, name, getExamplesFor(name, 3, 'label'), child)
-<<<<<<< HEAD
-      example_detail(currentId, name, getDatatypeProperties(name), child)
-=======
       example_detail(currentId, name, getDatatypeProperties(name, false), child)
->>>>>>> a5151d69c5b491bb1d54c8a881535959ff090b3f
       
     #  wizard.push(m);
     #  aux.push({:id => currentId, :className => name})
@@ -170,8 +166,25 @@ class OntologiesController < ApplicationController
    
   end
   
+<<<<<<< HEAD
   def getExamplesFor(className, cant, *props) 
+    
     return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+=======
+  def getExamplesFor(className, cant, *props)
+    
+    className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    
+    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
+   # resources.map{|resource| 
+    #   resource.rdfs::label.empty? ? resource.compact_uri : resource.rdfs::label.first
+    # }
+    puts "isto"
+    puts className
+    puts resources
+    return resources[0, cant]
+    #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
+>>>>>>> 8714e5222244b5c3c146b0a7ecf14fff61bac31f
   end
   
   def getDatatypeProperties(className, isFirstSet)
@@ -227,12 +240,9 @@ class OntologiesController < ApplicationController
         }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
-<<<<<<< HEAD
-=======
     choose_attributes_types_detail(currentId, className, child)
     example_detail_navigation_to_other_screen_question(currentId, className, child)
     
->>>>>>> a5151d69c5b491bb1d54c8a881535959ff090b3f
   end
   
   def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
@@ -251,12 +261,9 @@ class OntologiesController < ApplicationController
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
-<<<<<<< HEAD
-=======
     choose_attributes_types_list(currentId, className, child)
     choose_examples_list_navigation_question(currentId, className, child) 
     
->>>>>>> a5151d69c5b491bb1d54c8a881535959ff090b3f
   end
   
   def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...
