@@ -13,15 +13,17 @@ class OntologiesController < ApplicationController
     #breadthFirstSearch(flowTree, wizard)
 
     domain_classes.each{ |klass|
-      wizard.push(get_datatype_properties(klass));
-#      wizard.push(get_examples_for('Proceedings', 3, 'rdf:label', 'rdf:type', 'owl:sameAs', 'related to Event'))
+    # wizard.push(:klass => klass, :value => get_datatype_properties(klass))
+    # wizard.push({:klass => klass, :value => get_examples_for(klass, 3, 'rdfs:label', 'foaf:name', 'foaf:family_name', 'foaf:firstName', 'foaf:mbox_sha1sum')})
+    #wizard.push(get_examples_for('Proceedings', 3, 'rdf:label', 'rdf:type', 'owl:sameAs', 'related to Event'))
+     wizard.push({:klass => klass, :value => get_related_collections(klass, 3)})
     }
 
-    #wizard = get_datatype_properties('AcademicStaff')
+    #wizard = get_datatype_properties('Proceedings')
     
-    #wizard = getRelatedCollections('AcademicStaff')
+    #wizard = get_related_collections('Proceedings', 1, 1)
 
-    render :json => {:windows=>wizard}
+    render :json => {:windows=>wizard.select { |e| !e[:value].nil? }}
   end
 
   def index
@@ -183,7 +185,7 @@ class OntologiesController < ApplicationController
     result = []
     resources[0, @max_resource_search].each{|res|
       hash = {}
-      res.direct_properties.select{|x| props.include?(x.label.first || x.compact_uri)}.each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+      res.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.select{|x| props.include?(x.label.first || x.compact_uri)}.each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
       props.each{|prop| unless hash.include?(prop) then hash[prop] = 'No value' end}
       result.push(hash)
     }.uniq.compact[0, cant]
@@ -202,8 +204,9 @@ class OntologiesController < ApplicationController
     _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0, @max_resource_search]
     result = []
+    
     resources.each{|x| 
-      result += x.direct_properties.collect{|property| (property.label.first || property.compact_uri)}
+      result += x.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.collect{|property| (property.label.first || property.compact_uri)}
     }
     result = result.uniq
     result = ["The '#{className}' has no datatype property"] if result.empty?
@@ -218,8 +221,52 @@ class OntologiesController < ApplicationController
 =end
   end
 
-  def getRelatedCollections(className)
-    return ["Article", "Book", "Conference", "Event", "Person", "Document"]
+  def get_related_collectionsOld(className, result, level)
+   # prop = "rdfs:label"
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first
+    
+    unless resource.nil? then
+      props = resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}
+      
+     resources = props.collect { |prop| 
+               
+        temp = (prop.compact_uri =~ /([a-zA-Z0-9]):[a-zA-Z0-9]/) ?
+        resource.send(prop.compact_uri.split(":").first).send(prop.compact_uri.split(":").last) :
+         resource.send(prop.compact_uri.split("#").last)
+         
+        [:temp => temp, :resorce_new => RDFS::Resource.new(prop.uri),
+           :name => prop.compact_uri, :label => prop.label, :type => prop.type, :prop => prop, 
+           :mauricioClasses => prop.first.classes, :mauricioTypes => prop.first.types]
+        
+    }
+    
+    
+    #return ["Article", "Book", "Conference", "Event", "Person", "Document"]
+    end
+  end
+  
+  
+  def get_related_collections(className, level)
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first
+    
+    unless resource.nil? then
+      collections = resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}.collect{|r|
+         arr = r.first.classes
+         arr.shift
+         arr}.flatten
+      collections = collections.map{|c| c.localname}.uniq
+      collections.shift
+      collections
+         
+    #return ["Article", "Book", "Conference", "Event", "Person", "Document"]
+    end
+  end
+
+  
+  def new_query
+    
   end
 
   def example_list(previousId, className, examples, fatherFlowTree) # 6, 29, ...
@@ -323,7 +370,7 @@ class OntologiesController < ApplicationController
     fatherFlowTree[:children].push(child)
 
     datatype_properties_selection_detail(currentId, className, get_datatype_properties(className), child)
-    related_collection_detail(currentId, className, getRelatedCollections(className), child)
+    related_collection_detail(currentId, className, get_related_collections(className), child)
     computed_attribute_detail(currentId, className, child)
 
   end
@@ -365,7 +412,7 @@ class OntologiesController < ApplicationController
     fatherFlowTree[:children].push(child)
 
     datatype_properties_selection_list(currentId, className, get_datatype_properties(className), child)
-    related_collection_list(currentId, className, getRelatedCollections(className), child)
+    related_collection_list(currentId, className, get_related_collections(className), child)
     computed_attribute_list(currentId, className, child)
 
   end

@@ -1,0 +1,39 @@
+{
+	"windows": [
+		{
+			"klass": "Employee",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}, {
+			"klass": "InProceedings",
+			"value": ["Resource", "Proceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Proceedings", "Thing", "Publication", "TalkEvent", "AcademicEvent", "OrganisedEvent", "Event-1", "Vevent", "Person", "University", "Organization", "Product", "Publication", "Person", "Report", "Project", "Employee", "TechnicalReport", "Container", "Seq", "Person", "University", "Organization", "Product", "Publication", "Person", "Report", "Project", "Employee", "TechnicalReport", "Person", "University", "Organization", "Product", "Publication", "Person", "Report", "Project", "Employee", "TechnicalReport", "Concept"]
+		}, {
+			"klass": "Organization",
+			"value": ["Resource", "Person", "University", "Organization", "Product", "Publication", "Person", "Report", "Project", "Employee", "TechnicalReport", "Person", "University", "Organization", "Product", "Publication", "Person", "Report", "Project", "Employee", "TechnicalReport"]
+		}, {
+			"klass": "Person",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}, {
+			"klass": "Proceedings",
+			"value": ["Resource", "ConferenceEvent", "AcademicEvent", "OrganisedEvent", "Event-1", "Vevent", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication"]
+		}, {
+			"klass": "Product",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}, {
+			"klass": "Project",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}, {
+			"klass": "Publication",
+			"value": ["Resource", "ConferenceEvent", "AcademicEvent", "OrganisedEvent", "Event-1", "Vevent", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication"]
+		}, {
+			"klass": "Report",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}, {
+			"klass": "TechnicalReport",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact
+			", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}, {
+			"klass": "University",
+			"value": ["Resource", "Organization", "Group", "Organization", "Product", "Person", "InProceedings", "ArgumentativeDocument", "Document", "Artefact", "Document", "Paper", "Thing", "Publication", "Organization", "Group", "Organization", "Product", "Person"]
+		}
+	]
+}
