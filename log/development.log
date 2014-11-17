@@ -7370,3 +7370,99 @@ Completed in 1478ms (View: 179 | 200 OK [http://localhost/ontologies/wizard/http
 Processing OntologiesController#wizard (for 127.0.0.1 at 2014-10-24 19:12:12) [GET]
   Parameters: {"url"=>"http://data.semanticweb.org/ns/swc/ontology"}
 Completed in 274ms (View: 78 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fdata.semanticweb.org%2Fns%2Fswc%2Fontology]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:24:24) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 187ms (View: 181 | 200 OK [http://localhost/]
+
+
+Processing ExecuteController#init (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:24:32) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d
+Completed in 157ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:24:32) [GET]
+  Parameters: {"id"=>"http://base#84f5cd60-59bc-11e0-b9e1-00264afffe1d"}
+Completed in 1146ms (View: 2 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:24:44) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 106ms (View: 100 | 200 OK [http://localhost/]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:24:50) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 97ms (View: 78 | 200 OK [http://localhost/domain]
+
+
+Processing OntologiesController#new (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:24:57) [GET]
+Rendering template within layouts/application
+Rendering ontologies/new
+Completed in 116ms (View: 110 | 200 OK [http://localhost/ontologies/new]
+
+
+Processing OntologiesController#create (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:15) [POST]
+  Parameters: {"authenticity_token"=>"VySVc818tAAwJHUV1G4PhaZJJxR8uFZGHe+Ep1XxnIg=", "ontology"=>{"ontology_name"=>"auction", "ontology_description"=>"auction description", "datafile"=>#<File:C:/Users/Milena/AppData/Local/Temp/RackMultipart.13160.45423>, "ontology_file_notation"=>"rdfxml"}, "commit"=>"Create"}
+Redirected to http://localhost:3001/ontologies/edit/http:%2F%2Fbase%2375707340-6e8f-11e4-bf3c-9cb70d2a0c0a
+Completed in 841ms | 302 Found [http://localhost/ontologies]
+
+
+Processing OntologiesController#edit (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:16) [GET]
+  Parameters: {"id"=>"http://base#75707340-6e8f-11e4-bf3c-9cb70d2a0c0a"}
+Rendering template within layouts/application
+Rendering ontologies/edit
+Completed in 129ms (View: 124 | 200 OK [http://localhost/ontologies/edit/http:%2F%2Fbase%2375707340-6e8f-11e4-bf3c-9cb70d2a0c0a]
+
+
+Processing OntologiesController#activate_ontology (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:21) [POST]
+  Parameters: {"authenticity_token"=>"VySVc818tAAwJHUV1G4PhaZJJxR8uFZGHe+Ep1XxnIg=", "id"=>"http://base#75707340-6e8f-11e4-bf3c-9cb70d2a0c0a"}
+Redirected to http://localhost:3001/ontologies/edit/http:%2F%2Fbase%2375707340-6e8f-11e4-bf3c-9cb70d2a0c0a
+Completed in 374ms | 302 Found [http://localhost/ontologies/activate_ontology/http:%2F%2Fbase%2375707340-6e8f-11e4-bf3c-9cb70d2a0c0a]
+
+
+Processing OntologiesController#edit (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:21) [GET]
+  Parameters: {"id"=>"http://base#75707340-6e8f-11e4-bf3c-9cb70d2a0c0a"}
+Rendering template within layouts/application
+Rendering ontologies/edit
+Completed in 114ms (View: 107 | 200 OK [http://localhost/ontologies/edit/http:%2F%2Fbase%2375707340-6e8f-11e4-bf3c-9cb70d2a0c0a]
+
+
+Processing OntologiesController#update (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:27) [POST]
+  Parameters: {"authenticity_token"=>"VySVc818tAAwJHUV1G4PhaZJJxR8uFZGHe+Ep1XxnIg=", "id"=>"http://base#75707340-6e8f-11e4-bf3c-9cb70d2a0c0a", "ontology"=>{"ontology_description"=>"auction description"}, "commit"=>"Save"}
+Redirected to http://localhost:3001/ontologies
+Completed in 39ms | 302 Found [http://localhost/ontologies/update]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:28) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 166ms (View: 151 | 200 OK [http://localhost/ontologies]
+
+
+Processing ResourcesController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:25:37) [GET]
+Rendering template within layouts/application
+Rendering resources/index
+Rendered resources/_domain_classes (164.0ms)
+Rendered resources/_meta_classes (77.0ms)
+Completed in 435ms (View: 311 | 200 OK [http://localhost/resources]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:26:00) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 2834ms (View: 113 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing ApplicationsController#shutdown (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:26:18) [GET]
+Redirected to http://localhost:3001/applications
+Completed in 80ms | 302 Found [http://localhost/applications/shutdown]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-11-17 17:26:18) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 91ms (View: 86 | 200 OK [http://localhost/applications]
