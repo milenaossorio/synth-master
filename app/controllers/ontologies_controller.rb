@@ -18,7 +18,12 @@ class OntologiesController < ApplicationController
 
     #breadthFirstSearch(flowTree, wizard)
 
-    domain_classes.each{ |klass|
+    wizard.push(:klass => 'Produto', :value => generate_property_domain_range_from_definition('Produto', 2))
+
+    # domain_classes.each{ |klass| 
+     # wizard.push(:klass => klass[:className], :value => generate_property_domain_range_from_definition(klass[:className], 2))
+    # }
+    
     # wizard.push(:klass => klass, :value => get_datatype_properties(klass))
     # wizard.push({:klass => klass, :value => get_examples_for(klass, 3, 'rdfs:label', 'foaf:name', 'foaf:family_name', 'foaf:firstName', 'foaf:mbox_sha1sum')})
     #wizard.push(get_examples_for('Proceedings', 3, 'rdf:label', 'rdf:type', 'owl:sameAs', 'related to Event'))
@@ -26,9 +31,6 @@ class OntologiesController < ApplicationController
     
     # wizard.push({:klass => klass, :value => get_related_collections(klass[:className], 3)})
      #wizard.push({:klass => klass, :value => get_related_collections_getting_properties_domain_range_Aux(klass)})
-     
-     wizard.push(:klass => klass[:className], :value => get_relations(klass[:className], 2))
-    }
 
     #wizard = get_datatype_properties('Proceedings')
     
@@ -193,8 +195,13 @@ class OntologiesController < ApplicationController
   end
   
   def generate_property_domain_range_from_definition(className, level)
-    relations = get_relations(className, level).select{|rel| {:propertyName => rel.label || r.compact_uri, :domain => rel.rdfs::domain,
-        :range => rel.rdfs::range} if !rel.rdfs::domain.empty? || !rel.rdfs::domain.empty?}
+    relations = get_relations(className, level).map{|rel| 
+      {:propertyName => ActiveRDF::Namespace.localname(rel.uri),
+         :domain => rel.rdfs::domain.map{|d| ActiveRDF::Namespace.localname(d)}, 
+         :range => rel.rdfs::range.map{|r| ActiveRDF::Namespace.localname(r)}
+      }
+    }
+    
     # relations = [{:propertyName => "name1", :domain => "domain1", :range => "range1"}, #Example to prove grouping domain and range by property name
                  # {:propertyName => "name2", :domain => "domain1", :range => "range2"},
                  # {:propertyName => "name1", :domain => "domain1", :range => "range1"},
@@ -230,14 +237,10 @@ class OntologiesController < ApplicationController
     _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first
     
-    puts _class
-    puts resource
-    puts "---"
-    
     relations = []
     
     unless resource.nil? then
-      relations = resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}
+      relations = resource.direct_predicates#.select{|y| y.first.is_a?(RDFS::Resource)}
       #relations.shift
     end     
     

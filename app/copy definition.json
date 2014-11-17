@@ -1,0 +1,145 @@
+{
+	"windows": [
+		{
+			"klass": "Produto",
+			"value": [
+				{
+					"propertyName": [],
+					"uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2000/01/rdf-schema#Class"
+						}
+					]
+				}, {
+					"propertyName": [],
+					"uri": "http://www.w3.org/2000/01/rdf-schema#label",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+						}
+					]
+				}, {
+					"propertyName": ["Nome"],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeProduto",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2001/XMLSchema#string"
+						}
+					]
+				}, {
+					"propertyName": [],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#categoria",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"
+						}
+					]
+				}, {
+					"propertyName": ["Data de cadastro"],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataCadastro",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2001/XMLSchema#string"
+						}
+					]
+				}, {
+					"propertyName": ["Descricao"],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#descricaoProduto",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2001/XMLSchema#string"
+						}
+					]
+				}, {
+					"propertyName": ["Esta em oferta"],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#estaEmLeilao",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2001/XMLSchema#string"
+						}
+					]
+				}, {
+					"propertyName": ["Quantidade"],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#quantidade",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2001/XMLSchema#string"
+						}
+					]
+				}, {
+					"propertyName": ["Nome"],
+					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeCategoria",
+					"domain": [
+						{
+							"datasets": [],
+							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"
+						}
+					],
+					"range": [
+						{
+							"datasets": [],
+							"uri": "http://www.w3.org/2001/XMLSchema#string"
+						}
+					]
+				}
+			]
+		}
+	]
+}
