@@ -2,144 +2,410 @@
 	"windows": [
 		{
 			"klass": "Produto",
-			"value": [
-				{
-					"propertyName": [],
-					"uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2000/01/rdf-schema#Class"
-						}
-					]
-				}, {
-					"propertyName": [],
-					"uri": "http://www.w3.org/2000/01/rdf-schema#label",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-						}
-					]
-				}, {
-					"propertyName": ["Nome"],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeProduto",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2001/XMLSchema#string"
-						}
-					]
-				}, {
-					"propertyName": [],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#categoria",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"
-						}
-					]
-				}, {
-					"propertyName": ["Data de cadastro"],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataCadastro",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2001/XMLSchema#string"
-						}
-					]
-				}, {
-					"propertyName": ["Descricao"],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#descricaoProduto",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2001/XMLSchema#string"
-						}
-					]
-				}, {
-					"propertyName": ["Esta em oferta"],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#estaEmLeilao",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2001/XMLSchema#string"
-						}
-					]
-				}, {
-					"propertyName": ["Quantidade"],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#quantidade",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2001/XMLSchema#string"
-						}
-					]
-				}, {
-					"propertyName": ["Nome"],
-					"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeCategoria",
-					"domain": [
-						{
-							"datasets": [],
-							"uri": "http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"
-						}
-					],
-					"range": [
-						{
-							"datasets": [],
-							"uri": "http://www.w3.org/2001/XMLSchema#string"
-						}
-					]
-				}
-			]
+			"value": {
+				"definition": [
+					{
+						"propertyName": "type",
+						"domain": ["Resource"],
+						"range": ["Class"]
+					}, {
+						"propertyName": "label",
+						"domain": ["Resource"],
+						"range": ["Literal"]
+					}, {
+						"propertyName": "nomeLeilao",
+						"domain": ["Leilao"],
+						"range": ["string"]
+					}, {
+						"propertyName": "temProduto",
+						"domain": ["Leilao"],
+						"range": ["Produto"]
+					}, {
+						"propertyName": "temVendedor",
+						"domain": ["Leilao"],
+						"range": ["Vendedor"]
+					}, {
+						"propertyName": "dataFim",
+						"domain": ["Leilao"],
+						"range": ["string"]
+					}, {
+						"propertyName": "dataInicio",
+						"domain": ["Leilao"],
+						"range": ["string"]
+					}, {
+						"propertyName": "difMin",
+						"domain": ["Leilao"],
+						"range": ["string"]
+					}, {
+						"propertyName": "estadoProduto",
+						"domain": ["Leilao"],
+						"range": ["string"]
+					}, {
+						"propertyName": "lanceMin",
+						"domain": ["Leilao"],
+						"range": ["string"]
+					}, {
+						"propertyName": "nomeProduto",
+						"domain": ["Produto"],
+						"range": ["string"]
+					}, {
+						"propertyName": "categoria",
+						"domain": ["Produto"],
+						"range": ["Categoria"]
+					}, {
+						"propertyName": "dataCadastro",
+						"domain": ["Produto"],
+						"range": ["string"]
+					}, {
+						"propertyName": "descricaoProduto",
+						"domain": ["Produto"],
+						"range": ["string"]
+					}, {
+						"propertyName": "estaEmLeilao",
+						"domain": ["Produto"],
+						"range": ["string"]
+					}, {
+						"propertyName": "quantidade",
+						"domain": ["Produto"],
+						"range": ["string"]
+					}, {
+						"propertyName": "nomeCategoria",
+						"domain": ["Categoria"],
+						"range": ["string"]
+					}, {
+						"propertyName": "nomeUsuario",
+						"domain": ["Usuario"],
+						"range": ["string"]
+					}, {
+						"propertyName": "email",
+						"domain": ["Usuario"],
+						"range": ["string"]
+					}, {
+						"propertyName": "dataMembroDesde",
+						"domain": ["Vendedor"],
+						"range": ["string"]
+					}, {
+						"propertyName": "qualificacao",
+						"domain": ["Vendedor"],
+						"range": ["string"]
+					}, {
+						"propertyName": "type",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["Class", "Resource"]
+					}, {
+						"propertyName": "label",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["Literal"]
+					}, {
+						"propertyName": "nomeLeilao",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "temProduto",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["Resource", "Produto", "NamedIndividual"]
+					}, {
+						"propertyName": "temVendedor",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["Resource", "Usuario", "Vendedor", "NamedIndividual"]
+					}, {
+						"propertyName": "dataFim",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "dataInicio",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "difMin",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "estadoProduto",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "lanceMin",
+						"domain": ["Resource", "Leilao", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "type",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["Class", "Resource"]
+					}, {
+						"propertyName": "label",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["Literal"]
+					}, {
+						"propertyName": "nomeProduto",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "categoria",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["Resource", "Categoria", "NamedIndividual"]
+					}, {
+						"propertyName": "dataCadastro",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "descricaoProduto",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "estaEmLeilao",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "quantidade",
+						"domain": ["Resource", "Produto", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "type",
+						"domain": ["Resource", "Categoria", "NamedIndividual"],
+						"range": ["Class", "Resource"]
+					}, {
+						"propertyName": "label",
+						"domain": ["Resource", "Categoria", "NamedIndividual"],
+						"range": ["Literal"]
+					}, {
+						"propertyName": "nomeCategoria",
+						"domain": ["Resource", "Categoria", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "type",
+						"domain": ["Resource", "Usuario", "Concorrente", "NamedIndividual"],
+						"range": ["Class", "Resource"]
+					}, {
+						"propertyName": "label",
+						"domain": ["Resource", "Usuario", "Concorrente", "NamedIndividual"],
+						"range": ["Literal"]
+					}, {
+						"propertyName": "nomeUsuario",
+						"domain": ["Resource", "Usuario", "Concorrente", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "email",
+						"domain": ["Resource", "Usuario", "Concorrente", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "type",
+						"domain": ["Resource", "Usuario", "Vendedor", "NamedIndividual"],
+						"range": ["Class", "Resource"]
+					}, {
+						"propertyName": "label",
+						"domain": ["Resource", "Usuario", "Vendedor", "NamedIndividual"],
+						"range": ["Literal"]
+					}, {
+						"propertyName": "nomeUsuario",
+						"domain": ["Resource", "Usuario", "Vendedor", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "dataMembroDesde",
+						"domain": ["Resource", "Usuario", "Vendedor", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "email",
+						"domain": ["Resource", "Usuario", "Vendedor", "NamedIndividual"],
+						"range": ["string"]
+					}, {
+						"propertyName": "qualificacao",
+						"domain": ["Resource", "Usuario", "Vendedor", "NamedIndividual"],
+						"range": ["string"]
+					}
+				],
+				"triples": [
+					{
+						"subject": "leilao1",
+						"predicate": "type",
+						"object": "Resource"
+					}, {
+						"subject": "leilao1",
+						"predicate": "label",
+						"object": "leilao 1"
+					}, {
+						"subject": "leilao1",
+						"predicate": "nomeLeilao",
+						"object": "leilao 1"
+					}, {
+						"subject": "leilao1",
+						"predicate": "temProduto",
+						"object": "MP4_Watch_Play_NewLink_PM101"
+					}, {
+						"subject": "leilao1",
+						"predicate": "temVendedor",
+						"object": "vendedor1"
+					}, {
+						"subject": "leilao1",
+						"predicate": "dataFim",
+						"object": "2012/02/20"
+					}, {
+						"subject": "leilao1",
+						"predicate": "dataInicio",
+						"object": "2012/02/01"
+					}, {
+						"subject": "leilao1",
+						"predicate": "difMin",
+						"object": "5"
+					}, {
+						"subject": "leilao1",
+						"predicate": "estadoProduto",
+						"object": "30.00 USPS Priority Mail International \nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide"
+					}, {
+						"subject": "leilao1",
+						"predicate": "lanceMin",
+						"object": "23"
+					}, {
+						"subject": "Resource",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Resource",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "Class",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Class",
+						"predicate": "subClassOf",
+						"object": "Class"
+					}, {
+						"subject": "Leilao",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Leilao",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "Leilao",
+						"predicate": "label",
+						"object": "Leilao"
+					}, {
+						"subject": "Class",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "NamedIndividual",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "NamedIndividual",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "type",
+						"object": "Resource"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "label",
+						"object": "MP4 Watch Play NewLink PM101"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "nomeProduto",
+						"object": "MP4 Watch Play NewLink PM101"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "categoria",
+						"object": "audio"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "dataCadastro",
+						"object": "12/10/2012"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "descricaoProduto",
+						"object": "MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "estaEmLeilao",
+						"object": "1"
+					}, {
+						"subject": "MP4_Watch_Play_NewLink_PM101",
+						"predicate": "quantidade",
+						"object": "23"
+					}, {
+						"subject": "Produto",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Produto",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "Produto",
+						"predicate": "label",
+						"object": "Produto"
+					}, {
+						"subject": "audio",
+						"predicate": "type",
+						"object": "Resource"
+					}, {
+						"subject": "audio",
+						"predicate": "label",
+						"object": "Audio"
+					}, {
+						"subject": "audio",
+						"predicate": "nomeCategoria",
+						"object": "Audio"
+					}, {
+						"subject": "Categoria",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Categoria",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "Categoria",
+						"predicate": "label",
+						"object": "Categoria"
+					}, {
+						"subject": "vendedor1",
+						"predicate": "type",
+						"object": "Resource"
+					}, {
+						"subject": "vendedor1",
+						"predicate": "label",
+						"object": "Vendedor 1"
+					}, {
+						"subject": "vendedor1",
+						"predicate": "nomeUsuario",
+						"object": "Vendedor 1"
+					}, {
+						"subject": "vendedor1",
+						"predicate": "dataMembroDesde",
+						"object": "1/01/2005"
+					}, {
+						"subject": "vendedor1",
+						"predicate": "email",
+						"object": "vendedor1@gmail.com"
+					}, {
+						"subject": "vendedor1",
+						"predicate": "qualificacao",
+						"object": "1"
+					}, {
+						"subject": "Usuario",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Usuario",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}, {
+						"subject": "Vendedor",
+						"predicate": "type",
+						"object": "Class"
+					}, {
+						"subject": "Vendedor",
+						"predicate": "subClassOf",
+						"object": "Resource"
+					}
+				]
+			}
 		}
 	]
 }

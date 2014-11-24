@@ -5,6 +5,11 @@ class OntologiesController < ApplicationController
     @max_resource_search = 8
     
     @cache = {}
+    @cache_domain_range = {}
+    @cache_collections = {}
+    @cache_triples = {}
+    @relations = []
+    @props_declaration = []
 
     domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
    # domain_classes += get_domain_classes_from('http://data.semanticweb.org/ns/swc/ontology#')
@@ -14,15 +19,17 @@ class OntologiesController < ApplicationController
     #result = @namespaces.keys.map{|key| "#{key} - #{@namespaces[key]}"}
     
     wizard = []
-    #flowTree = class_step("0.0.0", domain_classes, "swrc")
+    # flowTree = class_step("0.0.0", domain_classes, "swrc")
+# 
+    # breadthFirstSearch(flowTree, wizard)
 
-    #breadthFirstSearch(flowTree, wizard)
+    # wizard.push(:klass => 'Produto', :value => generate_property_domain_range_from_definition('Produto', 2))
+    # wizard.push(:klass => 'Produto', :value => {:collections => get_direct_collections_getting_properties_domain_range('Produto')}), 
+      # :relations => @relations, :props_declaration => @props_declaration})
 
-    wizard.push(:klass => 'Produto', :value => generate_property_domain_range_from_definition('Produto', 2))
-
-    # domain_classes.each{ |klass| 
-     # wizard.push(:klass => klass[:className], :value => generate_property_domain_range_from_definition(klass[:className], 2))
-    # }
+     # domain_classes.each{ |klass| 
+      # wizard.push(:klass => klass[:className], :value => get_related_collectionsOld(klass[:className], 2))
+     # }
     
     # wizard.push(:klass => klass, :value => get_datatype_properties(klass))
     # wizard.push({:klass => klass, :value => get_examples_for(klass, 3, 'rdfs:label', 'foaf:name', 'foaf:family_name', 'foaf:firstName', 'foaf:mbox_sha1sum')})
@@ -32,6 +39,14 @@ class OntologiesController < ApplicationController
     # wizard.push({:klass => klass, :value => get_related_collections(klass[:className], 3)})
      #wizard.push({:klass => klass, :value => get_related_collections_getting_properties_domain_range_Aux(klass)})
 
+    
+    #wizard.push(:klass => 'Produto', :value => generate_triples_examples('Leilao', 4))
+    path = [{:propertiesNames => ["temProduto"], :className => "Produto"},
+            {:propertiesNames => ["categoria"], :className => "Categoria"}]
+    #wizard.push(:klass => 'Produto', :value => get_objects_from("leilao1", "temProduto", generate_triples_examples('Leilao', 4)[:triples]))
+    wizard.push(:klass => 'Leilao', :value => get_path_examples("Leilao", path))
+    
+    #wizard.push(:klass => 'Produto', :value => get_properties_domain_range_from_instances('Produto', 4))
     #wizard = get_datatype_properties('Proceedings')
     
     #wizard = get_related_collections('Proceedings', 1, 1)
@@ -45,7 +60,58 @@ class OntologiesController < ApplicationController
     # render :json => {:windows=>wizard.select { |e| e[:value].length > 0 }}
   end
   
-  def get_examples_using_label_for(className, cant)
+  def get_path_examples(initialClass, path)
+    examples = generate_triples_examples(initialClass)
+    initialInstances = get_instances_of_class(initialClass, examples[:triples])
+    initialInstances.collect{|initInst|
+      rest_examples = get_rest_of_path_examples(initInst, path, 0, examples[:triples])
+      rest_examples.collect{|rest_ex|
+        initInst + " - " +  rest_ex       
+      }
+    }
+  end
+  
+   def get_rest_of_path_examples(subject, path, pos, triples)
+
+    result = []
+    path[pos][:propertiesNames].each{|prop|
+      objects = get_objects_from(subject, prop, triples)
+      if pos == path.length - 1 then
+        insts = get_instances_of_class(path[path.length - 1][:className], triples)
+        objects.select{|obj| insts.include?(obj)}.each{|obj|
+          result.push(prop + " - " + obj)
+        }
+      else
+        objects.each{|obj|
+          rest_examples = get_rest_of_path_examples(obj, path, pos + 1, triples)
+          rest_examples.each{|rest_ex|
+            temp = prop + ":" + rest_ex
+            if temp.split(':').length == path.length - pos then
+              result.push(temp)
+            end
+          }
+        }
+      end
+    }
+    result
+  end
+  
+  def get_instances_of_class(className, triples)    
+    triples.select{|triple| triple[:predicate] == "type" && triple[:object] == className}.collect{|triple| triple[:subject]}
+  end
+  
+  def get_objects_from(subject, prop, triples)
+   triples.select{|triple| triple[:subject] == subject && triple[:predicate] == prop}.collect{|triple| triple[:object]}
+  end
+  
+  def get_domain_classes_from(ontology)
+    param = ontology
+    domain_classes = RDFS::Class.domain_classes.map{|value| 
+     {:prefix => ActiveRDF::Namespace.prefix(value), 
+      :className => ActiveRDF::Namespace.localname(value)} if value.uri.index(param) == 0}.compact
+  end
+  
+  def get_examples_using_label_for(className, cant) # it is not used
 
     className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
@@ -83,16 +149,19 @@ class OntologiesController < ApplicationController
   end
 
   def get_datatype_properties(className)
-
-    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
-    resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0, @max_resource_search]
     result = []
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     
+    puts "----------------------'#{className}' ----------------------------------------" if _class.nil?
+    
+    resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0, @max_resource_search]
+
     resources.each{|x| 
       result += x.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.collect{|property| (property.label.first || property.compact_uri)}
     }
     result = result.uniq
     result = ["The '#{className}' has no datatype property"] if result.empty?
+    
     return result
 
 =begin
@@ -104,7 +173,7 @@ class OntologiesController < ApplicationController
 =end
   end
 
-  def get_related_collectionsOld(className, level)
+  def get_related_collectionsOld(className, level) # it is not used
    # prop = "rdfs:label"
     _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first
@@ -128,7 +197,7 @@ class OntologiesController < ApplicationController
     end
   end
   
-  def get_related_collections(className, level)
+  def get_related_collections(className, level = 3)
 
     result = []
     if(level == 0)then return result end 
@@ -145,56 +214,65 @@ class OntologiesController < ApplicationController
   
   def get_direct_collections(className)
     
-    if @cache.has_key?(className) then return @cache[className] end
+    if @cache_collections.has_key?(className) then return @cache_collections[className] end
     
     _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first
     
     unless resource.nil? then
-      collections = resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}[0,5].collect{|r|
+      collections = resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}.collect{|r|
          arr = r.first.classes
          arr.shift
          arr}.flatten
       collections = collections.map{|c| c.localname}.uniq
       collections.shift
-      @cache[className] = collections
+      @cache_collections[className] = collections
     else
-      @cache[className] = []
+      @cache_collections[className] = []
     end     
     #return ["Article", "Book", "Conference", "Event", "Person", "Document"]
   end
   
-   def get_related_collections_getting_properties_domain_range_Aux(className)
-    _class = RDFS::Class.select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+  def get_direct_collections_getting_properties_domain_range(className) # it is not used
+     
+    if @cache.has_key?(className) then return @cache[className] end
+     
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
     resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first
+    
+    collections=[]
 
     unless resource.nil? then
-      resource.direct_properties[0,5].select{|y| y.first.is_a?(RDFS::Resource)}.each{|r|
+      resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}.each{|r|
         arr = r.first.classes
         arr.shift
         collections += arr
         @relations.push(r) #it may not be needed
-        @props_declaration.push({:propertyName => r.label || r.compact_uri, :domain => resource.first.classes.map{|c| c.localname}.uniq,
-          :range => r.first.classes.map{|c| c.localname}.uniq })
+        # @props_declaration.push({:propertyName => r.label || r.compact_uri, :domain => resource.first.classes.map{|c| c.localname}.uniq,
+          # :range => r.first.classes.map{|c| c.localname}.uniq })
         }
-        @props_declaration.shift
-        @relations.shift
-        group_domain_and_range_by_property_name(@props_declaration)
+       # @props_declaration.shift
+       # @relations.shift
+        # group_domain_and_range_by_property_name(@props_declaration)
       collections = collections.map{|c| c.localname}.uniq
-    collections.shift
+    #collections.shift
     collections
+    @cache[className] = collections
     else
-    []
+      @cache[className] = []
     end
   #return ["Article", "Book", "Conference", "Event", "Person", "Document"]
   end
   
-  def generate_triples_examples
-    examples[:definition] = generate_property_domain_range_from_definition
-    examples[:definition] += generate_property_domain_range_from_instances
+  def generate_triples_examples(className, level = 3)
+    examples = {}
+    examples[:definition] = get_property_domain_range_from_definition(className, level)
+    examples[:definition] += get_properties_domain_range_from_instances(className, level)
+    examples[:triples] = get_instances_triples(className, level)
+    examples
   end
   
-  def generate_property_domain_range_from_definition(className, level)
+  def get_property_domain_range_from_definition(className, level)
     relations = get_relations(className, level).map{|rel| 
       {:propertyName => ActiveRDF::Namespace.localname(rel.uri),
          :domain => rel.rdfs::domain.map{|d| ActiveRDF::Namespace.localname(d)}, 
@@ -207,17 +285,52 @@ class OntologiesController < ApplicationController
                  # {:propertyName => "name1", :domain => "domain1", :range => "range1"},
                  # {:propertyName => "name1", :domain => "domain3", :range => "range3"}]
     
-    #group_domain_and_range_by_property_name(relations)
+    group_domain_and_range_by_property_name(relations)
   end
   
   def group_domain_and_range_by_property_name(relations)
     relations.group_by{|rel| rel[:propertyName]}.values.map{|value| {:propertyName => value.first[:propertyName], #grouping domain and range by property name
-      :domain => value.collect{|y| y[:domain]}.uniq, :range => value.collect{|y| y[:range]}.uniq}}
+      :domain => value.collect{|y| y[:domain]}.flatten.uniq, :range => value.collect{|y| y[:range]}.flatten.uniq}}
   end
   
-  def generate_property_domain_range_from_instances(className, level)
+  def get_properties_domain_range_from_instances(className, level)
+
+    result = []
+    if(level == 0)then return result end 
+      
+    result = get_direct_properties_domain_range_from_instances(className)       
     
-  end 
+    classes = get_direct_collections(className)
+
+    temp = classes.collect{|_class|
+      get_properties_domain_range_from_instances(_class, level-1)
+    }
+    result += temp
+    result.flatten.uniq
+  end
+  
+  def get_direct_properties_domain_range_from_instances(className)
+    
+    if @cache_domain_range.has_key?(className) then return @cache_domain_range[className] end
+      
+    
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first 
+    
+    unless resource.nil? then
+      triples = resource.direct_properties.collect{|prop|
+         {:propertyName => prop.localname,
+         :domain => resource.classes.map{|d| d.localname}, 
+         :range => (prop.first.is_a?(RDFS::Resource)? prop.first.classes : prop.rdfs::range).map{|r| r.localname}
+         }
+      }   
+      @cache_domain_range[className] = triples
+    else
+      @cache_domain_range[className] = []
+    end     
+    #return ["Article", "Book", "Conference", "Event", "Person", "Document"]
+  end
+
   
   def get_relations(className, level)
     result = []
@@ -240,7 +353,7 @@ class OntologiesController < ApplicationController
     relations = []
     
     unless resource.nil? then
-      relations = resource.direct_predicates#.select{|y| y.first.is_a?(RDFS::Resource)}
+      relations = resource.direct_predicates
       #relations.shift
     end     
     
@@ -270,11 +383,71 @@ class OntologiesController < ApplicationController
       # ActiveRDF::Namespace.localname(value.uri) if value.uri.index(@param) == 0}.compact
   # end
   
-  def get_domain_classes_from(ontology)
-    param = ontology
-    domain_classes = RDFS::Class.domain_classes.map{|value| 
-     {:prefix => ActiveRDF::Namespace.prefix(value), 
-      :className => ActiveRDF::Namespace.localname(value)} if value.uri.index(param) == 0}.compact
+  def get_instances_triples(className, level)
+      
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0,3]
+    
+    #get_direct_instances_triples_including_datatype_properties(resources)
+    
+    get_instances_triples_Aux(resources, level)    
+   
+  end
+  
+  def get_instances_triples_Aux(resources, level)
+    resp = []
+    if level == 0 then return resp end
+    unless resources.nil? then    
+      resources.each{|resource|
+        unless resource.nil?
+          result = get_direct_instances_triples_including_datatype_properties(resource)
+          resp += result[:triples]
+          resp += get_instances_triples_Aux(result[:direct_instances], level-1)
+        end
+      }
+    end
+    
+    resp.uniq
+  end
+  
+  
+  def get_direct_instances_triples(resource)# get only triples of object properties # it is not used in the meanwhile
+ 
+    if @cache_triples.has_key?(resource) then return @cache_triples[resource] end
+      
+    direct_instances = []
+    triples = []        
+        
+    resource.direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}.each{|prop|
+     direct_instances += prop
+     triples.push({:subject => resource.localname, :predicate => prop.localname, :object => prop.first.localname})
+    }   
+       
+    @cache_triples[resource] = {:direct_instances => direct_instances, :triples => triples} 
+    
+  end
+  
+   def get_direct_instances_triples_including_datatype_properties(resource) #it is like get_direct_instances_triples but including datatype properties
+
+    if !resource.is_a?(RDFS::Resource) then return {:direct_instances => [], :triples => []} end
+
+    if @cache_triples.has_key?(resource) then return @cache_triples[resource] end
+
+    direct_instances = []
+    triples = []
+
+    resource.direct_properties.each{|prop|
+      direct_instances.push(prop)
+      prop.each{|p|
+        triples.push({:subject => resource.localname,
+          :predicate => prop.localname,
+          :object => p.respond_to?("localname")? p.localname : p})
+
+      }
+    }
+
+    @cache_triples[resource] = {:direct_instances => direct_instances.flatten.uniq, :triples => triples}
+  
   end
 
   def index
@@ -384,7 +557,7 @@ class OntologiesController < ApplicationController
     currentId = previousId + ".0"
     m = {:id => currentId, :type => 'select', :title => "What do you want to show from #{prefix} ontology?",
       :message => 'Class', :options => []}
-    m[:options] = classes.map{|className| {:key=>(index += 1), :text=>className, :next=>currentId + "." + index.to_s}}
+    m[:options] = classes.map{|klass| {:key=>(index += 1), :text=>klass[:className], :next=>currentId + "." + index.to_s}}
     flowTree = {:value => m, :children => []}
 
     class_next_step(currentId, classes, flowTree);
@@ -396,6 +569,7 @@ class OntologiesController < ApplicationController
     index = -1
     aux = []
     classes.each{ |name|
+      name = name[:className]
       currentId = (previousId + "." + (index += 1).to_s)
       m = {:id => currentId, :type => 'radio', :title => 'What do you want to do?',
         :message => '',
@@ -406,18 +580,11 @@ class OntologiesController < ApplicationController
         ]}
       child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
-      example_list(currentId, name, get_examples_for(name, 3, 'rdf:label'), child)
+      example_list(currentId, name, get_examples_for(name, 3, 'rdfs:label'), child)
       example_detail(currentId, name, get_datatype_properties(name), child)
 
     }
 
-  end
-
-  
-
-  
-  def new_query
-    
   end
 
   def example_list(previousId, className, examples, fatherFlowTree) # 6, 29, ...
@@ -607,14 +774,17 @@ class OntologiesController < ApplicationController
     m = {
       :id => currentId, :title => "Select what you want to show", :type => "select",
       :message => "#{className}'s \t related collections",
-      :options => [
-        {:key => 0, :text => relatedCollections[0], :next => currentId + ".0"},
-        {:key => 1, :text => relatedCollections[1], :next => currentId + ".0"},
-        {:key => 2, :text => relatedCollections[2], :next => currentId + ".0"},
-        {:key => 3, :text => relatedCollections[3], :next => currentId + ".0"},
-        {:key => 4, :text => relatedCollections[4], :next => currentId + ".0"},
-        {:key => 5, :text => relatedCollections[5], :next => currentId + ".0"}
-      ]
+      :options => relatedCollections.each_with_index.collect{|collection, index|
+          {:key => index, :text => collection, :next => currentId + ".0"}
+        }
+      # [
+        # {:key => 0, :text => relatedCollections[0], :next => currentId + ".0"},
+        # {:key => 1, :text => relatedCollections[1], :next => currentId + ".0"},
+        # {:key => 2, :text => relatedCollections[2], :next => currentId + ".0"},
+        # {:key => 3, :text => relatedCollections[3], :next => currentId + ".0"},
+        # {:key => 4, :text => relatedCollections[4], :next => currentId + ".0"},
+        # {:key => 5, :text => relatedCollections[5], :next => currentId + ".0"}
+      # ]
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
@@ -688,14 +858,17 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".1"
     m = {
       :id => currentId, :title => "Select what you want to show", :type => "select", :message => "#{className}'s \t related collections",
-      :options => [
-        {:key => 0, :text => relatedCollections[0], :next => currentId + ".0"},
-        {:key => 1, :text => relatedCollections[1], :next => currentId + ".0"},
-        {:key => 2, :text => relatedCollections[2], :next => currentId + ".0"},
-        {:key => 3, :text => relatedCollections[3], :next => currentId + ".0"},
-        {:key => 4, :text => relatedCollections[4], :next => currentId + ".0"},
-        {:key => 5, :text => relatedCollections[5], :next => currentId + ".0"}
-      ]
+      :options => relatedCollections.each_with_index.collect{|collection, index|
+          {:key => index, :text => collection, :next => currentId + ".0"}
+        }
+      # [
+        # {:key => 0, :text => relatedCollections[0], :next => currentId + ".0"},
+        # {:key => 1, :text => relatedCollections[1], :next => currentId + ".0"},
+        # {:key => 2, :text => relatedCollections[2], :next => currentId + ".0"},
+        # {:key => 3, :text => relatedCollections[3], :next => currentId + ".0"},
+        # {:key => 4, :text => relatedCollections[4], :next => currentId + ".0"},
+        # {:key => 5, :text => relatedCollections[5], :next => currentId + ".0"}
+      # ]
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
