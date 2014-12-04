@@ -73,7 +73,11 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect 'ontologies/wizard/:url', :controller => :ontologies, :action => :wizard, :requirements => { :url => /.*/} 
+  map.connect 'ontologies/wizard/:url', :controller => :ontologies, :action => :wizard, :requirements => { :url => /.*/}
+  map.connect 'ontologies/examples/:url', :controller => :ontologies, :action => :examples, :requirements => { :url => /.*/}
+  map.connect 'ontologies/examples/:url', :controller => :ontologies, :action => :examples, :requirements => { :url => /.*/}
+  map.connect 'applications/create_app', :controller => :applications, :action => :create_app, :via => :post
+  
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.connect 'home',       :controller => :applications

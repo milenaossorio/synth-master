@@ -1,8 +1,8 @@
 class OntologiesController < ApplicationController
   # GET /ontologies/wizard/id:/[^\/]+/
-  def wizard
-
-    @max_resource_search = 8
+  def init
+    @max_resource_search = 12
+    @max_number_examples = 5
     
     @cache = {}
     @cache_domain_range = {}
@@ -11,6 +11,12 @@ class OntologiesController < ApplicationController
     @relations = []
     @props_declaration = []
 
+  end
+
+  def wizard
+    
+    init()
+    
     domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
    # domain_classes += get_domain_classes_from('http://data.semanticweb.org/ns/swc/ontology#')
    # domain_classes += get_domain_classes_from('http://xmlns.com/wordnet/1.6/')
@@ -19,9 +25,9 @@ class OntologiesController < ApplicationController
     #result = @namespaces.keys.map{|key| "#{key} - #{@namespaces[key]}"}
     
     wizard = []
-    # flowTree = class_step("0.0.0", domain_classes, "swrc")
-# 
-    # breadthFirstSearch(flowTree, wizard)
+    flowTree = class_step("0.0.0", domain_classes, "auction")
+    
+    breadthFirstSearch(flowTree, wizard)
 
     # wizard.push(:klass => 'Produto', :value => generate_property_domain_range_from_definition('Produto', 2))
     # wizard.push(:klass => 'Produto', :value => {:collections => get_direct_collections_getting_properties_domain_range('Produto')}), 
@@ -41,10 +47,10 @@ class OntologiesController < ApplicationController
 
     
     #wizard.push(:klass => 'Produto', :value => generate_triples_examples('Leilao', 4))
-    path = [{:propertiesNames => ["temProduto"], :className => "Produto"},
-            {:propertiesNames => ["categoria"], :className => "Categoria"}]
+    #path = [{:propertiesNames => ["temProduto"], :className => "Produto"},
+     #       {:propertiesNames => ["categoria"], :className => "Categoria"}]
     #wizard.push(:klass => 'Produto', :value => get_objects_from("leilao1", "temProduto", generate_triples_examples('Leilao', 4)[:triples]))
-    wizard.push(:klass => 'Leilao', :value => get_path_examples("Leilao", path))
+    #wizard.push(:klass => 'Leilao', :value => get_path_examples("Leilao", path))
     
     #wizard.push(:klass => 'Produto', :value => get_properties_domain_range_from_instances('Produto', 4))
     #wizard = get_datatype_properties('Proceedings')
@@ -55,12 +61,48 @@ class OntologiesController < ApplicationController
      # wizard = domain_classes
     #wizard = result
     
-    render :json => {:windows=> wizard}
+    data = get_data_of_wizard
+    
+    render :json => {:windows=> data}
 
     # render :json => {:windows=>wizard.select { |e| e[:value].length > 0 }}
   end
   
-  def get_path_examples(initialClass, path)
+  def get_data_of_wizard
+    domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
+    data_hash = {}
+    domain_classes.each{|_class|
+      data_hash
+      datatype_properties = get_datatype_properties(_class[:className])
+      examples = get_examples_for(_class[:className], @max_number_examples, datatype_properties)
+      # data_hash[_class] = examples.collect{|ex|
+        # ex.each_with_index.collect{|prop, index|
+          # {:id => index, :name => prop.keys.first, :value => prop.values.first}
+        # }
+      # }
+    }
+  end
+  
+  def examples
+    
+    init()
+    
+    domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
+    examples = {:definition => [], :triples => []}
+    domain_classes.each{|_class|
+      temp = generate_triples_examples(_class[:className], @max_number_examples)
+      examples[:definition].push(temp[:definition]);
+      examples[:triples].push(temp[:triples]);
+    }
+    
+    examples[:definition] = group_domain_and_range_by_property_name(examples[:definition].flatten)
+    examples[:triples] = examples[:triples].flatten.uniq
+
+    render :json => examples;
+    
+  end
+  
+  def get_path_examples(initialClass, path) #it is not used. It is in app.js
     examples = generate_triples_examples(initialClass)
     initialInstances = get_instances_of_class(initialClass, examples[:triples])
     initialInstances.collect{|initInst|
@@ -71,7 +113,7 @@ class OntologiesController < ApplicationController
     }
   end
   
-   def get_rest_of_path_examples(subject, path, pos, triples)
+   def get_rest_of_path_examples(subject, path, pos, triples) #it is not used. It is in app.js
 
     result = []
     path[pos][:propertiesNames].each{|prop|
@@ -96,11 +138,11 @@ class OntologiesController < ApplicationController
     result
   end
   
-  def get_instances_of_class(className, triples)    
+  def get_instances_of_class(className, triples) #it is not used. It is in app.js   
     triples.select{|triple| triple[:predicate] == "type" && triple[:object] == className}.collect{|triple| triple[:subject]}
   end
   
-  def get_objects_from(subject, prop, triples)
+  def get_objects_from(subject, prop, triples) #it is not used. It is in app.js
    triples.select{|triple| triple[:subject] == subject && triple[:predicate] == prop}.collect{|triple| triple[:object]}
   end
   
@@ -134,16 +176,17 @@ class OntologiesController < ApplicationController
     result = []
     resources[0, @max_resource_search].each{|res|
       hash = {}
-      res.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.select{|x| props.include?(x.label.first || x.compact_uri)}.each{|property| hash[(property.label.first || property.compact_uri).to_sym] = property.to_s }
+      res.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.select{|x| props.include?(x.label.first || x.compact_uri || x.localname)}.
+      each{|property| hash[(property.label.first || property.compact_uri || property.localname)] = property.to_s } #(property.label.first || property.compact_uri).to_sym
       props.each{|prop| unless hash.include?(prop) then hash[prop] = 'No value' end}
       result.push(hash)
-    }.uniq.compact[0, cant]
+    }.uniq.compact
 
     (result.length...cant).each do
       result.push(Hash[props.map{|prop| [prop, 'No more example']}])
     end
 
-    return result
+    return result[0, cant]
 
   #return ['Posters Display', 'Demo: Adapting a Map Query Interface...', 'Demo: Blognoon: Exploring a Topic in...']
   end
@@ -268,12 +311,23 @@ class OntologiesController < ApplicationController
     examples = {}
     examples[:definition] = get_property_domain_range_from_definition(className, level)
     examples[:definition] += get_properties_domain_range_from_instances(className, level)
+    examples[:definition] = group_domain_and_range_by_property_name(examples[:definition])
     examples[:triples] = get_instances_triples(className, level)
     examples
   end
   
+  def hasValue (collection)
+    filter = ['Resource', 'NamedIndividual']
+    collection.each{|c|
+      return true if filter.include?(ActiveRDF::Namespace.localname(c))
+    }
+    return false
+  end
+  
   def get_property_domain_range_from_definition(className, level)
-    relations = get_relations(className, level).map{|rel| 
+    relations = get_relations(className, level).select{
+      |rel| !hasValue(rel.rdfs::domain) && !hasValue(rel.rdfs::range)
+    }.map{|rel| 
       {:propertyName => ActiveRDF::Namespace.localname(rel.uri),
          :domain => rel.rdfs::domain.map{|d| ActiveRDF::Namespace.localname(d)}, 
          :range => rel.rdfs::range.map{|r| ActiveRDF::Namespace.localname(r)}
@@ -318,7 +372,9 @@ class OntologiesController < ApplicationController
     resource = ActiveRDF::ObjectManager.construct_class(_class).find_all.first 
     
     unless resource.nil? then
-      triples = resource.direct_properties.collect{|prop|
+      triples = resource.direct_properties.select{
+        |prop| !hasValue(resource.classes) && !hasValue((prop.first.is_a?(RDFS::Resource)? prop.first.classes : prop.rdfs::range))
+      }.collect{|prop|
          {:propertyName => prop.localname,
          :domain => resource.classes.map{|d| d.localname}, 
          :range => (prop.first.is_a?(RDFS::Resource)? prop.first.classes : prop.rdfs::range).map{|r| r.localname}
@@ -386,7 +442,7 @@ class OntologiesController < ApplicationController
   def get_instances_triples(className, level)
       
     _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
-    resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0,3]
+    resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0, @max_number_examples]
     
     #get_direct_instances_triples_including_datatype_properties(resources)
     
@@ -580,7 +636,7 @@ class OntologiesController < ApplicationController
         ]}
       child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
-      example_list(currentId, name, get_examples_for(name, 3, 'rdfs:label'), child)
+      example_list(currentId, name, get_examples_for(name, @max_number_examples, 'rdfs:label'), child)
       example_detail(currentId, name, get_datatype_properties(name), child)
 
     }
@@ -598,14 +654,14 @@ class OntologiesController < ApplicationController
       :details =>
       [
         [
-          [{:type => "text", :msg => examples[0]}],
-          [{:type => "text", :msg => examples[1]}],
-          [{:type => "text", :msg => examples[2]}]
+          [{:type => "text", :msg => examples[0].values.first}],
+          [{:type => "text", :msg => examples[1].values.first}],
+          [{:type => "text", :msg => examples[2].values.first }]
         ],
         [
-          [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[0]}],
-          [{:type => "img", :msg => '/assets/checkbox.png'},{:type => "text", :msg => examples[1]}],
-          [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[2]}]
+          [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[0].values.first}],
+          [{:type => "img", :msg => '/assets/checkbox.png'},{:type => "text", :msg => examples[1].values.first}],
+          [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[2].values.first}]
         ]
       ]
     }
@@ -774,6 +830,7 @@ class OntologiesController < ApplicationController
     m = {
       :id => currentId, :title => "Select what you want to show", :type => "select",
       :message => "#{className}'s \t related collections",
+      :mainclass => className,
       :options => relatedCollections.each_with_index.collect{|collection, index|
           {:key => index, :text => collection, :next => currentId + ".0"}
         }
@@ -857,7 +914,10 @@ class OntologiesController < ApplicationController
   def related_collection_list(previousId, className, relatedCollections, fatherFlowTree) #10
     currentId = previousId.to_s + ".1"
     m = {
-      :id => currentId, :title => "Select what you want to show", :type => "select", :message => "#{className}'s \t related collections",
+      :id => currentId, :title => "Select what you want to show",
+      :type => "select",
+      :message => "#{className}'s \t related collections",
+      :mainclass => className,
       :options => relatedCollections.each_with_index.collect{|collection, index|
           {:key => index, :text => collection, :next => currentId + ".0"}
         }
@@ -895,7 +955,7 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "Select where one should click to choose a(n) #{className}",
-      :type => "attributeForChoosing", :message => "Events", :example => className,
+      :type => "attributeForChoosing", :message => "#{className}s", :example => className,
       :originalModal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :options => [
@@ -910,16 +970,7 @@ class OntologiesController < ApplicationController
   def suggest_paths(previousId, className, fatherFlowTree) #11
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "Select the path", :type => "paths", :message => "Suggested paths",
-      :paths => [
-        {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
-            "Event1 - hasOpeningDocument:author - João",
-            "Event2 - hasClosingDocument:advisor - Schwabe"]},
-        {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
-      ],
-      :options => [
-        {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
-      ]
+      :id => currentId, :title => "Select the path", :type => "paths", :message => "Suggested paths", :next => currentId + ".0"
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
@@ -931,17 +982,7 @@ class OntologiesController < ApplicationController
   def choose_relations_of_path(previousId, className, fatherFlowTree) #12
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "Select the relationships", :type => "path",
-      :message => "Suggested path",
-      :paths => [
-        {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
-            "Event1 - hasOpeningDocument:author - João",
-            "Event2 - hasClosingDocument:advisor - Schawbe"]},
-        {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
-      ],
-      :options => [
-        {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
-      ]
+      :id => currentId, :title => "Select the relationships", :type => "path", :message => "Suggested path", :next => currentId + ".0"
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
@@ -970,17 +1011,7 @@ class OntologiesController < ApplicationController
   def suggest_paths_detail(previousId, className, fatherFlowTree) #20
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "Select the path", :type => "paths",
-      :message => "Suggested paths",
-      :paths => [
-        {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
-            "Event1 - hasOpeningDocument:author - João",
-            "Event2 - hasClosingDocument:advisor - Schawbe"]},
-        {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
-      ],
-      :options => [
-        {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
-      ]
+      :id => currentId, :title => "Select the path", :type => "paths", :message => "Suggested paths", :next => currentId + ".0"
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
@@ -992,33 +1023,7 @@ class OntologiesController < ApplicationController
   def choose_relations_of_path_detail(previousId, className, fatherFlowTree) #21
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "Select the relationships", :type => "path", :message => "Suggested path",
-      :paths => [
-        {:key => 0, :pathItems => ["Event", "Document", "Person"], :examples => ["Event1 - hasOpeningDocument:presenter - Milena",
-            "Event1 - hasOpeningDocument:author - João",
-            "Event2 - hasClosingDocument:advisor - Schawbe"]},
-        {:key => 1, :pathItems => ["Event", "Person"], :examples => ["Event1 - organizer - Tim Berners Lee"]}
-      ],
-      :propertySets => [
-        [
-          [
-            {:key => 0, :text => "organizer"}
-          ]
-        ],
-        [
-          [
-            {:key => 0, :text => "hasOpeningDocument"},
-            {:key => 1, :text => "hasClosingDocument"}
-          ],
-          [
-            {:key => 0, :text => "presenter"},
-            {:key => 1, :text => "author"}
-          ]
-        ]
-      ],
-      :options => [
-        {:key => 0, :next => currentId + ".0"}, {:key => 1, :next => currentId + ".0"}
-      ]
+      :id => currentId, :title => "Select the relationships", :type => "path", :message => "Suggested path", :next => currentId + ".0"      
     }
 
     child = {:value => m, :children => []}
@@ -1032,11 +1037,11 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "", :type => "radioSelectedPropertiesForDetail",
-      :message => "Do you want to show more attributes in the Event detail? Which type?",
-      :example => "events",
+      :message => "Do you want to show more attributes in the #{className} detail? Which type?",
+      :example => className,
       :options => [
-        {:key => 0, :text => "Direct attributes of an Event", :next => previousId[0, previousId.length-6] + ".0"},
-        {:key => 1, :text => "Attributes of other classes related to Event", :next => previousId[0, previousId.length-4]},
+        {:key => 0, :text => "Direct attributes of a(n) #{className}", :next => previousId[0, previousId.length-6] + ".0"},
+        {:key => 1, :text => "Attributes of other classes related to #{className}", :next => previousId[0, previousId.length-4]},
         {:key => 2, :text => "Computed Attributes", :next => previousId[0, previousId.length-6] + ".2"},
         {:key => 3, :text => "No more", :next => previousId[0, previousId.length-8] + ".1"}
       ]
