@@ -10931,3 +10931,954 @@ Completed in 2852ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3
 Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-24 18:52:52) [GET]
   Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
 Completed in 3576ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-26 11:02:43) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 4508ms (View: 137 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-11-30 08:47:17) [GET]
+  Parameters: {"url"=>"1"}
+Completed in 5044ms (View: 82 | 200 OK [http://localhost/ontologies/wizard/1]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 13:16:10) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 5329ms (View: 150 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 13:21:50) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16781ms (View: 215 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 13:23:49) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15545ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 15:07:30) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15863ms (View: 71 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 15:33:58) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17517ms (View: 80 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 15:34:16) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16696ms (View: 100 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 15:39:42) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16637ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 15:44:33) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15855ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 15:46:36) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15183ms (View: 74 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:25:43) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17669ms (View: 367 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:26:09) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15882ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:26:29) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15873ms (View: 76 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:29:05) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15573ms (View: 72 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:29:45) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15645ms (View: 90 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:40:16) [GET]
+  Parameters: {"url"=>"id/http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 30ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/id/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:43:38) [GET]
+  Parameters: {"url"=>"12"}
+Completed in 31ms (View: 11 | 200 OK [http://localhost/ontologies/wizard/12]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:49:41) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15575ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:50:58) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16123ms (View: 76 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:51:47) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16368ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 16:59:04) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16637ms (View: 90 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#examples (for 0:0:0:0:0:0:0:1 at 2014-12-02 17:18:33) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 2208ms (View: 14 | 200 OK [http://localhost/ontologies/examples/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#examples (for 0:0:0:0:0:0:0:1 at 2014-12-02 17:50:16) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+ActiveRDF::ActiveRdfError (ObjectManager: can't construct class from nil):
+  app/controllers/ontologies_controller.rb:377:in `get_relations_aux'
+  app/controllers/ontologies_controller.rb:364:in `get_relations'
+  app/controllers/ontologies_controller.rb:302:in `get_property_domain_range_from_definition'
+  app/controllers/ontologies_controller.rb:294:in `generate_triples_examples'
+  app/controllers/ontologies_controller.rb:76:in `examples'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:75:in `examples'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (80.0ms)
+Rendered rescues/_request_and_response (20.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#examples (for 0:0:0:0:0:0:0:1 at 2014-12-02 17:52:38) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 8245ms (View: 30 | 200 OK [http://localhost/ontologies/examples/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 17:54:05) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15921ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 17:58:50) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15557ms (View: 73 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:02:19) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15268ms (View: 63 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:09:13) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16062ms (View: 90 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:09:48) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15693ms (View: 90 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:18:03) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15094ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:26:50) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15563ms (View: 67 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:27:14) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16112ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:31:13) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16444ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:34:27) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15880ms (View: 70 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:42:59) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16864ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 18:54:24) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15864ms (View: 77 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#examples (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:14:06) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NameError (undefined local variable or method `rel' for #<OntologiesController:0x11294e1>):
+  app/controllers/ontologies_controller.rb:311:in `get_property_domain_range_from_definition'
+  org/jruby/RubyArray.java:2403:in `select'
+  app/controllers/ontologies_controller.rb:310:in `get_property_domain_range_from_definition'
+  app/controllers/ontologies_controller.rb:294:in `generate_triples_examples'
+  app/controllers/ontologies_controller.rb:76:in `examples'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:75:in `examples'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#examples (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:14:31) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 9479ms (View: 23 | 200 OK [http://localhost/ontologies/examples/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#examples (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:17:50) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 8536ms (View: 31 | 200 OK [http://localhost/ontologies/examples/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:19:29) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15465ms (View: 90 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:23:20) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16064ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:27:01) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16194ms (View: 68 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-02 19:27:17) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15963ms (View: 71 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 10:01:01) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16454ms (View: 84 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 10:01:20) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16145ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 10:01:47) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 15958ms (View: 60 | 200 OK [http://localhost/ontologies/wizard/http://www.semanticweb.org/milena/ontologies/2013/6/auction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 11:01:19) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1170ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 11:03:28) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1340ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 11:42:50) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 622ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 11:56:58) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1298ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:02:14) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1026ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:02:33) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 816ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:03:09) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NoMethodError (undefined method `x' for #<OntologiesController:0x1916aab>):
+  app/controllers/ontologies_controller.rb:164:in `get_examples_for'
+  org/jruby/RubyArray.java:2403:in `select'
+  app/controllers/ontologies_controller.rb:164:in `get_examples_for'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:162:in `get_examples_for'
+  app/controllers/ontologies_controller.rb:45:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (180.0ms)
+Rendered rescues/_request_and_response (169.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:08:51) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NameError (undefined local variable or method `property' for #<OntologiesController:0x18d21f>):
+  app/controllers/ontologies_controller.rb:165:in `get_examples_for'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:164:in `get_examples_for'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:162:in `get_examples_for'
+  app/controllers/ontologies_controller.rb:45:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:09:04) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1098ms (View: 12 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:09:33) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1364ms (View: 299 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:21:10) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1239ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:22:05) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1137ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:48:51) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1347ms (View: 17 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:49:07) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 2907ms (View: 180 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:49:16) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1947ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:51:27) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1488ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:53:17) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1565ms (View: 9 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 12:55:59) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17149ms (View: 134 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 13:05:11) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NoMethodError (undefined method `value' for {"rdfs:label"=>"Audio"}:Hash):
+  app/controllers/ontologies_controller.rb:635:in `example_list'
+  app/controllers/ontologies_controller.rb:622:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:610:in `class_next_step'
+  app/controllers/ontologies_controller.rb:602:in `class_step'
+  app/controllers/ontologies_controller.rb:28:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (21.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 13:10:47) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17061ms (View: 56 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 13:12:43) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NoMethodError (undefined method `rdfs' for #<OntologiesController:0x474cc8>):
+  app/controllers/ontologies_controller.rb:635:in `example_list'
+  app/controllers/ontologies_controller.rb:622:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:610:in `class_next_step'
+  app/controllers/ontologies_controller.rb:602:in `class_step'
+  app/controllers/ontologies_controller.rb:28:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 13:12:55) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17285ms (View: 56 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 13:16:02) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17326ms (View: 57 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 13:17:16) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17146ms (View: 61 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 15:21:25) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 20859ms (View: 222 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 15:27:36) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 46014ms (View: 53 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 15:32:41) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16994ms (View: 101 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 17:53:08) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+ActiveRDF::ActiveRdfError (ObjectManager: can't construct class from nil):
+  app/controllers/ontologies_controller.rb:200:in `get_datatype_properties'
+  app/controllers/ontologies_controller.rb:76:in `get_data_of_wizard'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:74:in `get_data_of_wizard'
+  app/controllers/ontologies_controller.rb:64:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (299.0ms)
+Rendered rescues/_request_and_response (254.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 17:55:10) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NoMethodError (undefined method `keys' for [["rdfs:label", "Nome"], "No more example"]:Array):
+  app/controllers/ontologies_controller.rb:80:in `get_data_of_wizard'
+  org/jruby/RubyHash.java:1181:in `each'
+  org/jruby/RubyEnumerable.java:951:in `each_with_index'
+  org/jruby/RubyEnumerator.java:195:in `each'
+  org/jruby/RubyEnumerable.java:705:in `collect'
+  app/controllers/ontologies_controller.rb:79:in `get_data_of_wizard'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:78:in `get_data_of_wizard'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:74:in `get_data_of_wizard'
+  app/controllers/ontologies_controller.rb:64:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 17:58:47) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 20840ms (View: 128 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 17:59:23) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 20249ms (View: 7 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 18:00:50) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NoMethodError (undefined method `keys' for [["rdfs:label", "Nome"], "No value"]:Array):
+  app/controllers/ontologies_controller.rb:80:in `get_data_of_wizard'
+  org/jruby/RubyHash.java:1181:in `each'
+  org/jruby/RubyEnumerable.java:951:in `each_with_index'
+  org/jruby/RubyEnumerator.java:195:in `each'
+  org/jruby/RubyEnumerable.java:705:in `collect'
+  app/controllers/ontologies_controller.rb:79:in `get_data_of_wizard'
+  org/jruby/RubyArray.java:2339:in `collect'
+  app/controllers/ontologies_controller.rb:78:in `get_data_of_wizard'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:74:in `get_data_of_wizard'
+  app/controllers/ontologies_controller.rb:64:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (7.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-03 18:01:47) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 23737ms (View: 8 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:06:21) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 15820ms (View: 15123 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:10:14) [POST]
+  Parameters: {"application_name"=>"test1"}
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 2248ms (View: 674 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:10:56) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 259ms (View: 256 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:12:11) [POST]
+  Parameters: {"application_name"=>"test1"}
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 302ms (View: 298 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:12:15) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 721ms (View: 717 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:12:34) [GET]
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 117ms (View: 57 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:12:39) [POST]
+  Parameters: {"authenticity_token"=>"TCDaYvFokwLjhlGv0w+CCfg1PCVW57O1OKqSzqwbmVk=", "application"=>{"name"=>"juna"}, "commit"=>"Create"}
+Redirected to http://localhost:3001/applications
+Completed in 1024ms | 302 Found [http://localhost/applications]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:12:40) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 2181ms (View: 2173 | 200 OK [http://localhost/applications]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:14:00) [GET]
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 43ms (View: 40 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:14:17) [GET]
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 90ms (View: 90 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:14:45) [GET]
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 40ms (View: 30 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:16:59) [POST]
+  Parameters: {"application_name"=>"test1", "authenticity_token"=>"TCDaYvFokwLjhlGv0w+CCfg1PCVW57O1OKqSzqwbmVk="}
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 33ms (View: 29 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:17:12) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 50ms (View: 50 | 200 OK [http://localhost/applications]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:17:19) [GET]
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 100ms (View: 100 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:18:02) [POST]
+  Parameters: {"application_name"=>"test1", "authenticity_token"=>"FPdyB5VaLbC9btgdnxE9vWF/qJlnB3+4QQYcNzNinp0="}
+Redirected to http://localhost:3001/applications
+Completed in 129ms | 302 Found [http://localhost/applications]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:19:06) [POST]
+  Parameters: {"application_name"=>"test1", "authenticity_token"=>"FPdyB5VaLbC9btgdnxE9vWF/qJlnB3+4QQYcNzNinp0="}
+
+RuntimeError ('test3' has been taken.):
+  /app/models/application.rb:38:in `create'
+  app/controllers/applications_controller.rb:20:in `create'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (84.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:19:14) [POST]
+  Parameters: {"application_name"=>"test1", "authenticity_token"=>"FPdyB5VaLbC9btgdnxE9vWF/qJlnB3+4QQYcNzNinp0="}
+
+RuntimeError ('test3' has been taken.):
+  /app/models/application.rb:38:in `create'
+  app/controllers/applications_controller.rb:20:in `create'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:19:28) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 1000ms (View: 480 | 200 OK [http://localhost/domain]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:19:32) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 40ms (View: 40 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:20:15) [POST]
+  Parameters: {"application_name"=>"test1"}
+Redirected to http://localhost:3001/applications
+Completed in 131ms | 302 Found [http://localhost/applications]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:20:20) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 40ms (View: 40 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:23:23) [POST]
+  Parameters: {"application_name"=>"test1"}
+Redirected to http://localhost:3001/applications
+Completed in 119ms | 302 Found [http://localhost/applications]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:23:29) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 60ms (View: 60 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#destroy (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:24:33) [DELETE]
+  Parameters: {"authenticity_token"=>"FPdyB5VaLbC9btgdnxE9vWF/qJlnB3+4QQYcNzNinp0=", "id"=>"test1"}
+
+NoMethodError (undefined method `getRepository' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  /app/models/application.rb:87:in `shutdown'
+  /app/models/application.rb:103:in `destroy'
+  app/controllers/applications_controller.rb:35:in `destroy'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (20.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationsController#destroy (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:24:44) [DELETE]
+  Parameters: {"authenticity_token"=>"FPdyB5VaLbC9btgdnxE9vWF/qJlnB3+4QQYcNzNinp0=", "id"=>"test3"}
+
+NoMethodError (undefined method `getRepository' for nil:NilClass):
+  org/jruby/RubyKernel.java:230:in `method_missing'
+  /app/models/application.rb:87:in `shutdown'
+  /app/models/application.rb:103:in `destroy'
+  app/controllers/applications_controller.rb:35:in `destroy'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:25:27) [POST]
+  Parameters: {"application_name"=>"test8"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/applications_controller.rb:19:in `create'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+
+Rendered rescues/_trace (22.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:25:33) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 50ms (View: 40 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:25:51) [POST]
+  Parameters: {"application"=>{"name"=>"test8"}}
+Redirected to http://localhost:3001/applications
+Completed in 163ms | 302 Found [http://localhost/applications]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:25:55) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 530ms (View: 530 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#new (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:26:03) [GET]
+Rendering template within layouts/application
+Rendering applications/new
+Completed in 30ms (View: 30 | 200 OK [http://localhost/applications/new]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:28:16) [POST]
+  Parameters: {"application"=>{"name"=>"test9"}}
+Completed in 217ms (View: 49 | 200 OK [http://localhost/applications]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:28:53) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 270ms (View: 180 | 200 OK [http://localhost/domain]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:28:55) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 70ms (View: 60 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#create (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:29:57) [POST]
+  Parameters: {"application"=>{"name"=>"test10"}}
+Completed in 144ms (View: 8 | 200 OK [http://localhost/applications]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:35:35) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 50ms (View: 50 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:50:24) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 140ms (View: 140 | 200 OK [http://localhost/home]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:50:54) [POST]
+  Parameters: {"application"=>{"name"=>"test10"}, "member"=>{"create_app"=>:post}}
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 67ms (View: 63 | 200 OK [http://localhost/applications/create_app]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:52:01) [POST]
+  Parameters: {"application"=>{"name"=>"test10"}, "member"=>{"create_app"=>:post}}
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 52ms (View: 48 | 200 OK [http://localhost/applications/create_app]
+
+
+Processing ApplicationsController#create_app (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:54:46) [POST]
+  Parameters: {"application"=>{"name"=>"test10"}, "via"=>:post}
+Completed in 39ms (View: 8 | 200 OK [http://localhost/applications/create_app]
+
+
+Processing ApplicationsController#show (for 0:0:0:0:0:0:0:1 at 2014-12-04 12:55:31) [GET]
+  Parameters: {"id"=>"create_app"}
+
+ActionController::UnknownAction (No action responded to show. Actions: activate, children_attributes, create, create_app, destroy, index, jqgrid_children_index, jqgrid_children_post_data, new, and shutdown):
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:48:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:163:in `start_thread'
+
+Rendering rescues/layout (not_found)
