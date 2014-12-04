@@ -16,7 +16,6 @@ class ApplicationsController < ApplicationController
   # POST /namespaces
   # POST /namespaces.xml
   def create
-
     Application.create(params[:application][:name])
     
     respond_to do |format|
@@ -24,6 +23,11 @@ class ApplicationsController < ApplicationController
       format.html { redirect_to :action => :index }
       format.xml  { render :xml => @application, :status => :created, :location => @application }
     end
+  end
+  
+  def create_app
+    #Application.create(params[:application][:name])
+    render :json => {:my_message => "ok-ok"}
   end
   
   def activate
