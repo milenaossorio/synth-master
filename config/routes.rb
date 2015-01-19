@@ -77,6 +77,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'ontologies/examples/:url', :controller => :ontologies, :action => :examples, :requirements => { :url => /.*/}
   map.connect 'ontologies/examples/:url', :controller => :ontologies, :action => :examples, :requirements => { :url => /.*/}
   map.connect 'applications/create_app', :controller => :applications, :action => :create_app, :via => :post
+  map.connect 'contexts/create_app', :controller => :contexts, :action => :create_app, :via => :post
   
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

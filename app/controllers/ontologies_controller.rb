@@ -28,16 +28,22 @@ class OntologiesController < ApplicationController
     flowTree = class_step("0.0.0", domain_classes, "auction")
     
     breadthFirstSearch(flowTree, wizard)
+    
+    
 
     # wizard.push(:klass => 'Produto', :value => generate_property_domain_range_from_definition('Produto', 2))
     # wizard.push(:klass => 'Produto', :value => {:collections => get_direct_collections_getting_properties_domain_range('Produto')}), 
       # :relations => @relations, :props_declaration => @props_declaration})
 
-     # domain_classes.each{ |klass| 
+      # domain_classes.each{ |klass| 
       # wizard.push(:klass => klass[:className], :value => get_related_collectionsOld(klass[:className], 2))
      # }
     
-    # wizard.push(:klass => klass, :value => get_datatype_properties(klass))
+    # wizard.push(:klass => klass[:className], :value => get_datatype_properties(klass[:className]))
+#     
+    # wizard.push({:klass => klass[:className], :value => get_examples_for(klass[:className], 3, *get_datatype_properties(klass[:className]))})
+#     
+    # } 
     # wizard.push({:klass => klass, :value => get_examples_for(klass, 3, 'rdfs:label', 'foaf:name', 'foaf:family_name', 'foaf:firstName', 'foaf:mbox_sha1sum')})
     #wizard.push(get_examples_for('Proceedings', 3, 'rdf:label', 'rdf:type', 'owl:sameAs', 'related to Event'))
     # temp = get_related_collections(klass, 1)
@@ -61,9 +67,7 @@ class OntologiesController < ApplicationController
      # wizard = domain_classes
     #wizard = result
     
-    data = get_data_of_wizard
-    
-    render :json => {:windows=> data}
+    render :json => {:windows=> wizard, :data => get_data_of_wizard}
 
     # render :json => {:windows=>wizard.select { |e| e[:value].length > 0 }}
   end
@@ -72,15 +76,16 @@ class OntologiesController < ApplicationController
     domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
     data_hash = {}
     domain_classes.each{|_class|
-      data_hash
-      datatype_properties = get_datatype_properties(_class[:className])
-      examples = get_examples_for(_class[:className], @max_number_examples, datatype_properties)
-      # data_hash[_class] = examples.collect{|ex|
-        # ex.each_with_index.collect{|prop, index|
-          # {:id => index, :name => prop.keys.first, :value => prop.values.first}
-        # }
-      # }
+       props = get_datatype_properties(_class[:className])
+       examples = get_examples_for(_class[:className], 3, *props)
+       arr = examples.collect{|ex_hash| 
+         ex_hash.sort.each_with_index.collect{|(key, value), index|
+            {:id => index, :name => key, :value => value}
+         }
+      }
+      data_hash[_class[:className]] = arr      
     }
+    data_hash
   end
   
   def examples
@@ -171,13 +176,13 @@ class OntologiesController < ApplicationController
   def get_examples_for(className, cant, *props)
 
     className = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
-    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all
-
-    result = []
-    resources[0, @max_resource_search].each{|res|
+    resources = className.nil? ? [] : ActiveRDF::ObjectManager.construct_class(className).find_all[0, @max_resource_search]
+    
+     result = []
+    resources.each{|res|
       hash = {}
-      res.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.select{|x| props.include?(x.label.first || x.compact_uri || x.localname)}.
-      each{|property| hash[(property.label.first || property.compact_uri || property.localname)] = property.to_s } #(property.label.first || property.compact_uri).to_sym
+      res.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.select{|x| props.include?(x.label.first || x.localname || x.compact_uri)}.
+      each{|property| hash[(property.label.first || property.localname || property.compact_uri) ] = property.to_s } #(property.label.first || property.compact_uri).to_sym
       props.each{|prop| unless hash.include?(prop) then hash[prop] = 'No value' end}
       result.push(hash)
     }.uniq.compact
@@ -200,7 +205,8 @@ class OntologiesController < ApplicationController
     resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0, @max_resource_search]
 
     resources.each{|x| 
-      result += x.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.collect{|property| (property.label.first || property.compact_uri)}
+      result += x.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.
+                collect{|property| (property.label.first || property.localname  || property.compact_uri )}
     }
     result = result.uniq
     result = ["The '#{className}' has no datatype property"] if result.empty?
@@ -667,7 +673,7 @@ class OntologiesController < ApplicationController
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
-    examples = get_examples_for(className, 3, 'rdf:label');
+    examples = get_examples_for(className, 3, 'rdfs:label');
     example_list_choose_one_more_attributes_question(currentId, className, examples, child)
     example_list_choose_more_than_one_more_attributes_question(currentId, className, examples, child)
 
@@ -687,7 +693,6 @@ class OntologiesController < ApplicationController
     fatherFlowTree[:children].push(child)
     choose_attributes_types_detail(currentId, className, child)
     example_detail_navigation_to_other_screen_question(currentId, className, child)
-
   end
 
   def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
@@ -699,9 +704,9 @@ class OntologiesController < ApplicationController
         {:key => 0, :text => "Yes", :next => currentId + ".0"},{:key => 1, :text => "No", :next => currentId + ".1"}
       ],
       :details => [
-        [{:type => "text", :msg => examples[0]}],
-        [{:type => "text", :msg => examples[1]}],
-        [{:type => "text", :msg => examples[2]}]
+        [{:type => "text", :msg => examples[0].values.first}],
+        [{:type => "text", :msg => examples[1].values.first}],
+        [{:type => "text", :msg => examples[2].values.first}]
       ]
     }
     child = {:value => m, :children => []}
@@ -720,9 +725,9 @@ class OntologiesController < ApplicationController
         {:key => 0, :text => "Yes", :next => previousId.to_s + ".0.0"},{:key => 1, :text => "No", :next => previousId.to_s + ".0.1"}
       ],
       :details => [
-        [{:type => "img", :msg => "/assets/checkbox-checked.png"},{:type => "text", :msg => examples[0]}],
-        [{:type => "img", :msg => "/assets/checkbox.png"},{:type => "text", :msg => examples[1]}],
-        [{:type => "img", :msg => "/assets/checkbox-checked.png"},{:type => "text", :msg => examples[2]}]
+        [{:type => "img", :msg => "/assets/checkbox-checked.png"},{:type => "text", :msg => examples[0].values.first}],
+        [{:type => "img", :msg => "/assets/checkbox.png"},{:type => "text", :msg => examples[1].values.first}],
+        [{:type => "img", :msg => "/assets/checkbox-checked.png"},{:type => "text", :msg => examples[2].values.first}]
       ]
     }
     child = {:value => m, :children => []}
