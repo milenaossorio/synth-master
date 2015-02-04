@@ -25,14 +25,22 @@ class ApplicationsController < ApplicationController
     end
   end
   
-  def create_app
-    #Application.create(params[:application][:name])
-    render :json => {:my_message => "ok-ok"}
+  def create_api
+    #Application.create(params[:application_name])
+    render :json => {:status => :successful, :location => @application}
   end
+  
+
   
   def activate
     Application.new(params[:id]).activate
     redirect_to :action => :index
+  end
+  
+  def activate_api
+    Application.new(params[:name]).activate
+    
+    render :json => {:status => :successful}
   end
  
   def destroy

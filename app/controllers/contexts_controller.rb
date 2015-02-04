@@ -51,9 +51,10 @@ class ContextsController < ApplicationController
     end
   end
   
-  def create_app
+  def create_api
     @context = SHDM::Context.create(params[:context])
-    render :json => {:message => 'ok', :context => @context}
+    
+    render :json => {:status => :successful, :context => @context}
   end
 
   # PUT /contexts/1

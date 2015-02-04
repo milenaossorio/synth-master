@@ -66,7 +66,7 @@ class OntologiesController < ApplicationController
     #wizard = {:value => generate_property_domain_range_from_definition}
      # wizard = domain_classes
     #wizard = result
-    
+    #a = get_datatype_properties('Produto')
     render :json => {:windows=> wizard, :data => get_data_of_wizard}
 
     # render :json => {:windows=>wizard.select { |e| e[:value].length > 0 }}
@@ -642,7 +642,7 @@ class OntologiesController < ApplicationController
         ]}
       child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
-      example_list(currentId, name, get_examples_for(name, @max_number_examples, 'rdfs:label'), child)
+      example_list(currentId, name, get_examples_for(name, @max_number_examples, 'label'), child)
       example_detail(currentId, name, get_datatype_properties(name), child)
 
     }
@@ -673,7 +673,7 @@ class OntologiesController < ApplicationController
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
-    examples = get_examples_for(className, 3, 'rdfs:label');
+    examples = get_examples_for(className, 3, 'label');
     example_list_choose_one_more_attributes_question(currentId, className, examples, child)
     example_list_choose_more_than_one_more_attributes_question(currentId, className, examples, child)
 

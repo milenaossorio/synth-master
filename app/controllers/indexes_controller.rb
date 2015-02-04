@@ -53,6 +53,18 @@ class IndexesController < ApplicationController
       end
     end
   end
+  
+  def create_api
+    context_url = params[:index].delete(:context_index_context)
+    params[:index][:context_index_context] = SHDM::Context.find(context_url)
+    @index = SHDM::ContextIndex.create(params[:index])
+    
+    if @index.save
+      render :json => {:status => :successful, :index => @index}
+    else
+      render :json => {:status => :fail}
+    end
+  end
 
   # PUT /indexes/1
   # PUT /indexes/1.xml

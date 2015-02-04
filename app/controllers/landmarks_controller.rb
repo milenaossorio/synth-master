@@ -66,6 +66,25 @@ class LandmarksController < ApplicationController
       end
     end
   end
+  
+ def create_api
+    landmark_type = params[:landmark].delete(:type)
+    @landmark = SHDM::Landmark.create(params[:landmark])    
+    if landmark_type == 'index_anchor'
+      params[:index_anchor_navigation_attribute][:index_anchor_navigation_attribute_target_index] = SHDM::Index.new(params[:index_anchor_navigation_attribute][:index_anchor_navigation_attribute_target_index])
+      navigation_attribute = SHDM::IndexAnchorNavigationAttribute.create(params[:index_anchor_navigation_attribute])
+    else
+      params[:context_anchor_navigation_attribute][:context_anchor_navigation_attribute_target_context] = SHDM::Context.new(params[:context_anchor_navigation_attribute][:context_anchor_navigation_attribute_target_context])
+      navigation_attribute = SHDM::ContextAnchorNavigationAttribute.create(params[:context_anchor_navigation_attribute])
+    end    
+    @landmark.landmark_navigation_attribute = navigation_attribute.save
+    
+    if @landmark.save
+      render :json => {:status => :successful, :landmark => @landmark}
+    else
+      render :json => {:status => :fail}
+    end
+  end
 
   # PUT /landmarks/1
   # PUT /landmarks/1.xml
