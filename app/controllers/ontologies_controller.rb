@@ -80,7 +80,7 @@ class OntologiesController < ApplicationController
        examples = get_examples_for(_class[:className], 3, *props)
        arr = examples.collect{|ex_hash| 
          ex_hash.sort.each_with_index.collect{|(key, value), index|
-            {:id => index, :name => key, :value => value}
+            {:id => index, :name => key, :value => [value]}
          }
       }
       data_hash[_class[:className]] = arr      
@@ -642,7 +642,7 @@ class OntologiesController < ApplicationController
         ]}
       child = {:value => m, :children => []}
       fatherFlowTree[:children].push(child)
-      example_list(currentId, name, get_examples_for(name, @max_number_examples, 'rdfs:label'), child)
+      example_list(currentId, name, get_examples_for(name, @max_number_examples, 'label'), child)
       example_detail(currentId, name, get_datatype_properties(name), child)
 
     }
@@ -673,7 +673,7 @@ class OntologiesController < ApplicationController
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
-    examples = get_examples_for(className, 3, 'rdfs:label');
+    examples = get_examples_for(className, 3, 'label');
     example_list_choose_one_more_attributes_question(currentId, className, examples, child)
     example_list_choose_more_than_one_more_attributes_question(currentId, className, examples, child)
 

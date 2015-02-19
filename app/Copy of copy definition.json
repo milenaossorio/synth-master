@@ -3243,35 +3243,35 @@
 		}
 	],
 	"data": {
-			"Categoria": [[
+		"Categoria": [[
 				{
 					"id": 0,
 					"name": "Nome",
-					"value": "Audio"
+					"value": ["Audio"]
 				}, {
 					"id": 1,
 					"name": "label",
-					"value": "Audio"
+					"value": ["Audio"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Nome",
-					"value": "Informatica"
+					"value": ["Informatica"]
 				}, {
 					"id": 1,
 					"name": "label",
-					"value": "Informatica"
+					"value": ["Informatica"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Nome",
-					"value": "Cine e Foto"
+					"value": ["Cine e Foto"]
 				}, {
 					"id": 1,
 					"name": "label",
-					"value": "Cine e Foto"
+					"value": ["Cine e Foto"]
 				}
 			]
 		],
@@ -3279,103 +3279,103 @@
 				{
 					"id": 0,
 					"name": "Data de fim",
-					"value": "2012/02/20"
+					"value": ["2012/02/20"]
 				}, {
 					"id": 1,
 					"name": "Data de inicio",
-					"value": "2012/02/01"
+					"value": ["2012/02/01"]
 				}, {
 					"id": 2,
 					"name": "Diferenca minima",
-					"value": "5"
+					"value": ["5"]
 				}, {
 					"id": 3,
 					"name": "Estado do produto",
-					"value": "30.00 USPS Priority Mail International \nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide, novo"
+					"value": ["30.00 USPS Priority Mail International \nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide, novo"]
 				}, {
 					"id": 4,
 					"name": "Informacao do frete",
-					"value": "No value"
+					"value": ["No value"]
 				}, {
 					"id": 5,
 					"name": "Minimo lance",
-					"value": "23"
+					"value": ["23"]
 				}, {
 					"id": 6,
 					"name": "Nome",
-					"value": "leilao 1"
+					"value": ["leilao 1"]
 				}, {
 					"id": 7,
 					"name": "label",
-					"value": "leilao 1"
+					"value": ["leilao 1"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Data de fim",
-					"value": "2012/12/25"
+					"value": ["2012/12/25"]
 				}, {
 					"id": 1,
 					"name": "Data de inicio",
-					"value": "2012/10/04"
+					"value": ["2012/10/04"]
 				}, {
 					"id": 2,
 					"name": "Diferenca minima",
-					"value": "25"
+					"value": ["25"]
 				}, {
 					"id": 3,
 					"name": "Estado do produto",
-					"value": "novo"
+					"value": ["novo"]
 				}, {
 					"id": 4,
 					"name": "Informacao do frete",
-					"value": "30.00 USPS Priority Mail International\nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide"
+					"value": ["30.00 USPS Priority Mail International\nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide"]
 				}, {
 					"id": 5,
 					"name": "Minimo lance",
-					"value": "45"
+					"value": ["45"]
 				}, {
 					"id": 6,
 					"name": "Nome",
-					"value": "leilao 2"
+					"value": ["leilao 2"]
 				}, {
 					"id": 7,
 					"name": "label",
-					"value": "leilao 2"
+					"value": ["leilao 2"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Data de fim",
-					"value": "2012/09/10"
+					"value": ["2012/09/10"]
 				}, {
 					"id": 1,
 					"name": "Data de inicio",
-					"value": "2012/04/04"
+					"value": ["2012/04/04"]
 				}, {
 					"id": 2,
 					"name": "Diferenca minima",
-					"value": "5"
+					"value": ["5"]
 				}, {
 					"id": 3,
 					"name": "Estado do produto",
-					"value": "No value"
+					"value": ["No value"]
 				}, {
 					"id": 4,
 					"name": "Informacao do frete",
-					"value": "frete gratis"
+					"value": ["frete gratis"]
 				}, {
 					"id": 5,
 					"name": "Minimo lance",
-					"value": "45"
+					"value": ["45"]
 				}, {
 					"id": 6,
 					"name": "Nome",
-					"value": "leilao 10"
+					"value": ["leilao 10"]
 				}, {
 					"id": 7,
 					"name": "label",
-					"value": "leilao 10"
+					"value": ["leilao 10"]
 				}
 			]
 		],
@@ -3383,79 +3383,79 @@
 				{
 					"id": 0,
 					"name": "Data de cadastro",
-					"value": "23/05/2013"
+					"value": ["23/05/2013"]
 				}, {
 					"id": 1,
 					"name": "Descricao",
-					"value": "Nada como um equipamento completo e potente o suficiente para garantir a qualidade de entretenimento ideal na sua casa. Pois o LG HT806ST e justamente o caso para quem busca um home theater capaz de agradar a todos. Com 850W RMS de potencia, ele e perfeito para transformar sua casa em uma verdadeira sala de cinema e ainda animar todas as suas festas. A tecnologia Bass Blast potencializa os sons graves de modo impressionante, enquanto o recurso Virtual Sound Matrix simula os efeitos de um sistema 10.1 canais. Alem do design elegante e que se encaixa em qualquer ambiente, o aparelho conta com elementos bastante praticos, como a funcao Ripping, que possibilita gravar qualquer CD diretamente para um pendrive. O karaoke tambem e destaque do produto e promete horas de animacao com sua familia e amigos."
+					"value": ["Nada como um equipamento completo e potente o suficiente para garantir a qualidade de entretenimento ideal na sua casa. Pois o LG HT806ST e justamente o caso para quem busca um home theater capaz de agradar a todos. Com 850W RMS de potencia, ele e perfeito para transformar sua casa em uma verdadeira sala de cinema e ainda animar todas as suas festas. A tecnologia Bass Blast potencializa os sons graves de modo impressionante, enquanto o recurso Virtual Sound Matrix simula os efeitos de um sistema 10.1 canais. Alem do design elegante e que se encaixa em qualquer ambiente, o aparelho conta com elementos bastante praticos, como a funcao Ripping, que possibilita gravar qualquer CD diretamente para um pendrive. O karaoke tambem e destaque do produto e promete horas de animacao com sua familia e amigos."]
 				}, {
 					"id": 2,
 					"name": "Esta em oferta",
-					"value": "1"
+					"value": ["1"]
 				}, {
 					"id": 3,
 					"name": "Nome",
-					"value": "Home Theater LG HT806ST"
+					"value": ["Home Theater LG HT806ST"]
 				}, {
 					"id": 4,
 					"name": "Quantidade",
-					"value": "2"
+					"value": ["2"]
 				}, {
 					"id": 5,
 					"name": "label",
-					"value": "Home Theater LG HT806ST"
+					"value": ["Home Theater LG HT806ST"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Data de cadastro",
-					"value": "12/03/2012"
+					"value": ["12/03/2012"]
 				}, {
 					"id": 1,
 					"name": "Descricao",
-					"value": "MP4 Player Philips SA3VBE04KX/78 4GB GoGear Vibe c/ Tela 1,8 e Radio FM - Preto \nTenha em maos um MP4 Player que faz de tudo, desde poder ouvir musicas em formato MP3 ou sua programacao preferida no radio FM, ate assistir videos de filmes, shows ou clipes.i\nO modelo SA3VBE possui tela de 4,6 centimetros (1,8 polegadas) e ideal para ver seus videos e ate navegar por seus menus sem dificuldades. Ele ainda vem fones emborrachados evitando que machuquem seus ouvidos.\nSeu armazenamento permite guardar centena de musicas no formato MP3, tornando assim seu dispositivo movel em um verdadeiro centro de entretenimento. E se pensa que a transferencia de musicas do seu pc/notebook para o MP4 Player e demorada, engana-se Em apenas cinco minutos e possivel transferir ate trinta musicas de uma vez, sem perda de tempo"
+					"value": ["MP4 Player Philips SA3VBE04KX/78 4GB GoGear Vibe c/ Tela 1,8 e Radio FM - Preto \nTenha em maos um MP4 Player que faz de tudo, desde poder ouvir musicas em formato MP3 ou sua programacao preferida no radio FM, ate assistir videos de filmes, shows ou clipes.i\nO modelo SA3VBE possui tela de 4,6 centimetros (1,8 polegadas) e ideal para ver seus videos e ate navegar por seus menus sem dificuldades. Ele ainda vem fones emborrachados evitando que machuquem seus ouvidos.\nSeu armazenamento permite guardar centena de musicas no formato MP3, tornando assim seu dispositivo movel em um verdadeiro centro de entretenimento. E se pensa que a transferencia de musicas do seu pc/notebook para o MP4 Player e demorada, engana-se Em apenas cinco minutos e possivel transferir ate trinta musicas de uma vez, sem perda de tempo"]
 				}, {
 					"id": 2,
 					"name": "Esta em oferta",
-					"value": "1"
+					"value": ["1"]
 				}, {
 					"id": 3,
 					"name": "Nome",
-					"value": "MP4 Player Philips SA3VBE04KX/78"
+					"value": ["MP4 Player Philips SA3VBE04KX/78"]
 				}, {
 					"id": 4,
 					"name": "Quantidade",
-					"value": "12"
+					"value": ["12"]
 				}, {
 					"id": 5,
 					"name": "label",
-					"value": "MP4 Player Philips SA3VBE04KX/78"
+					"value": ["MP4 Player Philips SA3VBE04KX/78"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Data de cadastro",
-					"value": "12/10/2012"
+					"value": ["12/10/2012"]
 				}, {
 					"id": 1,
 					"name": "Descricao",
-					"value": "MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao"
+					"value": ["MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao"]
 				}, {
 					"id": 2,
 					"name": "Esta em oferta",
-					"value": "1"
+					"value": ["1"]
 				}, {
 					"id": 3,
 					"name": "Nome",
-					"value": "MP4 Watch Play NewLink PM101"
+					"value": ["MP4 Watch Play NewLink PM101"]
 				}, {
 					"id": 4,
 					"name": "Quantidade",
-					"value": "23"
+					"value": ["23"]
 				}, {
 					"id": 5,
 					"name": "label",
-					"value": "MP4 Watch Play NewLink PM101"
+					"value": ["MP4 Watch Play NewLink PM101"]
 				}
 			]
 		],
@@ -3463,67 +3463,67 @@
 				{
 					"id": 0,
 					"name": "Membro desde",
-					"value": "No value"
+					"value": ["No value"]
 				}, {
 					"id": 1,
 					"name": "Nome",
-					"value": "Concorrente 1"
+					"value": ["Concorrente 1"]
 				}, {
 					"id": 2,
 					"name": "Qualificacao",
-					"value": "No value"
+					"value": ["No value"]
 				}, {
 					"id": 3,
 					"name": "email",
-					"value": "concorrente1@gmail.com"
+					"value": ["concorrente1@gmail.com"]
 				}, {
 					"id": 4,
 					"name": "label",
-					"value": "Concorrente 1"
+					"value": ["Concorrente 1"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Membro desde",
-					"value": "No value"
+					"value": ["No value"]
 				}, {
 					"id": 1,
 					"name": "Nome",
-					"value": "Concorrente 2"
+					"value": ["Concorrente 2"]
 				}, {
 					"id": 2,
 					"name": "Qualificacao",
-					"value": "No value"
+					"value": ["No value"]
 				}, {
 					"id": 3,
 					"name": "email",
-					"value": "concorrente2@gmail.com"
+					"value": ["concorrente2@gmail.com"]
 				}, {
 					"id": 4,
 					"name": "label",
-					"value": "Concorrente 2"
+					"value": ["Concorrente 2"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Membro desde",
-					"value": "1/01/2005"
+					"value": ["1/01/2005"]
 				}, {
 					"id": 1,
 					"name": "Nome",
-					"value": "Vendedor 1"
+					"value": ["Vendedor 1"]
 				}, {
 					"id": 2,
 					"name": "Qualificacao",
-					"value": "1"
+					"value": ["1"]
 				}, {
 					"id": 3,
 					"name": "email",
-					"value": "vendedor1@gmail.com"
+					"value": ["vendedor1@gmail.com"]
 				}, {
 					"id": 4,
 					"name": "label",
-					"value": "Vendedor 1"
+					"value": ["Vendedor 1"]
 				}
 			]
 		],
@@ -3531,43 +3531,43 @@
 				{
 					"id": 0,
 					"name": "Nome",
-					"value": "Concorrente 1"
+					"value": ["Concorrente 1"]
 				}, {
 					"id": 1,
 					"name": "email",
-					"value": "concorrente1@gmail.com"
+					"value": ["concorrente1@gmail.com"]
 				}, {
 					"id": 2,
 					"name": "label",
-					"value": "Concorrente 1"
+					"value": ["Concorrente 1"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Nome",
-					"value": "Concorrente 2"
+					"value": ["Concorrente 2"]
 				}, {
 					"id": 1,
 					"name": "email",
-					"value": "concorrente2@gmail.com"
+					"value": ["concorrente2@gmail.com"]
 				}, {
 					"id": 2,
 					"name": "label",
-					"value": "Concorrente 2"
+					"value": ["Concorrente 2"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Nome",
-					"value": "No more example"
+					"value": ["No more example"]
 				}, {
 					"id": 1,
 					"name": "email",
-					"value": "No more example"
+					"value": ["No more example"]
 				}, {
 					"id": 2,
 					"name": "label",
-					"value": "No more example"
+					"value": ["No more example"]
 				}
 			]
 		],
@@ -3575,31 +3575,31 @@
 				{
 					"id": 0,
 					"name": "timeStamp",
-					"value": "2013/07/15 12:40"
+					"value": ["2013/07/15 12:40"]
 				}, {
 					"id": 1,
 					"name": "valor",
-					"value": "30"
+					"value": ["30"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "timeStamp",
-					"value": "2013/07/15 8:00"
+					"value": ["2013/07/15 8:00"]
 				}, {
 					"id": 1,
 					"name": "valor",
-					"value": "100"
+					"value": ["100"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "timeStamp",
-					"value": "2013/07/15 10:00"
+					"value": ["2013/07/15 10:00"]
 				}, {
 					"id": 1,
 					"name": "valor",
-					"value": "150"
+					"value": ["150"]
 				}
 			]
 		],
@@ -3607,67 +3607,67 @@
 				{
 					"id": 0,
 					"name": "Membro desde",
-					"value": "1/01/2005"
+					"value": ["1/01/2005"]
 				}, {
 					"id": 1,
 					"name": "Nome",
-					"value": "Vendedor 1"
+					"value": ["Vendedor 1"]
 				}, {
 					"id": 2,
 					"name": "Qualificacao",
-					"value": "1"
+					"value": ["1"]
 				}, {
 					"id": 3,
 					"name": "email",
-					"value": "vendedor1@gmail.com"
+					"value": ["vendedor1@gmail.com"]
 				}, {
 					"id": 4,
 					"name": "label",
-					"value": "Vendedor 1"
+					"value": ["Vendedor 1"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Membro desde",
-					"value": "2/04/2008"
+					"value": ["2/04/2008"]
 				}, {
 					"id": 1,
 					"name": "Nome",
-					"value": "Vendedor 2"
+					"value": ["Vendedor 2"]
 				}, {
 					"id": 2,
 					"name": "Qualificacao",
-					"value": "3"
+					"value": ["3"]
 				}, {
 					"id": 3,
 					"name": "email",
-					"value": "vendedor2@yahoo.com"
+					"value": ["vendedor2@yahoo.com"]
 				}, {
 					"id": 4,
 					"name": "label",
-					"value": "Vendedor 2"
+					"value": ["Vendedor 2"]
 				}
 			],[
 				{
 					"id": 0,
 					"name": "Membro desde",
-					"value": "23/05/2010"
+					"value": ["23/05/2010"]
 				}, {
 					"id": 1,
 					"name": "Nome",
-					"value": "Vendedor 3"
+					"value": ["Vendedor 3"]
 				}, {
 					"id": 2,
 					"name": "Qualificacao",
-					"value": "5"
+					"value": ["5"]
 				}, {
 					"id": 3,
 					"name": "email",
-					"value": "vendedor3@hotmail.com"
+					"value": ["vendedor3@hotmail.com"]
 				}, {
 					"id": 4,
 					"name": "label",
-					"value": "Vendedor 3"
+					"value": ["Vendedor 3"]
 				}
 			]
 		]

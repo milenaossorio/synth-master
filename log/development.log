@@ -13221,3 +13221,74 @@ Completed in 27503ms (View: 227 | 200 OK [http://localhost/ontologies/wizard/htt
 Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2014-12-19 10:19:49) [GET]
   Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
 Completed in 28055ms (View: 278 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-01-26 16:15:13) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 25450ms (View: 341 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-01-26 17:37:45) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 20206ms (View: 224 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-01-29 13:06:37) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 24080ms (View: 312 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-02-03 09:59:55) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 1000ms (View: 994 | 200 OK [http://localhost/]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-02-03 09:59:57) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 259ms (View: 253 | 200 OK [http://localhost/]
+
+
+Processing ApplicationsController#activate (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:12) [POST]
+  Parameters: {"authenticity_token"=>"u8d42+uCKh2bOx6Dj+UQrInOVoD49Ur5DuXY9tkVmGQ=", "id"=>"www2011"}
+Redirected to http://localhost:3001/applications
+Completed in 1840ms | 302 Found [http://localhost/applications/activate/www2011]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:14) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 165ms (View: 160 | 200 OK [http://localhost/applications]
+
+
+Processing ExecuteController#init (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:24) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d
+Completed in 262ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:24) [GET]
+  Parameters: {"id"=>"http://base#84f5cd60-59bc-11e0-b9e1-00264afffe1d"}
+Completed in 2192ms (View: 3 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%2384f5cd60-59bc-11e0-b9e1-00264afffe1d]
+
+
+Processing ApplicationsController#activate (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:36) [POST]
+  Parameters: {"authenticity_token"=>"u8d42+uCKh2bOx6Dj+UQrInOVoD49Ur5DuXY9tkVmGQ=", "id"=>"iswc2010"}
+Redirected to http://localhost:3001/applications
+Completed in 1193ms | 302 Found [http://localhost/applications/activate/iswc2010]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:37) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 134ms (View: 131 | 200 OK [http://localhost/applications]
+
+
+Processing ExecuteController#init (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:40) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%23a39aa7c0-3add-11e0-a7b4-00264afffe1d
+Completed in 205ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2015-02-03 10:00:40) [GET]
+  Parameters: {"id"=>"http://base#a39aa7c0-3add-11e0-a7b4-00264afffe1d"}
+Completed in 1121ms (View: 2 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%23a39aa7c0-3add-11e0-a7b4-00264afffe1d]
