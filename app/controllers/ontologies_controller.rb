@@ -246,7 +246,21 @@ class OntologiesController < ApplicationController
     end
   end
   
-  def get_related_collections(className, level = 3)
+  def get_related_collections(className)
+     collections = get_related_collections_from(className)
+     domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
+     domain_classes.each{|_class|
+       arr = get_related_collections_from(_class[:className])
+       if(arr.include?(className)) then
+         collections.push(_class[:className])
+       end
+     }
+     
+     collections
+  end
+  
+  
+  def get_related_collections_from(className, level = 3)
 
     result = []
     if(level == 0)then return result end 
@@ -254,7 +268,7 @@ class OntologiesController < ApplicationController
     result = get_direct_collections(className)
 
     temp = result.collect{|_class|
-      get_related_collections(_class, level-1)
+      get_related_collections_from(_class, level-1)
     }
     result += temp
     result.flatten.uniq
@@ -273,7 +287,13 @@ class OntologiesController < ApplicationController
          arr = r.first.classes
          arr.shift
          arr}.flatten
-      collections = collections.map{|c| c.localname}.uniq
+      # collections += resource.reversed_direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}.collect{|r|
+         # arr = r.first.classes
+         # arr.shift
+         # arr}.flatten   
+         
+           
+      collections = collections.map{|c| c.localname}.reject{|x| x == "NamedIndividual"}.uniq
       collections.shift
       @cache_collections[className] = collections
     else

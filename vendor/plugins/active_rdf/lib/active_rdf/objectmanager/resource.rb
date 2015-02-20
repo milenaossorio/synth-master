@@ -207,9 +207,20 @@ module RDFS
       class_predicates.collect{|prop| RDF::Property.new(prop,self)}
     end
 
-    # returns array of RDFS::Resources for properties that are directly defined for this resource
+    # returns array of RDFS::Resources for properties that are directly defined for this resource #######
+    def reversed_direct_predicates
+      new_query.distinct(:p).where(:o,:p,self).execute.collect{|prop| RDF::Property.new(prop,:o)}
+    end
+    
+    # returns array of RDF::Propertys that are directly related to this resource ########
+    def reversed_direct_properties
+      reversed_direct_predicates
+    end
+    
+     # returns array of RDFS::Resources for properties that are directly defined for this resource
     def direct_predicates
-      new_query.distinct(:p).where(self,:p,:o).execute
+      new_query.distinct(:p).where(:o,:p,self).execute.collect{|prop| RDF::Property.new(prop,:o)}
+      #new_query.distinct(:p).where(self,:p,:o).execute
     end
 
     # returns array of RDF::Propertys that are directly defined for this resource
