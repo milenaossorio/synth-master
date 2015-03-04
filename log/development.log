@@ -15621,3 +15621,123 @@ Completed in 142ms | 302 Found [http://localhost/execute/init]
 Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2015-02-20 14:21:55) [GET]
   Parameters: {"id"=>"http://base#a39aa7c0-3add-11e0-a7b4-00264afffe1d"}
 Completed in 2090ms (View: 5 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%23a39aa7c0-3add-11e0-a7b4-00264afffe1d]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:19:06) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 2646ms (View: 938 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:21:32) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 1517ms (View: 130 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:21:43) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 573ms (View: 569 | 200 OK [http://localhost/]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:21:48) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.first) on line #11 of app/views/ontologies/index.html.erb:
+8: 	<th align="right">Actions</th>
+9:   </tr>
+10: 
+11: <% @ontologies.sort{|a,b| a.ontology_name.first <=> b.ontology_name.first }.each do |ontology| %>
+12:   <tr>
+13:     <td><%=h ontology::symph.ontology_name %></td>
+14:     <td><%=h ontology::symph.ontology_description %></td>
+
+    app/views/ontologies/index.html.erb:11
+    app/views/ontologies/index.html.erb:11:in `sort'
+    app/views/ontologies/index.html.erb:11
+    c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (9.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:21:57) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 253ms (View: 250 | 200 OK [http://localhost/]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:22:02) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 117ms (View: 113 | 200 OK [http://localhost/]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:22:05) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.first) on line #11 of app/views/ontologies/index.html.erb:
+8: 	<th align="right">Actions</th>
+9:   </tr>
+10: 
+11: <% @ontologies.sort{|a,b| a.ontology_name.first <=> b.ontology_name.first }.each do |ontology| %>
+12:   <tr>
+13:     <td><%=h ontology::symph.ontology_name %></td>
+14:     <td><%=h ontology::symph.ontology_description %></td>
+
+    app/views/ontologies/index.html.erb:11
+    app/views/ontologies/index.html.erb:11:in `sort'
+    app/views/ontologies/index.html.erb:11
+    c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExecuteController#init (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:22:44) [GET]
+Redirected to http://localhost:3001/execute/index/http%3A%2F%2Fbase%23a39aa7c0-3add-11e0-a7b4-00264afffe1d
+Completed in 177ms | 302 Found [http://localhost/execute/init]
+
+
+Processing ExecuteController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:22:44) [GET]
+  Parameters: {"id"=>"http://base#a39aa7c0-3add-11e0-a7b4-00264afffe1d"}
+Completed in 1418ms (View: 5 | 200 OK [http://localhost/execute/index/http%3A%2F%2Fbase%23a39aa7c0-3add-11e0-a7b4-00264afffe1d]
+
+
+Processing ApplicationsController#activate (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:26:48) [POST]
+  Parameters: {"authenticity_token"=>"8L7hAy+ix5bkbCaQxYiOpvRdKs48ZAOnSz2+0MD4dtY=", "id"=>"test1"}
+Redirected to http://localhost:3001/applications
+Completed in 829ms | 302 Found [http://localhost/applications/activate/test1]
+
+
+Processing ApplicationsController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:26:49) [GET]
+Rendering template within layouts/application
+Rendering applications/index
+Completed in 143ms (View: 136 | 200 OK [http://localhost/applications]
+
+
+Processing OntologiesController#index (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:26:56) [GET]
+Rendering template within layouts/application
+Rendering ontologies/index
+Completed in 286ms (View: 234 | 200 OK [http://localhost/domain]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:27:03) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 19653ms (View: 171 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-04 17:45:15) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 16482ms (View: 138 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]

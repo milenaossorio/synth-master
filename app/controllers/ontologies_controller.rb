@@ -246,7 +246,21 @@ class OntologiesController < ApplicationController
     end
   end
   
-  def get_related_collections(className, level = 3)
+  def get_related_collections(className)
+     collections = get_related_collections_from(className)
+     domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
+     domain_classes.each{|_class|
+       arr = get_related_collections_from(_class[:className])
+       if(arr.include?(className)) then
+         collections.push(_class[:className])
+       end
+     }
+     
+     collections
+  end
+  
+  
+  def get_related_collections_from(className, level = 3)
 
     result = []
     if(level == 0)then return result end 
@@ -254,7 +268,7 @@ class OntologiesController < ApplicationController
     result = get_direct_collections(className)
 
     temp = result.collect{|_class|
-      get_related_collections(_class, level-1)
+      get_related_collections_from(_class, level-1)
     }
     result += temp
     result.flatten.uniq
@@ -273,7 +287,13 @@ class OntologiesController < ApplicationController
          arr = r.first.classes
          arr.shift
          arr}.flatten
-      collections = collections.map{|c| c.localname}.uniq
+      # collections += resource.reversed_direct_properties.select{|y| y.first.is_a?(RDFS::Resource)}.collect{|r|
+         # arr = r.first.classes
+         # arr.shift
+         # arr}.flatten   
+         
+           
+      collections = collections.map{|c| c.localname}.reject{|x| x == "NamedIndividual"}.uniq
       collections.shift
       @cache_collections[className] = collections
     else
@@ -681,7 +701,7 @@ class OntologiesController < ApplicationController
 
   def example_detail(previousId, className, datatypeProperties, fatherFlowTree) # 15, 42, ...
     currentId = previousId.to_s + ".1"
-    m = {:id => currentId, :title => "#{className} detail", :type => "yesNoDetail",
+    m = {:id => currentId, :title => "#{className} detail", :type => "yesNoDetail", :scope => "new", :example =>className,
       :messageOptions => "Do you want to show other attributes of a(n) #{className} in the detail view?",
       :datatypeProperties => datatypeProperties,
       :example => className,
@@ -698,7 +718,7 @@ class OntologiesController < ApplicationController
   def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "", :type => "infoWithOptions", :message => "#{className}s",
+      :id => currentId, :title => "", :type => "infoWithOptions", :scope => "new", :example =>className, :message => "#{className}s",
       :messageOptions => "Do you want to show other attributes of an #{className} than those shown in the example?",
       :options => [
         {:key => 0, :text => "Yes", :next => currentId + ".0"},{:key => 1, :text => "No", :next => currentId + ".1"}
@@ -719,7 +739,7 @@ class OntologiesController < ApplicationController
   def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...
     currentId = previousId.to_s + ".1"
     m = {
-      :id => currentId, :title => "", :type => "infoWithOptions", :message => "#{className}s",
+      :id => currentId, :title => "", :type => "infoWithOptions", :scope => "new", :example =>className, :message => "#{className}s",
       :messageOptions => "Do you want to show other attributes of a(n) #{className} than those shown in the example?",
       :options => [
         {:key => 0, :text => "Yes", :next => previousId.to_s + ".0.0"},{:key => 1, :text => "No", :next => previousId.to_s + ".0.1"}
@@ -764,8 +784,8 @@ class OntologiesController < ApplicationController
       :messageOptions => "Do you want to choose anything to navigate to other screen?",
       :example => className,
       :options => [
-        {:key => 0, :text => "Yes", :next => currentId + ".0" },
-        {:key => 1, :text => "No", :next => currentId + ".1"}
+        {:key => 0, :text => "Yes", :child => "Yes", :next => currentId + ".0" },
+        {:key => 1, :text => "No", :child => "End", :next => currentId + ".1"}
       ]
     }
     child = {:value => m, :children => []}
@@ -803,8 +823,8 @@ class OntologiesController < ApplicationController
       :messageOptions => "Do you want to choose anything to navigate to other screen?",
       :example => className,
       :options => [
-        {:key => 0, :text => "Yes", :next => currentId + ".0"},
-        {:key => 1, :text => "No", :next => previousId[0, previousId.length-4] + ".1.1.1"}
+        {:key => 0, :text => "Yes", :child => "Yes", :next => currentId + ".0"},
+        {:key => 1, :text => "No", :child => "End", :next => previousId[0, previousId.length-4] + ".1.1.1"}
       ]
     }
     child = {:value => m, :children => []}
@@ -818,7 +838,7 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "Following this example which attributes you want to show in the #{className} detail",
-      :type => "checkboxForDetail", :message => "Add #{className} properties", :example => className,
+      :type => "checkboxForDetail", :scope => "scope", :message => "Add #{className} properties", :example => className,
       :datatypeProperties => datatypeProperties,
       :options =>  [
         {:key => 0, :next => previousId + ".1.0.0.0"}
@@ -891,8 +911,8 @@ class OntologiesController < ApplicationController
     m = {
       :id => currentId, :title => "What do you want to do?", :type => "radio", :message => "",
       :options => [
-        {:key => 0, :text => "Go to the pages index", :next => 26},
-        {:key => 1, :text => "Finish the application definition", :next => 26}
+        {:key => 0, :text => "Go to the pages index", :next => "0.0.0.0"},
+        {:key => 1, :text => "Finish the application definition", :next => "#{currentId}."}
       ]
     }
     child = {:value => m, :children => []}
@@ -904,7 +924,7 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "Following this example which attributes you want to show in the #{className} list",
-      :type => "checkbox", :message => "Add #{className} properties", :example => className,
+      :type => "checkbox", :scope => "scope", :message => "Add #{className} properties", :example => className,
       :datatypeProperties => datatypeProperties,
       :options =>  [
         {:key => 0, :next => previousId + ".1.0.0.0"}
