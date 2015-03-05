@@ -196,17 +196,17 @@
 			"details": [[[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Audio"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Informatica"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Cine e Foto"
 						}
 					]
 				],[[
@@ -215,7 +215,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Audio"
 						}
 					],[
 						{
@@ -223,7 +223,7 @@
 							"msg": "/assets/checkbox.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Informatica"
 						}
 					],[
 						{
@@ -231,7 +231,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Cine e Foto"
 						}
 					]
 				]
@@ -240,9 +240,10 @@
 			"id": "0.0.0.0.0.1",
 			"title": "Categoria detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Categoria",
 			"messageOptions": "Do you want to show other attributes of a(n) Categoria in the detail view?",
 			"datatypeProperties": ["label", "Nome"],
-			"example": "Categoria",
 			"options": [
 				{
 					"key": 0,
@@ -274,17 +275,17 @@
 			"details": [[[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "leilao 1"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "leilao 2"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "leilao 10"
 						}
 					]
 				],[[
@@ -293,7 +294,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "leilao 1"
 						}
 					],[
 						{
@@ -301,7 +302,7 @@
 							"msg": "/assets/checkbox.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "leilao 2"
 						}
 					],[
 						{
@@ -309,7 +310,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "leilao 10"
 						}
 					]
 				]
@@ -318,9 +319,10 @@
 			"id": "0.0.0.0.1.1",
 			"title": "Leilao detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Leilao",
 			"messageOptions": "Do you want to show other attributes of a(n) Leilao in the detail view?",
 			"datatypeProperties": ["label", "Nome", "Data de fim", "Data de inicio", "Diferenca minima", "Estado do produto", "Minimo lance", "Informacao do frete"],
-			"example": "Leilao",
 			"options": [
 				{
 					"key": 0,
@@ -352,17 +354,17 @@
 			"details": [[[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Home Theater LG HT806ST"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "MP4 Player Philips SA3VBE04KX/78"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "MP4 Watch Play NewLink PM101"
 						}
 					]
 				],[[
@@ -371,7 +373,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Home Theater LG HT806ST"
 						}
 					],[
 						{
@@ -379,7 +381,7 @@
 							"msg": "/assets/checkbox.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "MP4 Player Philips SA3VBE04KX/78"
 						}
 					],[
 						{
@@ -387,7 +389,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "MP4 Watch Play NewLink PM101"
 						}
 					]
 				]
@@ -396,9 +398,10 @@
 			"id": "0.0.0.0.2.1",
 			"title": "Produto detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Produto",
 			"messageOptions": "Do you want to show other attributes of a(n) Produto in the detail view?",
 			"datatypeProperties": ["label", "Nome", "Data de cadastro", "Descricao", "Esta em oferta", "Quantidade"],
-			"example": "Produto",
 			"options": [
 				{
 					"key": 0,
@@ -430,17 +433,17 @@
 			"details": [[[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 1"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 2"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 1"
 						}
 					]
 				],[[
@@ -449,7 +452,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 1"
 						}
 					],[
 						{
@@ -457,7 +460,7 @@
 							"msg": "/assets/checkbox.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 2"
 						}
 					],[
 						{
@@ -465,7 +468,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 1"
 						}
 					]
 				]
@@ -474,9 +477,10 @@
 			"id": "0.0.0.0.3.1",
 			"title": "Usuario detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Usuario",
 			"messageOptions": "Do you want to show other attributes of a(n) Usuario in the detail view?",
 			"datatypeProperties": ["label", "Nome", "email", "Membro desde", "Qualificacao"],
-			"example": "Usuario",
 			"options": [
 				{
 					"key": 0,
@@ -508,12 +512,12 @@
 			"details": [[[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 1"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 2"
 						}
 					],[
 						{
@@ -527,7 +531,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 1"
 						}
 					],[
 						{
@@ -535,7 +539,7 @@
 							"msg": "/assets/checkbox.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Concorrente 2"
 						}
 					],[
 						{
@@ -552,9 +556,10 @@
 			"id": "0.0.0.0.4.1",
 			"title": "Concorrente detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Concorrente",
 			"messageOptions": "Do you want to show other attributes of a(n) Concorrente in the detail view?",
 			"datatypeProperties": ["label", "Nome", "email"],
-			"example": "Concorrente",
 			"options": [
 				{
 					"key": 0,
@@ -630,9 +635,10 @@
 			"id": "0.0.0.0.5.1",
 			"title": "Lance detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Lance",
 			"messageOptions": "Do you want to show other attributes of a(n) Lance in the detail view?",
 			"datatypeProperties": ["timeStamp", "valor"],
-			"example": "Lance",
 			"options": [
 				{
 					"key": 0,
@@ -664,17 +670,17 @@
 			"details": [[[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 1"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 2"
 						}
 					],[
 						{
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 3"
 						}
 					]
 				],[[
@@ -683,7 +689,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 1"
 						}
 					],[
 						{
@@ -691,7 +697,7 @@
 							"msg": "/assets/checkbox.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 2"
 						}
 					],[
 						{
@@ -699,7 +705,7 @@
 							"msg": "/assets/checkbox-checked.png"
 						}, {
 							"type": "text",
-							"msg": "No value"
+							"msg": "Vendedor 3"
 						}
 					]
 				]
@@ -708,9 +714,10 @@
 			"id": "0.0.0.0.6.1",
 			"title": "Vendedor detail",
 			"type": "yesNoDetail",
+			"scope": "new",
+			"example": "Vendedor",
 			"messageOptions": "Do you want to show other attributes of a(n) Vendedor in the detail view?",
 			"datatypeProperties": ["label", "Nome", "Membro desde", "email", "Qualificacao"],
-			"example": "Vendedor",
 			"options": [
 				{
 					"key": 0,
@@ -726,6 +733,8 @@
 			"id": "0.0.0.0.0.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Categoria",
 			"message": "Categorias",
 			"messageOptions": "Do you want to show other attributes of an Categoria than those shown in the example?",
 			"options": [
@@ -742,17 +751,17 @@
 			"details": [[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Audio"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Informatica"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Cine e Foto"
 					}
 				]
 			]
@@ -760,6 +769,8 @@
 			"id": "0.0.0.0.0.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Categoria",
 			"message": "Categorias",
 			"messageOptions": "Do you want to show other attributes of a(n) Categoria than those shown in the example?",
 			"options": [
@@ -779,7 +790,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Audio"
 					}
 				],[
 					{
@@ -787,7 +798,7 @@
 						"msg": "/assets/checkbox.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Informatica"
 					}
 				],[
 					{
@@ -795,7 +806,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Cine e Foto"
 					}
 				]
 			]
@@ -830,10 +841,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.0.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.0.1.1.1"
 				}
 			]
@@ -841,6 +854,8 @@
 			"id": "0.0.0.0.1.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Leilao",
 			"message": "Leilaos",
 			"messageOptions": "Do you want to show other attributes of an Leilao than those shown in the example?",
 			"options": [
@@ -857,17 +872,17 @@
 			"details": [[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "leilao 1"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "leilao 2"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "leilao 10"
 					}
 				]
 			]
@@ -875,6 +890,8 @@
 			"id": "0.0.0.0.1.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Leilao",
 			"message": "Leilaos",
 			"messageOptions": "Do you want to show other attributes of a(n) Leilao than those shown in the example?",
 			"options": [
@@ -894,7 +911,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "leilao 1"
 					}
 				],[
 					{
@@ -902,7 +919,7 @@
 						"msg": "/assets/checkbox.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "leilao 2"
 					}
 				],[
 					{
@@ -910,7 +927,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "leilao 10"
 					}
 				]
 			]
@@ -945,10 +962,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.1.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.1.1.1.1"
 				}
 			]
@@ -956,6 +975,8 @@
 			"id": "0.0.0.0.2.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Produto",
 			"message": "Produtos",
 			"messageOptions": "Do you want to show other attributes of an Produto than those shown in the example?",
 			"options": [
@@ -972,17 +993,17 @@
 			"details": [[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Home Theater LG HT806ST"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "MP4 Player Philips SA3VBE04KX/78"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "MP4 Watch Play NewLink PM101"
 					}
 				]
 			]
@@ -990,6 +1011,8 @@
 			"id": "0.0.0.0.2.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Produto",
 			"message": "Produtos",
 			"messageOptions": "Do you want to show other attributes of a(n) Produto than those shown in the example?",
 			"options": [
@@ -1009,7 +1032,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Home Theater LG HT806ST"
 					}
 				],[
 					{
@@ -1017,7 +1040,7 @@
 						"msg": "/assets/checkbox.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "MP4 Player Philips SA3VBE04KX/78"
 					}
 				],[
 					{
@@ -1025,7 +1048,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "MP4 Watch Play NewLink PM101"
 					}
 				]
 			]
@@ -1060,10 +1083,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.2.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.2.1.1.1"
 				}
 			]
@@ -1071,6 +1096,8 @@
 			"id": "0.0.0.0.3.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Usuario",
 			"message": "Usuarios",
 			"messageOptions": "Do you want to show other attributes of an Usuario than those shown in the example?",
 			"options": [
@@ -1087,17 +1114,17 @@
 			"details": [[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 1"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 2"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 1"
 					}
 				]
 			]
@@ -1105,6 +1132,8 @@
 			"id": "0.0.0.0.3.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Usuario",
 			"message": "Usuarios",
 			"messageOptions": "Do you want to show other attributes of a(n) Usuario than those shown in the example?",
 			"options": [
@@ -1124,7 +1153,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 1"
 					}
 				],[
 					{
@@ -1132,7 +1161,7 @@
 						"msg": "/assets/checkbox.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 2"
 					}
 				],[
 					{
@@ -1140,7 +1169,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 1"
 					}
 				]
 			]
@@ -1175,10 +1204,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.3.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.3.1.1.1"
 				}
 			]
@@ -1186,6 +1217,8 @@
 			"id": "0.0.0.0.4.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Concorrente",
 			"message": "Concorrentes",
 			"messageOptions": "Do you want to show other attributes of an Concorrente than those shown in the example?",
 			"options": [
@@ -1202,12 +1235,12 @@
 			"details": [[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 1"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 2"
 					}
 				],[
 					{
@@ -1220,6 +1253,8 @@
 			"id": "0.0.0.0.4.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Concorrente",
 			"message": "Concorrentes",
 			"messageOptions": "Do you want to show other attributes of a(n) Concorrente than those shown in the example?",
 			"options": [
@@ -1239,7 +1274,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 1"
 					}
 				],[
 					{
@@ -1247,7 +1282,7 @@
 						"msg": "/assets/checkbox.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Concorrente 2"
 					}
 				],[
 					{
@@ -1290,10 +1325,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.4.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.4.1.1.1"
 				}
 			]
@@ -1301,6 +1338,8 @@
 			"id": "0.0.0.0.5.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Lance",
 			"message": "Lances",
 			"messageOptions": "Do you want to show other attributes of an Lance than those shown in the example?",
 			"options": [
@@ -1335,6 +1374,8 @@
 			"id": "0.0.0.0.5.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Lance",
 			"message": "Lances",
 			"messageOptions": "Do you want to show other attributes of a(n) Lance than those shown in the example?",
 			"options": [
@@ -1405,10 +1446,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.5.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.5.1.1.1"
 				}
 			]
@@ -1416,6 +1459,8 @@
 			"id": "0.0.0.0.6.0.0",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Vendedor",
 			"message": "Vendedors",
 			"messageOptions": "Do you want to show other attributes of an Vendedor than those shown in the example?",
 			"options": [
@@ -1432,17 +1477,17 @@
 			"details": [[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 1"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 2"
 					}
 				],[
 					{
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 3"
 					}
 				]
 			]
@@ -1450,6 +1495,8 @@
 			"id": "0.0.0.0.6.0.1",
 			"title": "",
 			"type": "infoWithOptions",
+			"scope": "new",
+			"example": "Vendedor",
 			"message": "Vendedors",
 			"messageOptions": "Do you want to show other attributes of a(n) Vendedor than those shown in the example?",
 			"options": [
@@ -1469,7 +1516,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 1"
 					}
 				],[
 					{
@@ -1477,7 +1524,7 @@
 						"msg": "/assets/checkbox.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 2"
 					}
 				],[
 					{
@@ -1485,7 +1532,7 @@
 						"msg": "/assets/checkbox-checked.png"
 					}, {
 						"type": "text",
-						"msg": "No value"
+						"msg": "Vendedor 3"
 					}
 				]
 			]
@@ -1520,10 +1567,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.6.1.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.6.1.1.1"
 				}
 			]
@@ -1559,10 +1608,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.0.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.0.1.1.1"
 				}
 			]
@@ -1570,6 +1621,7 @@
 			"id": "0.0.0.0.0.1.0.0",
 			"title": "Following this example which attributes you want to show in the Categoria detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Categoria properties",
 			"example": "Categoria",
 			"datatypeProperties": ["label", "Nome"],
@@ -1586,7 +1638,21 @@
 			"type": "select",
 			"message": "Categoria's \t related collections",
 			"mainclass": "Categoria",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Leilao",
+					"next": "0.0.0.0.0.1.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Produto",
+					"next": "0.0.0.0.0.1.0.1.0"
+				}, {
+					"key": 2,
+					"text": "Lance",
+					"next": "0.0.0.0.0.1.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.0.1.0.2",
 			"title": "Computed attribute",
@@ -1625,11 +1691,11 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.0.1.1.1."
 				}
 			]
 		}, {
@@ -1664,10 +1730,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.1.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.1.1.1.1"
 				}
 			]
@@ -1675,6 +1743,7 @@
 			"id": "0.0.0.0.1.1.0.0",
 			"title": "Following this example which attributes you want to show in the Leilao detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Leilao properties",
 			"example": "Leilao",
 			"datatypeProperties": ["label", "Nome", "Data de fim", "Data de inicio", "Diferenca minima", "Estado do produto", "Minimo lance", "Informacao do frete"],
@@ -1698,19 +1767,19 @@
 					"next": "0.0.0.0.1.1.0.1.0"
 				}, {
 					"key": 1,
-					"text": "NamedIndividual",
-					"next": "0.0.0.0.1.1.0.1.0"
-				}, {
-					"key": 2,
 					"text": "Usuario",
 					"next": "0.0.0.0.1.1.0.1.0"
 				}, {
-					"key": 3,
+					"key": 2,
 					"text": "Vendedor",
 					"next": "0.0.0.0.1.1.0.1.0"
 				}, {
-					"key": 4,
+					"key": 3,
 					"text": "Categoria",
+					"next": "0.0.0.0.1.1.0.1.0"
+				}, {
+					"key": 4,
+					"text": "Lance",
 					"next": "0.0.0.0.1.1.0.1.0"
 				}
 			]
@@ -1752,11 +1821,11 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.1.1.1.1."
 				}
 			]
 		}, {
@@ -1791,10 +1860,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.2.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.2.1.1.1"
 				}
 			]
@@ -1802,6 +1873,7 @@
 			"id": "0.0.0.0.2.1.0.0",
 			"title": "Following this example which attributes you want to show in the Produto detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Produto properties",
 			"example": "Produto",
 			"datatypeProperties": ["label", "Nome", "Data de cadastro", "Descricao", "Esta em oferta", "Quantidade"],
@@ -1825,7 +1897,11 @@
 					"next": "0.0.0.0.2.1.0.1.0"
 				}, {
 					"key": 1,
-					"text": "NamedIndividual",
+					"text": "Leilao",
+					"next": "0.0.0.0.2.1.0.1.0"
+				}, {
+					"key": 2,
+					"text": "Lance",
 					"next": "0.0.0.0.2.1.0.1.0"
 				}
 			]
@@ -1867,11 +1943,11 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.2.1.1.1."
 				}
 			]
 		}, {
@@ -1906,10 +1982,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.3.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.3.1.1.1"
 				}
 			]
@@ -1917,6 +1995,7 @@
 			"id": "0.0.0.0.3.1.0.0",
 			"title": "Following this example which attributes you want to show in the Usuario detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Usuario properties",
 			"example": "Usuario",
 			"datatypeProperties": ["label", "Nome", "email", "Membro desde", "Qualificacao"],
@@ -1933,7 +2012,17 @@
 			"type": "select",
 			"message": "Usuario's \t related collections",
 			"mainclass": "Usuario",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Leilao",
+					"next": "0.0.0.0.3.1.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Lance",
+					"next": "0.0.0.0.3.1.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.3.1.0.2",
 			"title": "Computed attribute",
@@ -1972,11 +2061,11 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.3.1.1.1."
 				}
 			]
 		}, {
@@ -2011,10 +2100,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.4.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.4.1.1.1"
 				}
 			]
@@ -2022,6 +2113,7 @@
 			"id": "0.0.0.0.4.1.0.0",
 			"title": "Following this example which attributes you want to show in the Concorrente detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Concorrente properties",
 			"example": "Concorrente",
 			"datatypeProperties": ["label", "Nome", "email"],
@@ -2038,7 +2130,13 @@
 			"type": "select",
 			"message": "Concorrente's \t related collections",
 			"mainclass": "Concorrente",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Lance",
+					"next": "0.0.0.0.4.1.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.4.1.0.2",
 			"title": "Computed attribute",
@@ -2077,11 +2175,11 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.4.1.1.1."
 				}
 			]
 		}, {
@@ -2116,10 +2214,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.5.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.5.1.1.1"
 				}
 			]
@@ -2127,6 +2227,7 @@
 			"id": "0.0.0.0.5.1.0.0",
 			"title": "Following this example which attributes you want to show in the Lance detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Lance properties",
 			"example": "Lance",
 			"datatypeProperties": ["timeStamp", "valor"],
@@ -2154,23 +2255,19 @@
 					"next": "0.0.0.0.5.1.0.1.0"
 				}, {
 					"key": 2,
-					"text": "NamedIndividual",
-					"next": "0.0.0.0.5.1.0.1.0"
-				}, {
-					"key": 3,
 					"text": "Leilao",
 					"next": "0.0.0.0.5.1.0.1.0"
 				}, {
-					"key": 4,
-					"text": "Categoria",
-					"next": "0.0.0.0.5.1.0.1.0"
-				}, {
-					"key": 5,
+					"key": 3,
 					"text": "Produto",
 					"next": "0.0.0.0.5.1.0.1.0"
 				}, {
-					"key": 6,
+					"key": 4,
 					"text": "Vendedor",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 5,
+					"text": "Categoria",
 					"next": "0.0.0.0.5.1.0.1.0"
 				}
 			]
@@ -2212,11 +2309,11 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.5.1.1.1."
 				}
 			]
 		}, {
@@ -2251,10 +2348,12 @@
 				{
 					"key": 0,
 					"text": "Yes",
+					"child": "Yes",
 					"next": "0.0.0.0.6.0.0.1.0"
 				}, {
 					"key": 1,
 					"text": "No",
+					"child": "End",
 					"next": "0.0.0.0.6.1.1.1"
 				}
 			]
@@ -2262,6 +2361,7 @@
 			"id": "0.0.0.0.6.1.0.0",
 			"title": "Following this example which attributes you want to show in the Vendedor detail",
 			"type": "checkboxForDetail",
+			"scope": "scope",
 			"message": "Add Vendedor properties",
 			"example": "Vendedor",
 			"datatypeProperties": ["label", "Nome", "Membro desde", "email", "Qualificacao"],
@@ -2278,7 +2378,17 @@
 			"type": "select",
 			"message": "Vendedor's \t related collections",
 			"mainclass": "Vendedor",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Leilao",
+					"next": "0.0.0.0.6.1.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Lance",
+					"next": "0.0.0.0.6.1.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.6.1.0.2",
 			"title": "Computed attribute",
@@ -2317,17 +2427,18 @@
 				{
 					"key": 0,
 					"text": "Go to the pages index",
-					"next": 26
+					"next": "0.0.0.0"
 				}, {
 					"key": 1,
 					"text": "Finish the application definition",
-					"next": 26
+					"next": "0.0.0.0.6.1.1.1."
 				}
 			]
 		}, {
 			"id": "0.0.0.0.0.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Categoria list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Categoria properties",
 			"example": "Categoria",
 			"datatypeProperties": ["label", "Nome"],
@@ -2344,7 +2455,21 @@
 			"type": "select",
 			"message": "Categoria's \t related collections",
 			"mainclass": "Categoria",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Leilao",
+					"next": "0.0.0.0.0.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Produto",
+					"next": "0.0.0.0.0.0.0.0.1.0"
+				}, {
+					"key": 2,
+					"text": "Lance",
+					"next": "0.0.0.0.0.0.0.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.0.0.0.0.2",
 			"title": "Computed attribute",
@@ -2382,6 +2507,7 @@
 			"id": "0.0.0.0.1.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Leilao list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Leilao properties",
 			"example": "Leilao",
 			"datatypeProperties": ["label", "Nome", "Data de fim", "Data de inicio", "Diferenca minima", "Estado do produto", "Minimo lance", "Informacao do frete"],
@@ -2405,19 +2531,19 @@
 					"next": "0.0.0.0.1.0.0.0.1.0"
 				}, {
 					"key": 1,
-					"text": "NamedIndividual",
-					"next": "0.0.0.0.1.0.0.0.1.0"
-				}, {
-					"key": 2,
 					"text": "Usuario",
 					"next": "0.0.0.0.1.0.0.0.1.0"
 				}, {
-					"key": 3,
+					"key": 2,
 					"text": "Vendedor",
 					"next": "0.0.0.0.1.0.0.0.1.0"
 				}, {
-					"key": 4,
+					"key": 3,
 					"text": "Categoria",
+					"next": "0.0.0.0.1.0.0.0.1.0"
+				}, {
+					"key": 4,
+					"text": "Lance",
 					"next": "0.0.0.0.1.0.0.0.1.0"
 				}
 			]
@@ -2458,6 +2584,7 @@
 			"id": "0.0.0.0.2.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Produto list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Produto properties",
 			"example": "Produto",
 			"datatypeProperties": ["label", "Nome", "Data de cadastro", "Descricao", "Esta em oferta", "Quantidade"],
@@ -2481,7 +2608,11 @@
 					"next": "0.0.0.0.2.0.0.0.1.0"
 				}, {
 					"key": 1,
-					"text": "NamedIndividual",
+					"text": "Leilao",
+					"next": "0.0.0.0.2.0.0.0.1.0"
+				}, {
+					"key": 2,
+					"text": "Lance",
 					"next": "0.0.0.0.2.0.0.0.1.0"
 				}
 			]
@@ -2522,6 +2653,7 @@
 			"id": "0.0.0.0.3.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Usuario list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Usuario properties",
 			"example": "Usuario",
 			"datatypeProperties": ["label", "Nome", "email", "Membro desde", "Qualificacao"],
@@ -2538,7 +2670,17 @@
 			"type": "select",
 			"message": "Usuario's \t related collections",
 			"mainclass": "Usuario",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Leilao",
+					"next": "0.0.0.0.3.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Lance",
+					"next": "0.0.0.0.3.0.0.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.3.0.0.0.2",
 			"title": "Computed attribute",
@@ -2576,6 +2718,7 @@
 			"id": "0.0.0.0.4.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Concorrente list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Concorrente properties",
 			"example": "Concorrente",
 			"datatypeProperties": ["label", "Nome", "email"],
@@ -2592,7 +2735,13 @@
 			"type": "select",
 			"message": "Concorrente's \t related collections",
 			"mainclass": "Concorrente",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Lance",
+					"next": "0.0.0.0.4.0.0.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.4.0.0.0.2",
 			"title": "Computed attribute",
@@ -2630,6 +2779,7 @@
 			"id": "0.0.0.0.5.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Lance list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Lance properties",
 			"example": "Lance",
 			"datatypeProperties": ["timeStamp", "valor"],
@@ -2657,23 +2807,19 @@
 					"next": "0.0.0.0.5.0.0.0.1.0"
 				}, {
 					"key": 2,
-					"text": "NamedIndividual",
-					"next": "0.0.0.0.5.0.0.0.1.0"
-				}, {
-					"key": 3,
 					"text": "Leilao",
 					"next": "0.0.0.0.5.0.0.0.1.0"
 				}, {
-					"key": 4,
-					"text": "Categoria",
-					"next": "0.0.0.0.5.0.0.0.1.0"
-				}, {
-					"key": 5,
+					"key": 3,
 					"text": "Produto",
 					"next": "0.0.0.0.5.0.0.0.1.0"
 				}, {
-					"key": 6,
+					"key": 4,
 					"text": "Vendedor",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 5,
+					"text": "Categoria",
 					"next": "0.0.0.0.5.0.0.0.1.0"
 				}
 			]
@@ -2714,6 +2860,7 @@
 			"id": "0.0.0.0.6.0.0.0.0",
 			"title": "Following this example which attributes you want to show in the Vendedor list",
 			"type": "checkbox",
+			"scope": "scope",
 			"message": "Add Vendedor properties",
 			"example": "Vendedor",
 			"datatypeProperties": ["label", "Nome", "Membro desde", "email", "Qualificacao"],
@@ -2730,7 +2877,17 @@
 			"type": "select",
 			"message": "Vendedor's \t related collections",
 			"mainclass": "Vendedor",
-			"options": []
+			"options": [
+				{
+					"key": 0,
+					"text": "Leilao",
+					"next": "0.0.0.0.6.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Lance",
+					"next": "0.0.0.0.6.0.0.0.1.0"
+				}
+			]
 		}, {
 			"id": "0.0.0.0.6.0.0.0.2",
 			"title": "Computed attribute",
@@ -3246,31 +3403,31 @@
 		"Categoria": [[
 				{
 					"id": 0,
-					"name": "Nome",
+					"name": "label",
 					"value": ["Audio"]
 				}, {
 					"id": 1,
-					"name": "label",
+					"name": "Nome",
 					"value": ["Audio"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Nome",
+					"name": "label",
 					"value": ["Informatica"]
 				}, {
 					"id": 1,
-					"name": "label",
+					"name": "Nome",
 					"value": ["Informatica"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Nome",
+					"name": "label",
 					"value": ["Cine e Foto"]
 				}, {
 					"id": 1,
-					"name": "label",
+					"name": "Nome",
 					"value": ["Cine e Foto"]
 				}
 			]
@@ -3278,295 +3435,295 @@
 		"Leilao": [[
 				{
 					"id": 0,
+					"name": "label",
+					"value": ["leilao 1"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["leilao 1"]
+				}, {
+					"id": 2,
 					"name": "Data de fim",
 					"value": ["2012/02/20"]
 				}, {
-					"id": 1,
+					"id": 3,
 					"name": "Data de inicio",
 					"value": ["2012/02/01"]
 				}, {
-					"id": 2,
+					"id": 4,
 					"name": "Diferenca minima",
 					"value": ["5"]
 				}, {
-					"id": 3,
+					"id": 5,
 					"name": "Estado do produto",
 					"value": ["30.00 USPS Priority Mail International \nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide, novo"]
 				}, {
-					"id": 4,
-					"name": "Informacao do frete",
-					"value": ["No value"]
-				}, {
-					"id": 5,
+					"id": 6,
 					"name": "Minimo lance",
 					"value": ["23"]
 				}, {
-					"id": 6,
-					"name": "Nome",
-					"value": ["leilao 1"]
-				}, {
 					"id": 7,
-					"name": "label",
-					"value": ["leilao 1"]
+					"name": "Informacao do frete",
+					"value": ["No value"]
 				}
 			],[
 				{
 					"id": 0,
+					"name": "label",
+					"value": ["leilao 2"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["leilao 2"]
+				}, {
+					"id": 2,
 					"name": "Data de fim",
 					"value": ["2012/12/25"]
 				}, {
-					"id": 1,
+					"id": 3,
 					"name": "Data de inicio",
 					"value": ["2012/10/04"]
 				}, {
-					"id": 2,
+					"id": 4,
 					"name": "Diferenca minima",
 					"value": ["25"]
 				}, {
-					"id": 3,
+					"id": 5,
 					"name": "Estado do produto",
 					"value": ["novo"]
 				}, {
-					"id": 4,
+					"id": 6,
 					"name": "Informacao do frete",
 					"value": ["30.00 USPS Priority Mail International\nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide"]
 				}, {
-					"id": 5,
+					"id": 7,
 					"name": "Minimo lance",
 					"value": ["45"]
-				}, {
-					"id": 6,
-					"name": "Nome",
-					"value": ["leilao 2"]
-				}, {
-					"id": 7,
-					"name": "label",
-					"value": ["leilao 2"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Data de fim",
-					"value": ["2012/09/10"]
+					"name": "label",
+					"value": ["leilao 10"]
 				}, {
 					"id": 1,
-					"name": "Data de inicio",
-					"value": ["2012/04/04"]
-				}, {
-					"id": 2,
-					"name": "Diferenca minima",
-					"value": ["5"]
-				}, {
-					"id": 3,
-					"name": "Estado do produto",
-					"value": ["No value"]
-				}, {
-					"id": 4,
-					"name": "Informacao do frete",
-					"value": ["frete gratis"]
-				}, {
-					"id": 5,
-					"name": "Minimo lance",
-					"value": ["45"]
-				}, {
-					"id": 6,
 					"name": "Nome",
 					"value": ["leilao 10"]
 				}, {
+					"id": 2,
+					"name": "Data de fim",
+					"value": ["2012/09/10"]
+				}, {
+					"id": 3,
+					"name": "Data de inicio",
+					"value": ["2012/04/04"]
+				}, {
+					"id": 4,
+					"name": "Diferenca minima",
+					"value": ["5"]
+				}, {
+					"id": 5,
+					"name": "Informacao do frete",
+					"value": ["frete gratis"]
+				}, {
+					"id": 6,
+					"name": "Minimo lance",
+					"value": ["45"]
+				}, {
 					"id": 7,
-					"name": "label",
-					"value": ["leilao 10"]
+					"name": "Estado do produto",
+					"value": ["No value"]
 				}
 			]
 		],
 		"Produto": [[
 				{
 					"id": 0,
+					"name": "label",
+					"value": ["Home Theater LG HT806ST"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Home Theater LG HT806ST"]
+				}, {
+					"id": 2,
 					"name": "Data de cadastro",
 					"value": ["23/05/2013"]
 				}, {
-					"id": 1,
+					"id": 3,
 					"name": "Descricao",
 					"value": ["Nada como um equipamento completo e potente o suficiente para garantir a qualidade de entretenimento ideal na sua casa. Pois o LG HT806ST e justamente o caso para quem busca um home theater capaz de agradar a todos. Com 850W RMS de potencia, ele e perfeito para transformar sua casa em uma verdadeira sala de cinema e ainda animar todas as suas festas. A tecnologia Bass Blast potencializa os sons graves de modo impressionante, enquanto o recurso Virtual Sound Matrix simula os efeitos de um sistema 10.1 canais. Alem do design elegante e que se encaixa em qualquer ambiente, o aparelho conta com elementos bastante praticos, como a funcao Ripping, que possibilita gravar qualquer CD diretamente para um pendrive. O karaoke tambem e destaque do produto e promete horas de animacao com sua familia e amigos."]
 				}, {
-					"id": 2,
+					"id": 4,
 					"name": "Esta em oferta",
 					"value": ["1"]
 				}, {
-					"id": 3,
-					"name": "Nome",
-					"value": ["Home Theater LG HT806ST"]
-				}, {
-					"id": 4,
+					"id": 5,
 					"name": "Quantidade",
 					"value": ["2"]
-				}, {
-					"id": 5,
-					"name": "label",
-					"value": ["Home Theater LG HT806ST"]
 				}
 			],[
 				{
 					"id": 0,
+					"name": "label",
+					"value": ["MP4 Player Philips SA3VBE04KX/78"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["MP4 Player Philips SA3VBE04KX/78"]
+				}, {
+					"id": 2,
 					"name": "Data de cadastro",
 					"value": ["12/03/2012"]
 				}, {
-					"id": 1,
+					"id": 3,
 					"name": "Descricao",
 					"value": ["MP4 Player Philips SA3VBE04KX/78 4GB GoGear Vibe c/ Tela 1,8 e Radio FM - Preto \nTenha em maos um MP4 Player que faz de tudo, desde poder ouvir musicas em formato MP3 ou sua programacao preferida no radio FM, ate assistir videos de filmes, shows ou clipes.i\nO modelo SA3VBE possui tela de 4,6 centimetros (1,8 polegadas) e ideal para ver seus videos e ate navegar por seus menus sem dificuldades. Ele ainda vem fones emborrachados evitando que machuquem seus ouvidos.\nSeu armazenamento permite guardar centena de musicas no formato MP3, tornando assim seu dispositivo movel em um verdadeiro centro de entretenimento. E se pensa que a transferencia de musicas do seu pc/notebook para o MP4 Player e demorada, engana-se Em apenas cinco minutos e possivel transferir ate trinta musicas de uma vez, sem perda de tempo"]
 				}, {
-					"id": 2,
+					"id": 4,
 					"name": "Esta em oferta",
 					"value": ["1"]
 				}, {
-					"id": 3,
-					"name": "Nome",
-					"value": ["MP4 Player Philips SA3VBE04KX/78"]
-				}, {
-					"id": 4,
+					"id": 5,
 					"name": "Quantidade",
 					"value": ["12"]
-				}, {
-					"id": 5,
-					"name": "label",
-					"value": ["MP4 Player Philips SA3VBE04KX/78"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Data de cadastro",
-					"value": ["12/10/2012"]
+					"name": "label",
+					"value": ["MP4 Watch Play NewLink PM101"]
 				}, {
 					"id": 1,
-					"name": "Descricao",
-					"value": ["MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao"]
-				}, {
-					"id": 2,
-					"name": "Esta em oferta",
-					"value": ["1"]
-				}, {
-					"id": 3,
 					"name": "Nome",
 					"value": ["MP4 Watch Play NewLink PM101"]
 				}, {
+					"id": 2,
+					"name": "Data de cadastro",
+					"value": ["12/10/2012"]
+				}, {
+					"id": 3,
+					"name": "Descricao",
+					"value": ["MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao"]
+				}, {
 					"id": 4,
-					"name": "Quantidade",
-					"value": ["23"]
+					"name": "Esta em oferta",
+					"value": ["1"]
 				}, {
 					"id": 5,
-					"name": "label",
-					"value": ["MP4 Watch Play NewLink PM101"]
+					"name": "Quantidade",
+					"value": ["23"]
 				}
 			]
 		],
 		"Usuario": [[
 				{
 					"id": 0,
-					"name": "Membro desde",
-					"value": ["No value"]
+					"name": "label",
+					"value": ["Concorrente 1"]
 				}, {
 					"id": 1,
 					"name": "Nome",
 					"value": ["Concorrente 1"]
 				}, {
 					"id": 2,
-					"name": "Qualificacao",
-					"value": ["No value"]
-				}, {
-					"id": 3,
 					"name": "email",
 					"value": ["concorrente1@gmail.com"]
 				}, {
+					"id": 3,
+					"name": "Membro desde",
+					"value": ["No value"]
+				}, {
 					"id": 4,
-					"name": "label",
-					"value": ["Concorrente 1"]
+					"name": "Qualificacao",
+					"value": ["No value"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Membro desde",
-					"value": ["No value"]
+					"name": "label",
+					"value": ["Concorrente 2"]
 				}, {
 					"id": 1,
 					"name": "Nome",
 					"value": ["Concorrente 2"]
 				}, {
 					"id": 2,
-					"name": "Qualificacao",
-					"value": ["No value"]
-				}, {
-					"id": 3,
 					"name": "email",
 					"value": ["concorrente2@gmail.com"]
 				}, {
+					"id": 3,
+					"name": "Membro desde",
+					"value": ["No value"]
+				}, {
 					"id": 4,
-					"name": "label",
-					"value": ["Concorrente 2"]
+					"name": "Qualificacao",
+					"value": ["No value"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Membro desde",
-					"value": ["1/01/2005"]
+					"name": "label",
+					"value": ["Vendedor 1"]
 				}, {
 					"id": 1,
 					"name": "Nome",
 					"value": ["Vendedor 1"]
 				}, {
 					"id": 2,
-					"name": "Qualificacao",
-					"value": ["1"]
+					"name": "Membro desde",
+					"value": ["1/01/2005"]
 				}, {
 					"id": 3,
 					"name": "email",
 					"value": ["vendedor1@gmail.com"]
 				}, {
 					"id": 4,
-					"name": "label",
-					"value": ["Vendedor 1"]
+					"name": "Qualificacao",
+					"value": ["1"]
 				}
 			]
 		],
 		"Concorrente": [[
 				{
 					"id": 0,
-					"name": "Nome",
+					"name": "label",
 					"value": ["Concorrente 1"]
 				}, {
 					"id": 1,
+					"name": "Nome",
+					"value": ["Concorrente 1"]
+				}, {
+					"id": 2,
 					"name": "email",
 					"value": ["concorrente1@gmail.com"]
-				}, {
-					"id": 2,
-					"name": "label",
-					"value": ["Concorrente 1"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Nome",
+					"name": "label",
 					"value": ["Concorrente 2"]
 				}, {
 					"id": 1,
+					"name": "Nome",
+					"value": ["Concorrente 2"]
+				}, {
+					"id": 2,
 					"name": "email",
 					"value": ["concorrente2@gmail.com"]
-				}, {
-					"id": 2,
-					"name": "label",
-					"value": ["Concorrente 2"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Nome",
+					"name": "label",
 					"value": ["No more example"]
 				}, {
 					"id": 1,
-					"name": "email",
+					"name": "Nome",
 					"value": ["No more example"]
 				}, {
 					"id": 2,
-					"name": "label",
+					"name": "email",
 					"value": ["No more example"]
 				}
 			]
@@ -3606,68 +3763,68 @@
 		"Vendedor": [[
 				{
 					"id": 0,
-					"name": "Membro desde",
-					"value": ["1/01/2005"]
+					"name": "label",
+					"value": ["Vendedor 1"]
 				}, {
 					"id": 1,
 					"name": "Nome",
 					"value": ["Vendedor 1"]
 				}, {
 					"id": 2,
-					"name": "Qualificacao",
-					"value": ["1"]
+					"name": "Membro desde",
+					"value": ["1/01/2005"]
 				}, {
 					"id": 3,
 					"name": "email",
 					"value": ["vendedor1@gmail.com"]
 				}, {
 					"id": 4,
-					"name": "label",
-					"value": ["Vendedor 1"]
+					"name": "Qualificacao",
+					"value": ["1"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Membro desde",
-					"value": ["2/04/2008"]
+					"name": "label",
+					"value": ["Vendedor 2"]
 				}, {
 					"id": 1,
 					"name": "Nome",
 					"value": ["Vendedor 2"]
 				}, {
 					"id": 2,
-					"name": "Qualificacao",
-					"value": ["3"]
+					"name": "Membro desde",
+					"value": ["2/04/2008"]
 				}, {
 					"id": 3,
 					"name": "email",
 					"value": ["vendedor2@yahoo.com"]
 				}, {
 					"id": 4,
-					"name": "label",
-					"value": ["Vendedor 2"]
+					"name": "Qualificacao",
+					"value": ["3"]
 				}
 			],[
 				{
 					"id": 0,
-					"name": "Membro desde",
-					"value": ["23/05/2010"]
+					"name": "label",
+					"value": ["Vendedor 3"]
 				}, {
 					"id": 1,
 					"name": "Nome",
 					"value": ["Vendedor 3"]
 				}, {
 					"id": 2,
-					"name": "Qualificacao",
-					"value": ["5"]
+					"name": "Membro desde",
+					"value": ["23/05/2010"]
 				}, {
 					"id": 3,
 					"name": "email",
 					"value": ["vendedor3@hotmail.com"]
 				}, {
 					"id": 4,
-					"name": "label",
-					"value": ["Vendedor 3"]
+					"name": "Qualificacao",
+					"value": ["5"]
 				}
 			]
 		]

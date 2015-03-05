@@ -41,7 +41,7 @@ class OntologiesController < ApplicationController
     
     # wizard.push(:klass => klass[:className], :value => get_datatype_properties(klass[:className]))
 #     
-    # wizard.push({:klass => klass[:className], :value => get_examples_for(klass[:className], 3, *get_datatype_properties(klass[:className]))})
+   # wizard.push({:klass => "Usuario", :value => get_examples_for("Usuario", 3, *get_datatype_properties("Usuario"))})
 #     
     # } 
     # wizard.push({:klass => klass, :value => get_examples_for(klass, 3, 'rdfs:label', 'foaf:name', 'foaf:family_name', 'foaf:firstName', 'foaf:mbox_sha1sum')})
@@ -77,15 +77,23 @@ class OntologiesController < ApplicationController
     data_hash = {}
     domain_classes.each{|_class|
        props = get_datatype_properties(_class[:className])
+       change_label_to_first_position(props)
        examples = get_examples_for(_class[:className], 3, *props)
        arr = examples.collect{|ex_hash| 
-         ex_hash.sort.each_with_index.collect{|(key, value), index|
+         ex_hash.each_with_index.collect{|(key, value), index|
             {:id => index, :name => key, :value => [value]}
          }
       }
       data_hash[_class[:className]] = arr      
     }
     data_hash
+  end
+  
+  def change_label_to_first_position(props)
+    if(props.include? "label") then
+      props.delete("label")
+      props.insert(0, "label")
+    end
   end
   
   def examples
