@@ -1,0 +1,892 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/milena/ontologies/2013/6/auction#"
+     xml:base="http://www.semanticweb.org/milena/ontologies/2013/6/auction"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeCategoria -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeCategoria">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeLeilao -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeLeilao">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeProduto -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeProduto">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeUsuario -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeUsuario">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#categoria -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#categoria">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#temConcorrente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#temConcorrente">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Concorrente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#temFavorito -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#temFavorito">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Concorrente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#temLeilao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#temLeilao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#temProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#temProduto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#temVendedor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#temVendedor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataCadastro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataCadastro">
+        <rdfs:label>Data de cadastro</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataFim -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataFim">
+        <rdfs:label>Data de fim</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataInicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataInicio">
+        <rdfs:label>Data de inicio</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataMembroDesde -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#dataMembroDesde">
+        <rdfs:label>Membro desde</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#descricaoProduto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#descricaoProduto">
+        <rdfs:label>Descricao</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#difMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#difMin">
+        <rdfs:label>Diferenca minima</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#email">
+        <rdfs:label>email</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#estaEmLeilao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#estaEmLeilao">
+        <rdfs:label>Esta em oferta</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#estadoProduto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#estadoProduto">
+        <rdfs:label>Estado do produto</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#fotoProduto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#fotoProduto">
+        <rdfs:label>Foto</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#fotoUsuario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#fotoUsuario">
+        <rdfs:label>Foto</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#infoFrete -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#infoFrete">
+        <rdfs:label>Informacao do frete</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#lanceMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#lanceMin">
+        <rdfs:label>Minimo lance</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeCategoria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeCategoria">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeLeilao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeLeilao">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeProduto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeProduto">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeUsuario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#nomeUsuario">
+        <rdfs:label>Nome</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#qualificacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#qualificacao">
+        <rdfs:label>Qualificacao</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#quantidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#quantidade">
+        <rdfs:label>Quantidade</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#timeStamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#timeStamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#valor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#valor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:DatatypeProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria">
+        <rdfs:label>Categoria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Concorrente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Concorrente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao">
+        <rdfs:label>Leilao</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#temVendedor"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto">
+        <rdfs:label>Produto</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#categoria"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Usuario"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Home_Theater_LG_HT806ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Home_Theater_LG_HT806ST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <descricaoProduto>Nada como um equipamento completo e potente o suficiente para garantir a qualidade de entretenimento ideal na sua casa. Pois o LG HT806ST e justamente o caso para quem busca um home theater capaz de agradar a todos. Com 850W RMS de potencia, ele e perfeito para transformar sua casa em uma verdadeira sala de cinema e ainda animar todas as suas festas. A tecnologia Bass Blast potencializa os sons graves de modo impressionante, enquanto o recurso Virtual Sound Matrix simula os efeitos de um sistema 10.1 canais. Alem do design elegante e que se encaixa em qualquer ambiente, o aparelho conta com elementos bastante praticos, como a funcao Ripping, que possibilita gravar qualquer CD diretamente para um pendrive. O karaoke tambem e destaque do produto e promete horas de animacao com sua familia e amigos.</descricaoProduto>
+        <estaEmLeilao>1</estaEmLeilao>
+        <quantidade>2</quantidade>
+        <nomeProduto>Home Theater LG HT806ST</nomeProduto>
+        <dataCadastro>23/05/2013</dataCadastro>
+        <categoria rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#audio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Player_Philips_SA3VBE04KX/78 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Player_Philips_SA3VBE04KX/78">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <quantidade>12</quantidade>
+        <estaEmLeilao>1</estaEmLeilao>
+        <dataCadastro>12/03/2012</dataCadastro>
+        <nomeProduto>MP4 Player Philips SA3VBE04KX/78</nomeProduto>
+        <descricaoProduto>MP4 Player Philips SA3VBE04KX/78 4GB GoGear Vibe c/ Tela 1,8 e Radio FM - Preto 
+Tenha em maos um MP4 Player que faz de tudo, desde poder ouvir musicas em formato MP3 ou sua programacao preferida no radio FM, ate assistir videos de filmes, shows ou clipes.i
+O modelo SA3VBE possui tela de 4,6 centimetros (1,8 polegadas) e ideal para ver seus videos e ate navegar por seus menus sem dificuldades. Ele ainda vem fones emborrachados evitando que machuquem seus ouvidos.
+Seu armazenamento permite guardar centena de musicas no formato MP3, tornando assim seu dispositivo movel em um verdadeiro centro de entretenimento. E se pensa que a transferencia de musicas do seu pc/notebook para o MP4 Player e demorada, engana-se Em apenas cinco minutos e possivel transferir ate trinta musicas de uma vez, sem perda de tempo</descricaoProduto>
+        <categoria rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#audio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Watch_Play_NewLink_PM101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Watch_Play_NewLink_PM101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <nomeProduto>MP4 Watch Play NewLink PM101</nomeProduto>
+        <estaEmLeilao>1</estaEmLeilao>
+        <dataCadastro>12/10/2012</dataCadastro>
+        <quantidade>23</quantidade>
+        <descricaoProduto>MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao</descricaoProduto>
+        <categoria rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#audio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Monitor_LCD_LED_Samsung_23_S23B550V_Widescreen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Monitor_LCD_LED_Samsung_23_S23B550V_Widescreen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <nomeProduto>Monitor LCD LED Samsung 23 S23B550V Widescreen</nomeProduto>
+        <estaEmLeilao>1</estaEmLeilao>
+        <dataCadastro>12/4/2013</dataCadastro>
+        <descricaoProduto>Tecnologia e eficiencia com muito estilo!
+Para voce que procura um monitor que atenda as suas expectativas, tanto para o trabalho quanto para o lazer, conheca o Samsung S23B550V e surpreenda-se!
+Com design elegante e superfino, proporciona imagens sem distorcao em diferentes angulos, mantendo a mesma qualidade original de cores.
+O Mega Contraste Dinamico e o tempo de resposta de 2ms conferem uma qualidade de imagem nunca vista antes, alem de oferecer grande conforto visual, importante para quem passa horas na frente do monitor.
+Alem disso, o S23B550V possui tecnologia de iluminacao por LED que garantem melhor performance, economia de energia e respeito ao meio ambiente. Ele ainda conta com wall-mount, alto falante embutido e tecnologia Mobile High-Definition (MHL).
+Adquira o seu monitor Samsung e acrescente mais cores em sua vida!</descricaoProduto>
+        <quantidade>3</quantidade>
+        <categoria rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#informatica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#Ultrabook_Sony_Vaio_SVT14115CBS_com_Intel_Core_i5-3317U -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Ultrabook_Sony_Vaio_SVT14115CBS_com_Intel_Core_i5-3317U">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <nomeProduto>Ultrabook Sony Vaio SVT14115CBS com Intel Core i5-3317U</nomeProduto>
+        <descricaoProduto>Ultrabook Sony Vaio SVT14115CBS com Intel Core i5-3317U, 4GB, 320GB, 32GB SSD, Gravador de DVD, Leitor de Cartoes, Bluetooth, LED 14 e Windows 8</descricaoProduto>
+        <dataCadastro>23/01/2013</dataCadastro>
+        <estaEmLeilao>1</estaEmLeilao>
+        <quantidade>6</quantidade>
+        <categoria rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#informatica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#audio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#audio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <nomeCategoria>Audio</nomeCategoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#cine_e_foto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#cine_e_foto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <nomeCategoria>Cine e Foto</nomeCategoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Concorrente"/>
+        <email>concorrente1@gmail.com</email>
+        <nomeUsuario>Concorrente 1</nomeUsuario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Concorrente"/>
+        <email>concorrente2@gmail.com</email>
+        <nomeUsuario>Concorrente 2</nomeUsuario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#informatica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#informatica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <nomeCategoria>Informatica</nomeCategoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#lance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#lance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+        <valor>30</valor>
+        <timeStamp>2013/07/15 12:40</timeStamp>
+        <temConcorrente rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente1"/>
+        <temLeilao rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#lance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#lance2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Lance"/>
+        <timeStamp>2013/07/15 8:00</timeStamp>
+        <valor>100</valor>
+        <temConcorrente rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente2"/>
+        <temLeilao rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#lance3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#lance3">
+        <timeStamp>2013/07/15 10:00</timeStamp>
+        <valor>150</valor>
+        <temConcorrente rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#concorrente1"/>
+        <temLeilao rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <estadoProduto>30.00 USPS Priority Mail International 
+International items may be subject to customs processing and additional charges.  
+ 
+Item location:
+Pasadena, California, United States
+ 
+Ships to:
+Worldwide</estadoProduto>
+        <estadoProduto>novo</estadoProduto>
+        <lanceMin>23</lanceMin>
+        <dataInicio>2012/02/01</dataInicio>
+        <difMin>5</difMin>
+        <nomeLeilao>leilao 1</nomeLeilao>
+        <dataFim>2012/02/20</dataFim>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Watch_Play_NewLink_PM101"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao10">
+        <lanceMin>45</lanceMin>
+        <dataInicio>2012/04/04</dataInicio>
+        <dataFim>2012/09/10</dataFim>
+        <infoFrete>frete gratis</infoFrete>
+        <nomeLeilao>leilao 10</nomeLeilao>
+        <difMin>5</difMin>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#produto1"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <infoFrete>30.00 USPS Priority Mail International
+International items may be subject to customs processing and additional charges.  
+ 
+Item location:
+Pasadena, California, United States
+ 
+Ships to:
+Worldwide</infoFrete>
+        <difMin>25</difMin>
+        <dataFim>2012/12/25</dataFim>
+        <nomeLeilao>leilao 2</nomeLeilao>
+        <lanceMin>45</lanceMin>
+        <estadoProduto>novo</estadoProduto>
+        <dataInicio>2012/10/04</dataInicio>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Watch_Play_NewLink_PM101"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <dataFim>2013/11/23</dataFim>
+        <difMin>100</difMin>
+        <dataInicio>2012/05/01</dataInicio>
+        <estadoProduto>uso</estadoProduto>
+        <infoFrete>12.15 USPS First Class Mail Intl / First Class Package Intl Service
+International items may be subject to customs processing and additional charges.  
+ 
+Item location:
+Fontana, California, United States
+ 
+Ships to:
+Worldwide See exclusions</infoFrete>
+        <nomeLeilao>leilao 3</nomeLeilao>
+        <lanceMin>500</lanceMin>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Home_Theater_LG_HT806ST"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <difMin>10</difMin>
+        <infoFrete>12.15 USPS First Class Mail Intl / First Class Package Intl Service 
+International items may be subject to customs processing and additional charges.  
+ 
+Item location:
+Fontana, California, United States
+ 
+Ships to:
+Worldwide See exclusions</infoFrete>
+        <lanceMin>75</lanceMin>
+        <estadoProduto>uso</estadoProduto>
+        <dataInicio>2011/03/12</dataInicio>
+        <nomeLeilao>leilao 4</nomeLeilao>
+        <dataFim>2011/03/24</dataFim>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#MP4_Watch_Play_NewLink_PM101"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <lanceMin>200</lanceMin>
+        <dataFim>2013/08/10</dataFim>
+        <infoFrete>12.15 USPS First Class Mail Intl / First Class Package Intl Service
+International items may be subject to customs processing and additional charges.  
+ 
+Item location:
+Fontana, California, United States
+ 
+Ships to:
+Worldwide See exclusions</infoFrete>
+        <dataInicio>2013/06/16</dataInicio>
+        <nomeLeilao>leilao 5</nomeLeilao>
+        <difMin>50</difMin>
+        <estadoProduto>uso</estadoProduto>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Home_Theater_LG_HT806ST"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <lanceMin>50</lanceMin>
+        <infoFrete>frete gratis</infoFrete>
+        <difMin>15</difMin>
+        <nomeLeilao>leilao 6</nomeLeilao>
+        <dataInicio>2013/10/20</dataInicio>
+        <estadoProduto>novo</estadoProduto>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#produto1"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Leilao"/>
+        <difMin>uso</difMin>
+        <nomeLeilao>leilao 7</nomeLeilao>
+        <lanceMin>453</lanceMin>
+        <dataInicio>2013/07/10</dataInicio>
+        <infoFrete>frete gratis</infoFrete>
+        <difMin>50</difMin>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Home_Theater_LG_HT806ST"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao8">
+        <infoFrete>Frete gratis</infoFrete>
+        <nomeLeilao>leilao 8</nomeLeilao>
+        <difMin>50</difMin>
+        <dataFim>2014/07/15</dataFim>
+        <lanceMin>200</lanceMin>
+        <dataInicio>2013/07/15</dataInicio>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Monitor_LCD_LED_Samsung_23_S23B550V_Widescreen"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#leilao9">
+        <nomeLeilao>leilao 9</nomeLeilao>
+        <infoFrete>frete gratis</infoFrete>
+        <dataFim>2011/03/11</dataFim>
+        <dataInicio>2011/03/10</dataInicio>
+        <lanceMin>234</lanceMin>
+        <difMin>20</difMin>
+        <temProduto rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#produto1"/>
+        <temVendedor rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#produto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#produto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Produto"/>
+        <estaEmLeilao>0</estaEmLeilao>
+        <descricaoProduto>Camera Samsung ST 64 Preta c/ LCD 2.7 14,2 MP, Zoom Optico 5x, Estabilizacao de Imagem, Video em HD Foto Panoramica, Detector de Face e Sorriso</descricaoProduto>
+        <nomeProduto>Camera Samsung ST 64</nomeProduto>
+        <dataCadastro>23/04/2013</dataCadastro>
+        <quantidade>34</quantidade>
+        <categoria rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#cine_e_foto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#tablets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#tablets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <nomeCategoria>Tablets</nomeCategoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#telefones_e_celulares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#telefones_e_celulares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <nomeCategoria>Telefones e Celulares</nomeCategoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#tv_e_video -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#tv_e_video">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Categoria"/>
+        <nomeCategoria>TV e Video</nomeCategoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+        <qualificacao>1</qualificacao>
+        <dataMembroDesde>1/01/2005</dataMembroDesde>
+        <nomeUsuario>Vendedor 1</nomeUsuario>
+        <email>vendedor1@gmail.com</email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+        <nomeUsuario>Vendedor 2</nomeUsuario>
+        <dataMembroDesde>2/04/2008</dataMembroDesde>
+        <email>vendedor2@yahoo.com</email>
+        <qualificacao>3</qualificacao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milena/ontologies/2013/6/auction#vendedor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milena/ontologies/2013/6/auction#Vendedor"/>
+        <nomeUsuario>Vendedor 3</nomeUsuario>
+        <qualificacao>5</qualificacao>
+        <email>vendedor3@hotmail.com</email>
+        <dataMembroDesde>23/05/2010</dataMembroDesde>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <nomeProduto></nomeProduto>
+    </rdf:Description>
+    <rdf:Description>
+        <nomeProduto></nomeProduto>
+    </rdf:Description>
+    <rdf:Description>
+        <nomeProduto></nomeProduto>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"windows": [
 		{
@@ -3260,4 +3261,3680 @@
 			]
 		]
 	}
+=======
+{
+	"windows": [
+		{
+			"id": "0.0.0.0",
+			"type": "select",
+			"title": "What do you want to show from auction ontology?",
+			"message": "Class",
+			"options": [
+				{
+					"key": 0,
+					"text": "Categoria",
+					"next": "0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Leilao",
+					"next": "0.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Produto",
+					"next": "0.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "Usuario",
+					"next": "0.0.0.0.3"
+				}, {
+					"key": 4,
+					"text": "Concorrente",
+					"next": "0.0.0.0.4"
+				}, {
+					"key": 5,
+					"text": "Lance",
+					"next": "0.0.0.0.5"
+				}, {
+					"key": 6,
+					"text": "Vendedor",
+					"next": "0.0.0.0.6"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Categoria(s) to be chosen",
+					"next": "0.0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Categoria",
+					"next": "0.0.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Categoria",
+					"next": "0.0.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Leilao(s) to be chosen",
+					"next": "0.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Leilao",
+					"next": "0.0.0.0.1.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Leilao",
+					"next": "0.0.0.0.1.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Produto(s) to be chosen",
+					"next": "0.0.0.0.2.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Produto",
+					"next": "0.0.0.0.2.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Produto",
+					"next": "0.0.0.0.2.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Usuario(s) to be chosen",
+					"next": "0.0.0.0.3.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Usuario",
+					"next": "0.0.0.0.3.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Usuario",
+					"next": "0.0.0.0.3.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Concorrente(s) to be chosen",
+					"next": "0.0.0.0.4.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Concorrente",
+					"next": "0.0.0.0.4.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Concorrente",
+					"next": "0.0.0.0.4.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Lance(s) to be chosen",
+					"next": "0.0.0.0.5.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Lance",
+					"next": "0.0.0.0.5.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Lance",
+					"next": "0.0.0.0.5.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6",
+			"type": "radio",
+			"title": "What do you want to do?",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Show a list of Vendedor(s) to be chosen",
+					"next": "0.0.0.0.6.0"
+				}, {
+					"key": 1,
+					"text": "Show the detail of a(n) Vendedor",
+					"next": "0.0.0.0.6.1"
+				}, {
+					"key": 2,
+					"text": "Define a computation using a(n) Vendedor",
+					"next": "0.0.0.0.6.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Categoria",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Categoria?",
+					"next": "0.0.0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Categoria?",
+					"next": "0.0.0.0.0.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.0.1",
+			"title": "Categoria detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Categoria in the detail view?",
+			"datatypeProperties": ["label", "Nome"],
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.0.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Leilao",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Leilao?",
+					"next": "0.0.0.0.1.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Leilao?",
+					"next": "0.0.0.0.1.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.1.1",
+			"title": "Leilao detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Leilao in the detail view?",
+			"datatypeProperties": ["label", "Nome", "Data de fim", "Data de inicio", "Diferenca minima", "Estado do produto", "Minimo lance", "Informacao do frete"],
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Produto",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Produto?",
+					"next": "0.0.0.0.2.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Produto?",
+					"next": "0.0.0.0.2.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.2.1",
+			"title": "Produto detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Produto in the detail view?",
+			"datatypeProperties": ["label", "Nome", "Data de cadastro", "Descricao", "Esta em oferta", "Quantidade"],
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.2.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.2.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Usuario",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Usuario?",
+					"next": "0.0.0.0.3.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Usuario?",
+					"next": "0.0.0.0.3.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.3.1",
+			"title": "Usuario detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Usuario in the detail view?",
+			"datatypeProperties": ["label", "Nome", "email", "Membro desde", "Qualificacao"],
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.3.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.3.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Concorrente",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Concorrente?",
+					"next": "0.0.0.0.4.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Concorrente?",
+					"next": "0.0.0.0.4.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No more example"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No more example"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.4.1",
+			"title": "Concorrente detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Concorrente in the detail view?",
+			"datatypeProperties": ["label", "Nome", "email"],
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.4.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.4.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Lance",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Lance?",
+					"next": "0.0.0.0.5.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Lance?",
+					"next": "0.0.0.0.5.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.5.1",
+			"title": "Lance detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Lance in the detail view?",
+			"datatypeProperties": ["timeStamp", "valor"],
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.5.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.5.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0",
+			"title": "",
+			"type": "radioDetail",
+			"message": "Vendedor",
+			"messageOptions": "Do you want to choose",
+			"options": [
+				{
+					"key": 0,
+					"text": "one Vendedor?",
+					"next": "0.0.0.0.6.0.0"
+				}, {
+					"key": 1,
+					"text": "more than one Vendedor?",
+					"next": "0.0.0.0.6.0.1"
+				}
+			],
+			"details": [[[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				],[[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					],[
+						{
+							"type": "img",
+							"msg": "/assets/checkbox-checked.png"
+						}, {
+							"type": "text",
+							"msg": "No value"
+						}
+					]
+				]
+			]
+		}, {
+			"id": "0.0.0.0.6.1",
+			"title": "Vendedor detail",
+			"type": "yesNoDetail",
+			"messageOptions": "Do you want to show other attributes of a(n) Vendedor in the detail view?",
+			"datatypeProperties": ["label", "Nome", "Membro desde", "email", "Qualificacao"],
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.6.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.6.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Categorias",
+			"messageOptions": "Do you want to show other attributes of an Categoria than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.0.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.0.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Categorias",
+			"messageOptions": "Do you want to show other attributes of a(n) Categoria than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.0.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.0.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Categoria detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Categoria",
+					"next": "0.0.0.0.0.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Categoria",
+					"next": "0.0.0.0.0.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.0.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Categoria Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.0.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.0.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Leilaos",
+			"messageOptions": "Do you want to show other attributes of an Leilao than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.1.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.1.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.1.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Leilaos",
+			"messageOptions": "Do you want to show other attributes of a(n) Leilao than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.1.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.1.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.1.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Leilao detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Leilao",
+					"next": "0.0.0.0.1.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Leilao",
+					"next": "0.0.0.0.1.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.1.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Leilao Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.1.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.1.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Produtos",
+			"messageOptions": "Do you want to show other attributes of an Produto than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.2.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.2.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.2.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Produtos",
+			"messageOptions": "Do you want to show other attributes of a(n) Produto than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.2.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.2.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.2.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Produto detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Produto",
+					"next": "0.0.0.0.2.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Produto",
+					"next": "0.0.0.0.2.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.2.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Produto Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.2.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.2.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Usuarios",
+			"messageOptions": "Do you want to show other attributes of an Usuario than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.3.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.3.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.3.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Usuarios",
+			"messageOptions": "Do you want to show other attributes of a(n) Usuario than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.3.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.3.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.3.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Usuario detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Usuario",
+					"next": "0.0.0.0.3.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Usuario",
+					"next": "0.0.0.0.3.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.3.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Usuario Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.3.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.3.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Concorrentes",
+			"messageOptions": "Do you want to show other attributes of an Concorrente than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.4.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.4.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No more example"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.4.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Concorrentes",
+			"messageOptions": "Do you want to show other attributes of a(n) Concorrente than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.4.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.4.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No more example"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.4.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Concorrente detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Concorrente",
+					"next": "0.0.0.0.4.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Concorrente",
+					"next": "0.0.0.0.4.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.4.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Concorrente Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.4.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.4.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Lances",
+			"messageOptions": "Do you want to show other attributes of an Lance than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.5.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.5.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.5.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Lances",
+			"messageOptions": "Do you want to show other attributes of a(n) Lance than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.5.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.5.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.5.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Lance detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Lance",
+					"next": "0.0.0.0.5.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Lance",
+					"next": "0.0.0.0.5.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.5.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Lance Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.5.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.5.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0.0",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Vendedors",
+			"messageOptions": "Do you want to show other attributes of an Vendedor than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.6.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.6.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.6.0.1",
+			"title": "",
+			"type": "infoWithOptions",
+			"message": "Vendedors",
+			"messageOptions": "Do you want to show other attributes of a(n) Vendedor than those shown in the example?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.6.0.0.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.6.0.0.1"
+				}
+			],
+			"details": [[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				],[
+					{
+						"type": "img",
+						"msg": "/assets/checkbox-checked.png"
+					}, {
+						"type": "text",
+						"msg": "No value"
+					}
+				]
+			]
+		}, {
+			"id": "0.0.0.0.6.1.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Vendedor detail?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Vendedor",
+					"next": "0.0.0.0.6.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Vendedor",
+					"next": "0.0.0.0.6.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.6.1.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.1.1",
+			"title": "",
+			"type": "loopDetail",
+			"message": "Vendedor Detail",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.6.1.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.6.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Categoria list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Categoria",
+					"next": "0.0.0.0.0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Categoria",
+					"next": "0.0.0.0.0.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.0.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Categoria List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.0.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.1.0.0",
+			"title": "Following this example which attributes you want to show in the Categoria detail",
+			"type": "checkboxForDetail",
+			"message": "Add Categoria properties",
+			"example": "Categoria",
+			"datatypeProperties": ["label", "Nome"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.0.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.0.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Categoria's \t related collections",
+			"mainclass": "Categoria",
+			"options": []
+		}, {
+			"id": "0.0.0.0.0.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.0.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.1.1.0",
+			"title": "Select where one should click to choose an Categoria",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Categoria Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Categoria",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Categoria",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Leilao list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Leilao",
+					"next": "0.0.0.0.1.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Leilao",
+					"next": "0.0.0.0.1.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.1.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Leilao List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.1.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.1.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.1.0.0",
+			"title": "Following this example which attributes you want to show in the Leilao detail",
+			"type": "checkboxForDetail",
+			"message": "Add Leilao properties",
+			"example": "Leilao",
+			"datatypeProperties": ["label", "Nome", "Data de fim", "Data de inicio", "Diferenca minima", "Estado do produto", "Minimo lance", "Informacao do frete"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.1.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.1.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Leilao's \t related collections",
+			"mainclass": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Produto",
+					"next": "0.0.0.0.1.1.0.1.0"
+				}, {
+					"key": 1,
+					"text": "NamedIndividual",
+					"next": "0.0.0.0.1.1.0.1.0"
+				}, {
+					"key": 2,
+					"text": "Usuario",
+					"next": "0.0.0.0.1.1.0.1.0"
+				}, {
+					"key": 3,
+					"text": "Vendedor",
+					"next": "0.0.0.0.1.1.0.1.0"
+				}, {
+					"key": 4,
+					"text": "Categoria",
+					"next": "0.0.0.0.1.1.0.1.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.1.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.1.1.0",
+			"title": "Select where one should click to choose an Leilao",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Leilao Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Leilao",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Leilao",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Produto list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Produto",
+					"next": "0.0.0.0.2.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Produto",
+					"next": "0.0.0.0.2.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.2.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Produto List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.2.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.2.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.1.0.0",
+			"title": "Following this example which attributes you want to show in the Produto detail",
+			"type": "checkboxForDetail",
+			"message": "Add Produto properties",
+			"example": "Produto",
+			"datatypeProperties": ["label", "Nome", "Data de cadastro", "Descricao", "Esta em oferta", "Quantidade"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.2.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.2.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Produto's \t related collections",
+			"mainclass": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Categoria",
+					"next": "0.0.0.0.2.1.0.1.0"
+				}, {
+					"key": 1,
+					"text": "NamedIndividual",
+					"next": "0.0.0.0.2.1.0.1.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.2.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.1.1.0",
+			"title": "Select where one should click to choose an Produto",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Produto Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Produto",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Produto",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Usuario list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Usuario",
+					"next": "0.0.0.0.3.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Usuario",
+					"next": "0.0.0.0.3.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.3.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Usuario List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.3.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.3.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.1.0.0",
+			"title": "Following this example which attributes you want to show in the Usuario detail",
+			"type": "checkboxForDetail",
+			"message": "Add Usuario properties",
+			"example": "Usuario",
+			"datatypeProperties": ["label", "Nome", "email", "Membro desde", "Qualificacao"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.3.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.3.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Usuario's \t related collections",
+			"mainclass": "Usuario",
+			"options": []
+		}, {
+			"id": "0.0.0.0.3.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.3.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.1.1.0",
+			"title": "Select where one should click to choose an Usuario",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Usuario Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Usuario",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Usuario",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Concorrente list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Concorrente",
+					"next": "0.0.0.0.4.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Concorrente",
+					"next": "0.0.0.0.4.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.4.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Concorrente List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.4.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.4.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.1.0.0",
+			"title": "Following this example which attributes you want to show in the Concorrente detail",
+			"type": "checkboxForDetail",
+			"message": "Add Concorrente properties",
+			"example": "Concorrente",
+			"datatypeProperties": ["label", "Nome", "email"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.4.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.4.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Concorrente's \t related collections",
+			"mainclass": "Concorrente",
+			"options": []
+		}, {
+			"id": "0.0.0.0.4.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.4.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.1.1.0",
+			"title": "Select where one should click to choose an Concorrente",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Concorrente Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Concorrente",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Concorrente",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Lance list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Lance",
+					"next": "0.0.0.0.5.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Lance",
+					"next": "0.0.0.0.5.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.5.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Lance List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.5.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.5.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.1.0.0",
+			"title": "Following this example which attributes you want to show in the Lance detail",
+			"type": "checkboxForDetail",
+			"message": "Add Lance properties",
+			"example": "Lance",
+			"datatypeProperties": ["timeStamp", "valor"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.5.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.5.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Lance's \t related collections",
+			"mainclass": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Usuario",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Concorrente",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 2,
+					"text": "NamedIndividual",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 3,
+					"text": "Leilao",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 4,
+					"text": "Categoria",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 5,
+					"text": "Produto",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}, {
+					"key": 6,
+					"text": "Vendedor",
+					"next": "0.0.0.0.5.1.0.1.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.5.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.1.1.0",
+			"title": "Select where one should click to choose an Lance",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Lance Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Lance",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Lance",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0.0.0",
+			"title": "",
+			"type": "radio",
+			"message": "Which type of attributes you want to show in the Vendedor list?",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Vendedor",
+					"next": "0.0.0.0.6.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Vendedor",
+					"next": "0.0.0.0.6.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.6.0.0.0.2"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0.0.1",
+			"title": "",
+			"type": "loop",
+			"message": "",
+			"message1": "Vendedor List",
+			"messageOptions": "Do you want to choose anything to navigate to other screen?",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"text": "Yes",
+					"next": "0.0.0.0.6.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "No",
+					"next": "0.0.0.0.6.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.1.0.0",
+			"title": "Following this example which attributes you want to show in the Vendedor detail",
+			"type": "checkboxForDetail",
+			"message": "Add Vendedor properties",
+			"example": "Vendedor",
+			"datatypeProperties": ["label", "Nome", "Membro desde", "email", "Qualificacao"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.6.1.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.6.1.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Vendedor's \t related collections",
+			"mainclass": "Vendedor",
+			"options": []
+		}, {
+			"id": "0.0.0.0.6.1.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"needNextProcessing": true,
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.6.1.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.1.1.0",
+			"title": "Select where one should click to choose an Vendedor",
+			"type": "attributeForChoosingForDetail",
+			"needNextProcessing": true,
+			"message": "Vendedor Detail",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Vendedor",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Vendedor",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.1.1.1",
+			"title": "What do you want to do?",
+			"type": "radio",
+			"message": "",
+			"options": [
+				{
+					"key": 0,
+					"text": "Go to the pages index",
+					"next": 26
+				}, {
+					"key": 1,
+					"text": "Finish the application definition",
+					"next": 26
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Categoria list",
+			"type": "checkbox",
+			"message": "Add Categoria properties",
+			"example": "Categoria",
+			"datatypeProperties": ["label", "Nome"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.0.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.0.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Categoria's \t related collections",
+			"mainclass": "Categoria",
+			"options": []
+		}, {
+			"id": "0.0.0.0.0.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.0.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Categoria",
+			"type": "attributeForChoosing",
+			"message": "Categorias",
+			"example": "Categoria",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Categoria",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Categoria",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.0.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.1.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Leilao list",
+			"type": "checkbox",
+			"message": "Add Leilao properties",
+			"example": "Leilao",
+			"datatypeProperties": ["label", "Nome", "Data de fim", "Data de inicio", "Diferenca minima", "Estado do produto", "Minimo lance", "Informacao do frete"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.1.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.1.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Leilao's \t related collections",
+			"mainclass": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Produto",
+					"next": "0.0.0.0.1.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "NamedIndividual",
+					"next": "0.0.0.0.1.0.0.0.1.0"
+				}, {
+					"key": 2,
+					"text": "Usuario",
+					"next": "0.0.0.0.1.0.0.0.1.0"
+				}, {
+					"key": 3,
+					"text": "Vendedor",
+					"next": "0.0.0.0.1.0.0.0.1.0"
+				}, {
+					"key": 4,
+					"text": "Categoria",
+					"next": "0.0.0.0.1.0.0.0.1.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.1.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Leilao",
+			"type": "attributeForChoosing",
+			"message": "Leilaos",
+			"example": "Leilao",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Leilao",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Leilao",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.1.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.2.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Produto list",
+			"type": "checkbox",
+			"message": "Add Produto properties",
+			"example": "Produto",
+			"datatypeProperties": ["label", "Nome", "Data de cadastro", "Descricao", "Esta em oferta", "Quantidade"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.2.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.2.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Produto's \t related collections",
+			"mainclass": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Categoria",
+					"next": "0.0.0.0.2.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "NamedIndividual",
+					"next": "0.0.0.0.2.0.0.0.1.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.2.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Produto",
+			"type": "attributeForChoosing",
+			"message": "Produtos",
+			"example": "Produto",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Produto",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Produto",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.2.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.3.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Usuario list",
+			"type": "checkbox",
+			"message": "Add Usuario properties",
+			"example": "Usuario",
+			"datatypeProperties": ["label", "Nome", "email", "Membro desde", "Qualificacao"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.3.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.3.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Usuario's \t related collections",
+			"mainclass": "Usuario",
+			"options": []
+		}, {
+			"id": "0.0.0.0.3.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.3.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Usuario",
+			"type": "attributeForChoosing",
+			"message": "Usuarios",
+			"example": "Usuario",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Usuario",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Usuario",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.3.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.4.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Concorrente list",
+			"type": "checkbox",
+			"message": "Add Concorrente properties",
+			"example": "Concorrente",
+			"datatypeProperties": ["label", "Nome", "email"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.4.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.4.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Concorrente's \t related collections",
+			"mainclass": "Concorrente",
+			"options": []
+		}, {
+			"id": "0.0.0.0.4.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.4.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Concorrente",
+			"type": "attributeForChoosing",
+			"message": "Concorrentes",
+			"example": "Concorrente",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Concorrente",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.4.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.5.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Lance list",
+			"type": "checkbox",
+			"message": "Add Lance properties",
+			"example": "Lance",
+			"datatypeProperties": ["timeStamp", "valor"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.5.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.5.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Lance's \t related collections",
+			"mainclass": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Usuario",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 1,
+					"text": "Concorrente",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 2,
+					"text": "NamedIndividual",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 3,
+					"text": "Leilao",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 4,
+					"text": "Categoria",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 5,
+					"text": "Produto",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}, {
+					"key": 6,
+					"text": "Vendedor",
+					"next": "0.0.0.0.5.0.0.0.1.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.5.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Lance",
+			"type": "attributeForChoosing",
+			"message": "Lances",
+			"example": "Lance",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Lance",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Lance",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.5.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.6.0.0.0.0",
+			"title": "Following this example which attributes you want to show in the Vendedor list",
+			"type": "checkbox",
+			"message": "Add Vendedor properties",
+			"example": "Vendedor",
+			"datatypeProperties": ["label", "Nome", "Membro desde", "email", "Qualificacao"],
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.6.0.0.0.1.0.0.0"
+				}
+			],
+			"message1": "Selected properties"
+		}, {
+			"id": "0.0.0.0.6.0.0.0.1",
+			"title": "Select what you want to show",
+			"type": "select",
+			"message": "Vendedor's \t related collections",
+			"mainclass": "Vendedor",
+			"options": []
+		}, {
+			"id": "0.0.0.0.6.0.0.0.2",
+			"title": "Computed attribute",
+			"type": "computedAttribute",
+			"message": "New attribute",
+			"message1": "Selected properties",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"next": "0.0.0.0.6.0.0.0.1.0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0.0.1.0",
+			"title": "Select where one should click to choose a(n) Vendedor",
+			"type": "attributeForChoosing",
+			"message": "Vendedors",
+			"example": "Vendedor",
+			"originalModal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Vendedor",
+			"modal": "You clicked on the {0}. Do you want to use the {0} to choose a(n) Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"next": ".0.0.0"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.1.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.6.1.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.0.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.0.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.0.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.0.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.1.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.1.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.1.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.1.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.2.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.2.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.2.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.2.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.3.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.3.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.3.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.3.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.4.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.4.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.4.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.4.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.5.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.5.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.5.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.5.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.6.0.0.0.1.0",
+			"title": "Select the path",
+			"type": "paths",
+			"message": "Suggested paths",
+			"next": "0.0.0.0.6.0.0.0.1.0.0"
+		}, {
+			"id": "0.0.0.0.6.1.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.6.1.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.0.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.0.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.0.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Categoria detail? Which type?",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Categoria",
+					"next": "0.0.0.0.0.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Categoria",
+					"next": "0.0.0.0.0.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.0.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.0.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.1.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.1.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Leilao detail? Which type?",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Leilao",
+					"next": "0.0.0.0.1.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Leilao",
+					"next": "0.0.0.0.1.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.1.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.1.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.2.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.2.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Produto detail? Which type?",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Produto",
+					"next": "0.0.0.0.2.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Produto",
+					"next": "0.0.0.0.2.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.2.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.2.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.3.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.3.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Usuario detail? Which type?",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Usuario",
+					"next": "0.0.0.0.3.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Usuario",
+					"next": "0.0.0.0.3.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.3.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.3.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.4.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.4.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Concorrente detail? Which type?",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Concorrente",
+					"next": "0.0.0.0.4.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Concorrente",
+					"next": "0.0.0.0.4.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.4.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.4.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.5.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.5.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Lance detail? Which type?",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Lance",
+					"next": "0.0.0.0.5.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Lance",
+					"next": "0.0.0.0.5.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.5.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.5.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0.0.0.1.0.0",
+			"title": "Select the relationships",
+			"type": "path",
+			"message": "Suggested path",
+			"next": "0.0.0.0.6.0.0.0.1.0.0.0"
+		}, {
+			"id": "0.0.0.0.6.1.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedPropertiesForDetail",
+			"message": "Do you want to show more attributes in the Vendedor detail? Which type?",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of a(n) Vendedor",
+					"next": "0.0.0.0.6.1.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Vendedor",
+					"next": "0.0.0.0.6.1.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.6.1.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.6.1.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.0.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Categoria list? Which type?",
+			"example": "Categoria",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Categoria",
+					"next": "0.0.0.0.0.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Categoria",
+					"next": "0.0.0.0.0.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.0.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.0.0.0.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.1.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Leilao list? Which type?",
+			"example": "Leilao",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Leilao",
+					"next": "0.0.0.0.1.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Leilao",
+					"next": "0.0.0.0.1.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.1.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.1.0.0.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.2.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Produto list? Which type?",
+			"example": "Produto",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Produto",
+					"next": "0.0.0.0.2.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Produto",
+					"next": "0.0.0.0.2.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.2.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.2.0.0.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.3.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Usuario list? Which type?",
+			"example": "Usuario",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Usuario",
+					"next": "0.0.0.0.3.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Usuario",
+					"next": "0.0.0.0.3.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.3.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.3.0.0.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.4.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Concorrente list? Which type?",
+			"example": "Concorrente",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Concorrente",
+					"next": "0.0.0.0.4.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Concorrente",
+					"next": "0.0.0.0.4.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.4.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.4.0.0.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.5.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Lance list? Which type?",
+			"example": "Lance",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Lance",
+					"next": "0.0.0.0.5.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Lance",
+					"next": "0.0.0.0.5.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.5.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.5.0.0.1"
+				}
+			]
+		}, {
+			"id": "0.0.0.0.6.0.0.0.1.0.0.0",
+			"title": "",
+			"type": "radioSelectedProperties",
+			"message": "Do you want to show more attributes in the Vendedor list? Which type?",
+			"example": "Vendedor",
+			"options": [
+				{
+					"key": 0,
+					"text": "Direct attributes of an Vendedor",
+					"next": "0.0.0.0.6.0.0.0.0"
+				}, {
+					"key": 1,
+					"text": "Attributes of other classes related to Vendedor",
+					"next": "0.0.0.0.6.0.0.0.1"
+				}, {
+					"key": 2,
+					"text": "Computed Attributes",
+					"next": "0.0.0.0.6.0.0.0.2"
+				}, {
+					"key": 3,
+					"text": "No more",
+					"next": "0.0.0.0.6.0.0.1"
+				}
+			]
+		}
+	],
+	"data": {
+		"Categoria": [[
+				{
+					"id": 0,
+					"name": "Nome",
+					"value": ["Audio"]
+				}, {
+					"id": 1,
+					"name": "label",
+					"value": ["Audio"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Nome",
+					"value": ["Informatica"]
+				}, {
+					"id": 1,
+					"name": "label",
+					"value": ["Informatica"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Nome",
+					"value": ["Cine e Foto"]
+				}, {
+					"id": 1,
+					"name": "label",
+					"value": ["Cine e Foto"]
+				}
+			]
+		],
+		"Leilao": [[
+				{
+					"id": 0,
+					"name": "Data de fim",
+					"value": ["2012/02/20"]
+				}, {
+					"id": 1,
+					"name": "Data de inicio",
+					"value": ["2012/02/01"]
+				}, {
+					"id": 2,
+					"name": "Diferenca minima",
+					"value": ["5"]
+				}, {
+					"id": 3,
+					"name": "Estado do produto",
+					"value": ["30.00 USPS Priority Mail International \nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide, novo"]
+				}, {
+					"id": 4,
+					"name": "Informacao do frete",
+					"value": ["No value"]
+				}, {
+					"id": 5,
+					"name": "Minimo lance",
+					"value": ["23"]
+				}, {
+					"id": 6,
+					"name": "Nome",
+					"value": ["leilao 1"]
+				}, {
+					"id": 7,
+					"name": "label",
+					"value": ["leilao 1"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Data de fim",
+					"value": ["2012/12/25"]
+				}, {
+					"id": 1,
+					"name": "Data de inicio",
+					"value": ["2012/10/04"]
+				}, {
+					"id": 2,
+					"name": "Diferenca minima",
+					"value": ["25"]
+				}, {
+					"id": 3,
+					"name": "Estado do produto",
+					"value": ["novo"]
+				}, {
+					"id": 4,
+					"name": "Informacao do frete",
+					"value": ["30.00 USPS Priority Mail International\nInternational items may be subject to customs processing and additional charges.  \n \nItem location:\nPasadena, California, United States\n \nShips to:\nWorldwide"]
+				}, {
+					"id": 5,
+					"name": "Minimo lance",
+					"value": ["45"]
+				}, {
+					"id": 6,
+					"name": "Nome",
+					"value": ["leilao 2"]
+				}, {
+					"id": 7,
+					"name": "label",
+					"value": ["leilao 2"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Data de fim",
+					"value": ["2012/09/10"]
+				}, {
+					"id": 1,
+					"name": "Data de inicio",
+					"value": ["2012/04/04"]
+				}, {
+					"id": 2,
+					"name": "Diferenca minima",
+					"value": ["5"]
+				}, {
+					"id": 3,
+					"name": "Estado do produto",
+					"value": ["No value"]
+				}, {
+					"id": 4,
+					"name": "Informacao do frete",
+					"value": ["frete gratis"]
+				}, {
+					"id": 5,
+					"name": "Minimo lance",
+					"value": ["45"]
+				}, {
+					"id": 6,
+					"name": "Nome",
+					"value": ["leilao 10"]
+				}, {
+					"id": 7,
+					"name": "label",
+					"value": ["leilao 10"]
+				}
+			]
+		],
+		"Produto": [[
+				{
+					"id": 0,
+					"name": "Data de cadastro",
+					"value": ["23/05/2013"]
+				}, {
+					"id": 1,
+					"name": "Descricao",
+					"value": ["Nada como um equipamento completo e potente o suficiente para garantir a qualidade de entretenimento ideal na sua casa. Pois o LG HT806ST e justamente o caso para quem busca um home theater capaz de agradar a todos. Com 850W RMS de potencia, ele e perfeito para transformar sua casa em uma verdadeira sala de cinema e ainda animar todas as suas festas. A tecnologia Bass Blast potencializa os sons graves de modo impressionante, enquanto o recurso Virtual Sound Matrix simula os efeitos de um sistema 10.1 canais. Alem do design elegante e que se encaixa em qualquer ambiente, o aparelho conta com elementos bastante praticos, como a funcao Ripping, que possibilita gravar qualquer CD diretamente para um pendrive. O karaoke tambem e destaque do produto e promete horas de animacao com sua familia e amigos."]
+				}, {
+					"id": 2,
+					"name": "Esta em oferta",
+					"value": ["1"]
+				}, {
+					"id": 3,
+					"name": "Nome",
+					"value": ["Home Theater LG HT806ST"]
+				}, {
+					"id": 4,
+					"name": "Quantidade",
+					"value": ["2"]
+				}, {
+					"id": 5,
+					"name": "label",
+					"value": ["Home Theater LG HT806ST"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Data de cadastro",
+					"value": ["12/03/2012"]
+				}, {
+					"id": 1,
+					"name": "Descricao",
+					"value": ["MP4 Player Philips SA3VBE04KX/78 4GB GoGear Vibe c/ Tela 1,8 e Radio FM - Preto \nTenha em maos um MP4 Player que faz de tudo, desde poder ouvir musicas em formato MP3 ou sua programacao preferida no radio FM, ate assistir videos de filmes, shows ou clipes.i\nO modelo SA3VBE possui tela de 4,6 centimetros (1,8 polegadas) e ideal para ver seus videos e ate navegar por seus menus sem dificuldades. Ele ainda vem fones emborrachados evitando que machuquem seus ouvidos.\nSeu armazenamento permite guardar centena de musicas no formato MP3, tornando assim seu dispositivo movel em um verdadeiro centro de entretenimento. E se pensa que a transferencia de musicas do seu pc/notebook para o MP4 Player e demorada, engana-se Em apenas cinco minutos e possivel transferir ate trinta musicas de uma vez, sem perda de tempo"]
+				}, {
+					"id": 2,
+					"name": "Esta em oferta",
+					"value": ["1"]
+				}, {
+					"id": 3,
+					"name": "Nome",
+					"value": ["MP4 Player Philips SA3VBE04KX/78"]
+				}, {
+					"id": 4,
+					"name": "Quantidade",
+					"value": ["12"]
+				}, {
+					"id": 5,
+					"name": "label",
+					"value": ["MP4 Player Philips SA3VBE04KX/78"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Data de cadastro",
+					"value": ["12/10/2012"]
+				}, {
+					"id": 1,
+					"name": "Descricao",
+					"value": ["MP4 Watch Play NewLink PM101 Prata com Pulseira Relogio Preta, Radio FM, Gravador de Audio e Slot para Cartao"]
+				}, {
+					"id": 2,
+					"name": "Esta em oferta",
+					"value": ["1"]
+				}, {
+					"id": 3,
+					"name": "Nome",
+					"value": ["MP4 Watch Play NewLink PM101"]
+				}, {
+					"id": 4,
+					"name": "Quantidade",
+					"value": ["23"]
+				}, {
+					"id": 5,
+					"name": "label",
+					"value": ["MP4 Watch Play NewLink PM101"]
+				}
+			]
+		],
+		"Usuario": [[
+				{
+					"id": 0,
+					"name": "Membro desde",
+					"value": ["No value"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Concorrente 1"]
+				}, {
+					"id": 2,
+					"name": "Qualificacao",
+					"value": ["No value"]
+				}, {
+					"id": 3,
+					"name": "email",
+					"value": ["concorrente1@gmail.com"]
+				}, {
+					"id": 4,
+					"name": "label",
+					"value": ["Concorrente 1"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Membro desde",
+					"value": ["No value"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Concorrente 2"]
+				}, {
+					"id": 2,
+					"name": "Qualificacao",
+					"value": ["No value"]
+				}, {
+					"id": 3,
+					"name": "email",
+					"value": ["concorrente2@gmail.com"]
+				}, {
+					"id": 4,
+					"name": "label",
+					"value": ["Concorrente 2"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Membro desde",
+					"value": ["1/01/2005"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Vendedor 1"]
+				}, {
+					"id": 2,
+					"name": "Qualificacao",
+					"value": ["1"]
+				}, {
+					"id": 3,
+					"name": "email",
+					"value": ["vendedor1@gmail.com"]
+				}, {
+					"id": 4,
+					"name": "label",
+					"value": ["Vendedor 1"]
+				}
+			]
+		],
+		"Concorrente": [[
+				{
+					"id": 0,
+					"name": "Nome",
+					"value": ["Concorrente 1"]
+				}, {
+					"id": 1,
+					"name": "email",
+					"value": ["concorrente1@gmail.com"]
+				}, {
+					"id": 2,
+					"name": "label",
+					"value": ["Concorrente 1"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Nome",
+					"value": ["Concorrente 2"]
+				}, {
+					"id": 1,
+					"name": "email",
+					"value": ["concorrente2@gmail.com"]
+				}, {
+					"id": 2,
+					"name": "label",
+					"value": ["Concorrente 2"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Nome",
+					"value": ["No more example"]
+				}, {
+					"id": 1,
+					"name": "email",
+					"value": ["No more example"]
+				}, {
+					"id": 2,
+					"name": "label",
+					"value": ["No more example"]
+				}
+			]
+		],
+		"Lance": [[
+				{
+					"id": 0,
+					"name": "timeStamp",
+					"value": ["2013/07/15 12:40"]
+				}, {
+					"id": 1,
+					"name": "valor",
+					"value": ["30"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "timeStamp",
+					"value": ["2013/07/15 8:00"]
+				}, {
+					"id": 1,
+					"name": "valor",
+					"value": ["100"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "timeStamp",
+					"value": ["2013/07/15 10:00"]
+				}, {
+					"id": 1,
+					"name": "valor",
+					"value": ["150"]
+				}
+			]
+		],
+		"Vendedor": [[
+				{
+					"id": 0,
+					"name": "Membro desde",
+					"value": ["1/01/2005"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Vendedor 1"]
+				}, {
+					"id": 2,
+					"name": "Qualificacao",
+					"value": ["1"]
+				}, {
+					"id": 3,
+					"name": "email",
+					"value": ["vendedor1@gmail.com"]
+				}, {
+					"id": 4,
+					"name": "label",
+					"value": ["Vendedor 1"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Membro desde",
+					"value": ["2/04/2008"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Vendedor 2"]
+				}, {
+					"id": 2,
+					"name": "Qualificacao",
+					"value": ["3"]
+				}, {
+					"id": 3,
+					"name": "email",
+					"value": ["vendedor2@yahoo.com"]
+				}, {
+					"id": 4,
+					"name": "label",
+					"value": ["Vendedor 2"]
+				}
+			],[
+				{
+					"id": 0,
+					"name": "Membro desde",
+					"value": ["23/05/2010"]
+				}, {
+					"id": 1,
+					"name": "Nome",
+					"value": ["Vendedor 3"]
+				}, {
+					"id": 2,
+					"name": "Qualificacao",
+					"value": ["5"]
+				}, {
+					"id": 3,
+					"name": "email",
+					"value": ["vendedor3@hotmail.com"]
+				}, {
+					"id": 4,
+					"name": "label",
+					"value": ["Vendedor 3"]
+				}
+			]
+		]
+	}
+>>>>>>> 744fa8a53f2e22c03c3e57e32959e0116b93e45a
 }
