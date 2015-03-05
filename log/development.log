@@ -15746,3 +15746,18 @@ Completed in 16482ms (View: 138 | 200 OK [http://localhost/ontologies/wizard/htt
 Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-05 10:59:28) [GET]
   Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
 Completed in 25205ms (View: 594 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-05 11:18:49) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 22740ms (View: 339 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-05 11:47:28) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 21612ms (View: 242 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-05 11:57:38) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 17823ms (View: 170 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
