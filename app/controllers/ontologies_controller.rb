@@ -27,7 +27,7 @@ class OntologiesController < ApplicationController
     wizard = []
     flowTree = class_step("0.0.0", domain_classes, "auction")
     
-    breadthFirstSearch(flowTree, wizard)
+     breadthFirstSearch(flowTree, wizard)
     
     
 
@@ -906,11 +906,13 @@ class OntologiesController < ApplicationController
       :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :example => className,
       :options => [
-        {:key => 0, :next => ".0.0.0"}
+        {:key => 0, :next => previousId[0, previousId.length-6] + ".0.0.1.0.0"}
       ]
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
+    
+    class_step_1(currentId, className, get_related_collections(className), "auction", child) #43
 
   end
 
@@ -992,11 +994,13 @@ class OntologiesController < ApplicationController
       :originalModal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :options => [
-        {:key => 0, :next => ".0.0.0"}
+        {:key => 0, :next => currentId + ".0"}
       ]
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
+    
+    class_step_1(currentId, className, get_related_collections(className), "auction", child) #43
 
   end
 
@@ -1082,4 +1086,45 @@ class OntologiesController < ApplicationController
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
   end
+  
+  def class_step_1(previousId, className, relatedCollections, prefix, fatherFlowTree) #43
+    index = -1
+    currentId = previousId + ".0"
+    m = {:id => currentId, :type => 'select', :title => "What do you want to show from #{prefix} ontology?",
+      :mainclass => className, :message => 'Class', :options => []}
+    m[:options] = relatedCollections.map{|klass| {:key=>(index += 1), :text=>klass, :next=>currentId + "." + index.to_s}}
+    
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+    
+    suggest_paths_1(currentId, relatedCollections, child) #44
+  end
+  
+  def suggest_paths_1(previousId, classes, fatherFlowTree) #44
+    index = -1
+    classes.each{ |className|
+      currentId = (previousId + "." + (index += 1).to_s)
+      m = {
+      :id => currentId, :title => "Select the path", :type => "paths", :message => "Suggested paths", :next => currentId + ".0"
+      }
+      child = {:value => m, :children => []}
+      fatherFlowTree[:children].push(child)
+      
+      choose_relations_of_path_1(currentId, className, child) #45
+    }
+
+    
+
+  end
+  
+  def choose_relations_of_path_1(previousId, className, fatherFlowTree) #45
+    currentId = previousId.to_s + ".0"
+    m = {
+      :id => currentId, :title => "Select the relationships", :type => "path", :message => "Suggested path", :next => currentId + ".0"
+    }
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)
+
+  end
+    
 end
