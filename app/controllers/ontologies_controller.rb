@@ -10,6 +10,7 @@ class OntologiesController < ApplicationController
     @cache_triples = {}
     @relations = []
     @props_declaration = []
+    @domain_classes = []
 
   end
 
@@ -17,7 +18,7 @@ class OntologiesController < ApplicationController
     
     init()
     
-    domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
+    @domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
    # domain_classes += get_domain_classes_from('http://data.semanticweb.org/ns/swc/ontology#')
    # domain_classes += get_domain_classes_from('http://xmlns.com/wordnet/1.6/')
       
@@ -25,7 +26,7 @@ class OntologiesController < ApplicationController
     #result = @namespaces.keys.map{|key| "#{key} - #{@namespaces[key]}"}
     
     wizard = []
-    flowTree = class_step("0.0.0", domain_classes, "auction")
+    flowTree = class_step("0.0.0", @domain_classes, "auction")
     
      breadthFirstSearch(flowTree, wizard)
     
@@ -73,9 +74,8 @@ class OntologiesController < ApplicationController
   end
   
   def get_data_of_wizard
-    domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
     data_hash = {}
-    domain_classes.each{|_class|
+    @domain_classes.each{|_class|
        props = get_datatype_properties(_class[:className])
        change_label_to_first_position(props)
        examples = get_examples_for(_class[:className], 3, *props)
@@ -100,9 +100,8 @@ class OntologiesController < ApplicationController
     
     init()
     
-    domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
     examples = {:definition => [], :triples => []}
-    domain_classes.each{|_class|
+    @domain_classes.each{|_class|
       temp = generate_triples_examples(_class[:className], @max_number_examples)
       examples[:definition].push(temp[:definition]);
       examples[:triples].push(temp[:triples]);
@@ -256,8 +255,7 @@ class OntologiesController < ApplicationController
   
   def get_related_collections(className)
      collections = get_related_collections_from(className)
-     domain_classes = get_domain_classes_from(params[:url] || 'http://www.semanticweb.org/milena/ontologies/2013/6/auction')
-     domain_classes.each{|_class|
+     @domain_classes.each{|_class|
        arr = get_related_collections_from(_class[:className])
        if(arr.include?(className)) then
          collections.push(_class[:className])
@@ -1129,7 +1127,19 @@ class OntologiesController < ApplicationController
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
+    hidden_step(currentId, child) #46
 
+  end
+  
+  def hidden_step(previousId, fatherFlowTree) #46
+    index = -1
+    currentId = previousId + ".0"
+    m = {:id => currentId, :type => 'hidden', :options => []}
+    m[:options] = @domain_classes.map{|klass| {:key=>(index += 1), :text=>klass, :next=>currentId[0,7] + "." + index.to_s}}
+    
+    child = {:value => m, :children => []}
+    fatherFlowTree[:children].push(child)      
+    
   end
     
 end

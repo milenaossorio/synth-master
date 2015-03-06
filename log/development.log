@@ -15962,3 +15962,48 @@ Completed in 15915ms (View: 254 | 200 OK [http://localhost/ontologies/wizard/htt
 Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-05 17:35:09) [GET]
   Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
 Completed in 15981ms (View: 210 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-06 12:19:40) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+
+NameError (undefined local variable or method `fatherFlowTree' for #<OntologiesController:0x55f23bfd>):
+  app/controllers/ontologies_controller.rb:1144:in `hidden_step'
+  app/controllers/ontologies_controller.rb:1132:in `choose_relations_of_path_1'
+  app/controllers/ontologies_controller.rb:1118:in `suggest_paths_1'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:1110:in `suggest_paths_1'
+  app/controllers/ontologies_controller.rb:1105:in `class_step_1'
+  app/controllers/ontologies_controller.rb:1008:in `choose_attribute_to_navigate_list'
+  app/controllers/ontologies_controller.rb:846:in `choose_examples_list_navigation_question'
+  app/controllers/ontologies_controller.rb:746:in `example_list_choose_one_more_attributes_question'
+  app/controllers/ontologies_controller.rb:705:in `example_list'
+  app/controllers/ontologies_controller.rb:673:in `class_next_step'
+  org/jruby/RubyArray.java:1620:in `each'
+  app/controllers/ontologies_controller.rb:661:in `class_next_step'
+  app/controllers/ontologies_controller.rb:653:in `class_step'
+  app/controllers/ontologies_controller.rb:28:in `wizard'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyKernel.java:2105:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1620:in `each'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/jruby-1.6.8/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (28.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-06 12:20:41) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 22668ms (View: 547 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
+
+
+Processing OntologiesController#wizard (for 0:0:0:0:0:0:0:1 at 2015-03-06 16:02:53) [GET]
+  Parameters: {"url"=>"http://www.semanticweb.org/milena/ontologies/2013/6/auction"}
+Completed in 24359ms (View: 455 | 200 OK [http://localhost/ontologies/wizard/http%3A%2F%2Fwww.semanticweb.org%2Fmilena%2Fontologies%2F2013%2F6%2Fauction]
