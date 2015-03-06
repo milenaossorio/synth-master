@@ -846,7 +846,7 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "Following this example which attributes you want to show in the #{className} detail",
-      :type => "checkboxForDetail", :scope => "scope", :message => "Add #{className} properties", :example => className,
+      :type => "checkbox", :scope => "scope", :message => "Add #{className} properties", :example => className,
       :datatypeProperties => datatypeProperties,
       :options =>  [
         {:key => 0, :next => previousId + ".1.0.0.0"}
