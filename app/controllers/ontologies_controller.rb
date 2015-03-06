@@ -709,7 +709,8 @@ class OntologiesController < ApplicationController
 
   def example_detail(previousId, className, datatypeProperties, fatherFlowTree) # 15, 42, ...
     currentId = previousId.to_s + ".1"
-    m = {:id => currentId, :title => "#{className} detail", :type => "yesNoDetail", :scope => "new", :example =>className,
+    m = {:id => currentId, :title => "#{className} detail", :type => "yesNoDetail", 
+      :scope => "new", :scope_value => {:show => "details", :data => [0], :examples => []}, :example =>className,
       :messageOptions => "Do you want to show other attributes of a(n) #{className} in the detail view?",
       :datatypeProperties => datatypeProperties,
       :example => className,
@@ -726,7 +727,9 @@ class OntologiesController < ApplicationController
   def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "", :type => "infoWithOptions", :scope => "new", :example =>className, :message => "#{className}s",
+      :id => currentId, :title => "", :type => "infoWithOptions", 
+      :scope => "new", :scope_value => {:show => "table", :data => [0], :examples => []},
+      :example =>className, :message => "#{className}s",
       :messageOptions => "Do you want to show other attributes of an #{className} than those shown in the example?",
       :options => [
         {:key => 0, :text => "Yes", :next => currentId + ".0"},{:key => 1, :text => "No", :next => currentId + ".1"}
@@ -747,7 +750,9 @@ class OntologiesController < ApplicationController
   def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...
     currentId = previousId.to_s + ".1"
     m = {
-      :id => currentId, :title => "", :type => "infoWithOptions", :scope => "new", :example =>className, :message => "#{className}s",
+      :id => currentId, :title => "", :type => "infoWithOptions", 
+      :scope => "new", :scope_value => {:show => "table", :data => [0], :examples => []},
+      :example =>className, :message => "#{className}s",
       :messageOptions => "Do you want to show other attributes of a(n) #{className} than those shown in the example?",
       :options => [
         {:key => 0, :text => "Yes", :next => previousId.to_s + ".0.0"},{:key => 1, :text => "No", :next => previousId.to_s + ".0.1"}
@@ -787,7 +792,7 @@ class OntologiesController < ApplicationController
     m = {
       :id => currentId,
       :title => "",
-      :type => "loopDetail",
+      :type => "loop",
       :message => "#{className} Detail",
       :messageOptions => "Do you want to choose anything to navigate to other screen?",
       :example => className,
@@ -901,7 +906,7 @@ class OntologiesController < ApplicationController
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "Select where one should click to choose an #{className}",
-      :type => "attributeForChoosingForDetail", :needNextProcessing => true, :message => "#{className} Detail",
+      :type => "attributeForChoosing", :needNextProcessing => true, :message => "#{className} Detail",
       :originalModal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :modal => "You clicked on the {0}. Do you want to use the {0} to choose a(n) #{className}",
       :example => className,
@@ -1073,7 +1078,7 @@ class OntologiesController < ApplicationController
   def more_attributes_question_detail(previousId, className, fatherFlowTree) #18
     currentId = previousId.to_s + ".0"
     m = {
-      :id => currentId, :title => "", :type => "radioSelectedPropertiesForDetail",
+      :id => currentId, :title => "", :type => "radioSelectedProperties",
       :message => "Do you want to show more attributes in the #{className} detail? Which type?",
       :example => className,
       :options => [
