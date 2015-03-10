@@ -682,8 +682,14 @@ class OntologiesController < ApplicationController
       m = {:id => currentId, :type => 'radio', :title => 'What do you want to do?',
         :message => '',
         :options => [
-          {:key => 0, :text => "Show a list of #{name}(s) to be chosen", :next => currentId + ".0"},
-          {:key => 1, :text => "Show the detail of a(n) #{name}", :next => currentId + ".1"},
+          {:key => 0, :text => "Show a list of #{name}(s) to be chosen", :next => currentId + ".0",
+            :todo => [{:function_name => "save_value",
+              :params => [{:type => "constant", :name => "attribute_type", :value => "list"}]}]
+          },
+          {:key => 1, :text => "Show the detail of a(n) #{name}", :next => currentId + ".1",
+            :todo => [{:function_name => "save_value",
+              :params => [{:type => "constant", :name => "attribute_type", :value => "detail"}]}]
+          },
           {:key => 2, :text => "Define a computation using a(n) #{name}", :next => currentId + ".2"}
         ]}
       child = {:value => m, :children => []}
@@ -720,9 +726,9 @@ class OntologiesController < ApplicationController
                 {
                   :function_name => "create_context_wizard",
                   :params => [
-                                {:type => "constant", :name => "query", :value => "AUCTION::Produto.find_all"}, 
-                                {:type => "constant", :name => "name", :value => "Produto"}, 
-                                {:type => "constant", :name => "title", :value => "Produto."}
+                                {:type => "constant", :name => "query", :value => "AUCTION::#{className}.find_all"}, 
+                                {:type => "constant", :name => "name", :value => "#{className}"}, 
+                                {:type => "constant", :name => "title", :value => "#{className}."}
                              ],
                   :results => [
                                 {:name => "context", :global_var => "context_id"}, 
@@ -769,7 +775,7 @@ class OntologiesController < ApplicationController
     m = {
       :id => currentId, :title => "", :type => "infoWithOptions", 
       :scope => "new", :scope_value => {:show => "table", 
-                                        :data => props.each_with_index.collect{|prop, index| index}, 
+                                        :data => [0], 
                                         :type => props.collect{"ComputedAttribute"},
                                         :queries => props.collect{|prop| "self." + prop},
                                         :names => get_datatype_properties(className),
@@ -853,7 +859,9 @@ class OntologiesController < ApplicationController
            :todo => [
                       {
                         :function_name => "create_computed_attributes_wizard",
-                        :params => [{:type => "user_action", :name => "scope", :value => "scope"}],
+                        :params => [
+                          {:type => "user_action", :name => "scope", :value => "scope"},
+                          {:type => "constant", :name => "ontology", :value => "#{@url[-2]}"}],
                         :results => [{:name => "context", :global_var => "context_id"}]
                       }
                     ]
