@@ -11,6 +11,8 @@ class OntologiesController < ApplicationController
     @relations = []
     @props_declaration = []
     @domain_classes = []
+    @url = "http://www.semanticweb.org/milena/ontologies/2013/6/auction#"
+    @ontology = "auction::"
 
   end
 
@@ -227,6 +229,24 @@ class OntologiesController < ApplicationController
     return ["label", "summary", "Documents"]
   end
 =end
+  end
+  
+  def get_compact_uri_datatype_properties(className)
+    result = []
+    _class = RDFS::Class.find_all().select{|x| ActiveRDF::Namespace.localname(x.uri) == className}.first
+    
+    puts "----------------------'#{className}' ----------------------------------------" if _class.nil?
+    
+    resources = ActiveRDF::ObjectManager.construct_class(_class).find_all[0, @max_resource_search]
+
+    resources.each{|x| 
+      result += x.direct_properties.select{|y| !(y.first.is_a?(RDFS::Resource))}.
+                collect{|property| a = property.compact_uri.to_s; a.gsub(@url, @ontology) }
+    }
+    result = result.uniq
+    result = ["The '#{className}' has no datatype property"] if result.empty?
+    
+    return result
   end
 
   def get_related_collectionsOld(className, level) # it is not used
@@ -695,7 +715,22 @@ class OntologiesController < ApplicationController
           [{:type => "img", :msg => '/assets/checkbox.png'},{:type => "text", :msg => examples[1].values.first}],
           [{:type => "img", :msg => '/assets/checkbox-checked.png'},{:type => "text", :msg => examples[2].values.first}]
         ]
+      ],
+      :todo => [
+                {
+                  :function_name => "create_context_wizard",
+                  :params => [
+                                {:type => "constant", :name => "query", :value => "AUCTION::Produto.find_all"}, 
+                                {:type => "constant", :name => "name", :value => "Produto"}, 
+                                {:type => "constant", :name => "title", :value => "Produto."}
+                             ],
+                  :results => [
+                                {:name => "context", :global_var => "context_id"}, 
+                                {:name => "defaultIndex", :global_var => "index_id"}
+                              ]
+                }
       ]
+
     }
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)
@@ -706,11 +741,17 @@ class OntologiesController < ApplicationController
   end
 
   def example_detail(previousId, className, datatypeProperties, fatherFlowTree) # 15, 42, ...
+    props = get_compact_uri_datatype_properties(className)
     currentId = previousId.to_s + ".1"
     m = {:id => currentId, :title => "#{className} detail", :type => "yesNoDetail", 
-      :scope => "new", :scope_value => {:show => "details", :data => [0], :examples => []}, :example =>className,
+      :scope => "new", :scope_value => {:show => "details", 
+                                        :data => props.each_with_index.collect{|prop, index| index}, 
+                                        :type => props.collect{"ComputedAttribute"},
+                                        :queries => props.collect{|prop| "self." + prop},
+                                        :names => datatypeProperties,
+                                        :examples => []}, 
+      :example =>className,
       :messageOptions => "Do you want to show other attributes of a(n) #{className} in the detail view?",
-      :datatypeProperties => datatypeProperties,
       :example => className,
       :options => [
         {:key => 0, :text => "Yes", :next => currentId + ".0"},{:key => 1, :text => "No", :next => currentId + ".1"}
@@ -723,10 +764,16 @@ class OntologiesController < ApplicationController
   end
 
   def example_list_choose_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #30, 32, ...
+    props = get_compact_uri_datatype_properties(className)
     currentId = previousId.to_s + ".0"
     m = {
       :id => currentId, :title => "", :type => "infoWithOptions", 
-      :scope => "new", :scope_value => {:show => "table", :data => [0], :examples => []},
+      :scope => "new", :scope_value => {:show => "table", 
+                                        :data => props.each_with_index.collect{|prop, index| index}, 
+                                        :type => props.collect{"ComputedAttribute"},
+                                        :queries => props.collect{|prop| "self." + prop},
+                                        :names => get_datatype_properties(className),
+                                        :examples => []},
       :example =>className, :message => "#{className}s",
       :messageOptions => "Do you want to show other attributes of an #{className} than those shown in the example?",
       :options => [
@@ -745,11 +792,17 @@ class OntologiesController < ApplicationController
 
   end
 
-  def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...
+  def example_list_choose_more_than_one_more_attributes_question(previousId, className, examples, fatherFlowTree) #31, 33, ...  
+    props = get_compact_uri_datatype_properties(className)
     currentId = previousId.to_s + ".1"
     m = {
       :id => currentId, :title => "", :type => "infoWithOptions", 
-      :scope => "new", :scope_value => {:show => "table", :data => [0], :examples => []},
+      :scope => "new", :scope_value => {:show => "table", 
+                                        :data => props.each_with_index.collect{|prop, index| index}, 
+                                        :type => props.collect{"ComputedAttribute"},
+                                        :queries => props.collect{|prop| "self." + prop},
+                                        :names => get_datatype_properties(className),
+                                        :examples => []},
       :example =>className, :message => "#{className}s",
       :messageOptions => "Do you want to show other attributes of a(n) #{className} than those shown in the example?",
       :options => [
@@ -796,7 +849,15 @@ class OntologiesController < ApplicationController
       :example => className,
       :options => [
         {:key => 0, :text => "Yes", :child => "Yes", :next => currentId + ".0" },
-        {:key => 1, :text => "No", :child => "End", :next => currentId + ".1"}
+        {:key => 1, :text => "No", :child => "End", :next => currentId + ".1",
+           :todo => [
+                      {
+                        :function_name => "create_computed_attributes_wizard",
+                        :params => [{:type => "user_action", :name => "scope", :value => "scope"}],
+                        :results => [{:name => "context", :global_var => "context_id"}]
+                      }
+                    ]
+        }
       ]
     }
     child = {:value => m, :children => []}
@@ -835,7 +896,15 @@ class OntologiesController < ApplicationController
       :example => className,
       :options => [
         {:key => 0, :text => "Yes", :child => "Yes", :next => currentId + ".0"},
-        {:key => 1, :text => "No", :child => "End", :next => previousId[0, previousId.length-4] + ".1.1.1"}
+        {:key => 1, :text => "No", :child => "End", :next => previousId[0, previousId.length-4] + ".1.1.1",
+          :todo => [
+                      {
+                        :function_name => "create_computed_attributes_wizard",
+                        :params => [{:type => "user_action", :name => "scope", :value => "scope"}],
+                        :results => [{:name => "context", :global_var => "context_id"}]
+                      }
+                   ]
+        }
       ]
     }
     child = {:value => m, :children => []}
@@ -926,6 +995,21 @@ class OntologiesController < ApplicationController
       :options => [
         {:key => 0, :text => "Go to the pages index", :next => "0.0.0.0"},
         {:key => 1, :text => "Finish the application definition", :next => "#{currentId}."}
+      ],
+      :todo =>  [
+              {
+                :function_name => "create_index_landmark_wizard",
+                :params => [
+                    { :type => "globar_var", :name => "index_id", :value => "index_id"}, 
+                    { :type => "constant", :name => "name", :value => className}
+                ]
+              }, 
+              {
+                :function_name => "pop_global_var",
+                :params => [
+                    {:type => "constant", :name => "key", :value => "context_id"}
+                ]
+              }
       ]
     }
     child = {:value => m, :children => []}
@@ -1135,7 +1219,7 @@ class OntologiesController < ApplicationController
     index = -1
     currentId = previousId + ".0"
     m = {:id => currentId, :type => 'hidden', :options => []}
-    m[:options] = @domain_classes.map{|klass| {:key=>(index += 1), :text=>klass, :next=>currentId[0,7] + "." + index.to_s}}
+    m[:options] = @domain_classes.map{|klass| {:key=>(index += 1), :text=>klass[:className], :next=>currentId[0,7] + "." + index.to_s}}
     
     child = {:value => m, :children => []}
     fatherFlowTree[:children].push(child)      
